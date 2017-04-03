@@ -24,6 +24,17 @@ public class EndGame : MonoBehaviour {
         //Coins are destroyed and score added
         if (other.gameObject.tag == "Player")
         {
+            //Did the player gather all coins, if yes more Ach score, if no less Ach score
+            if(pm.GetComponent<PrefabManager>().coins.Length == 0)
+            {
+                mc.GetComponent<MotivationController>().IncreaseAchievementScore(50);
+            }
+            else
+            {
+                mc.GetComponent<MotivationController>().DecreaseAchievementScore(pm.GetComponent<PrefabManager>().coins.Length * 2);
+            }
+
+            //Minus action score for every enemy left aline
             mc.GetComponent<MotivationController>().DecreaseActionScore(pm.GetComponent<PrefabManager>().enemies.Length * 5);
             Application.Quit();
         }

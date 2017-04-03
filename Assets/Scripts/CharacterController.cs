@@ -8,13 +8,23 @@ public class CharacterController : MonoBehaviour {
     int coinsAmount; //how many coins collected
     int bulletSpeed;
 
+    //Hiding variables
     bool isHiding = false; //is our player hiding?
     Vector2 currentHidingVector; //at what position is they hiding
     GameObject currentHidingObject; //which object are they hiding in
+
+    //The player itself
     GameObject player;
+
+    //The MotivationController
+    public GameObject mc;
+
+    //Variables related to shooting
     public Rigidbody2D bullet;
     float timeToFire = 0;
     float fireRate = 4;
+
+    //Points for spawning bullets
     Transform firePointLeft;
     Transform firePointRight;
     Transform firePointDown;
@@ -23,12 +33,12 @@ public class CharacterController : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		player = GameObject.FindGameObjectWithTag("Player");
-        //bullet = GameObject.FindGameObjectWithTag("Bullet").GetComponent<Rigidbody2D>();
         firePointLeft = transform.FindChild("FirePointLeft");
         firePointRight = transform.FindChild("FirePointRight");
         firePointDown = transform.FindChild("FirePointDown");
         firePointUp = transform.FindChild("FirePointUp");
-	}
+        mc = GameObject.FindGameObjectWithTag("MotivationController");
+    }
 	
 	// Update is called once per frame
 	void Update () {
@@ -137,8 +147,8 @@ public class CharacterController : MonoBehaviour {
         if (other.gameObject.tag == "Coin")
         {
             Destroy(other.gameObject);
-            coinsAmount = coinsAmount + 1;
-            print(coinsAmount);
+            coinsAmount += 1;
+            mc.GetComponent<MotivationController>().IncreaseAchievementScore(2);
         }
     }
 
@@ -165,7 +175,7 @@ public class CharacterController : MonoBehaviour {
     }
 
     /// <summary>
-    /// Shooting a bullet to the left (WIP)
+    /// Shooting a bullet in the direction specified
     /// </summary>
     void Shoot(Vector3 dir, Transform fp)
     {

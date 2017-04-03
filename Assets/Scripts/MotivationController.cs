@@ -33,4 +33,16 @@ public class MotivationController : MonoBehaviour {
     {
         ActionScore -= dec;
     }
+    public void IncreaseAchievementScore(int inc)
+    {
+        AchievementScore += inc;
+    }
+    public int GetAchievementScore()
+    {
+        return AchievementScore;
+    }
+    public void DecreaseAchievementScore(int dec)
+    {
+        AchievementScore -= dec;
+    }
 }
