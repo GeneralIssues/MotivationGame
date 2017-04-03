@@ -4,9 +4,10 @@ using UnityEngine;
 
 public class EnemyController : MonoBehaviour {
 
-    public string state = "Alert";
+    public string state = "Chilling";
     public float speed;
     public GameObject player;
+    public float range = 5;
 
 	// Use this for initialization
 	void Start () {
@@ -17,13 +18,13 @@ public class EnemyController : MonoBehaviour {
 	void Update () {
 	    if (state == "Chilling"){
             GetComponent<Rigidbody2D>().velocity = new Vector2(0,0);
-            if (Vector3.Distance(transform.position, player.transform.position) < 4f)
+            if (Vector3.Distance(transform.position, player.transform.position) < range)
                 state = "Attack";
         }
         if (state == "Attack")
         {
             transform.position = Vector2.MoveTowards(this.transform.position, player.transform.position, 1 * Time.deltaTime);
-            if (Vector3.Distance(transform.position, player.transform.position) > 3f)
+            if (Vector3.Distance(transform.position, player.transform.position) > range)
                 state = "Chilling";
         }
     }

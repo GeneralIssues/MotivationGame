@@ -12,6 +12,7 @@ TagManager:
   - Bullet
   - MotivationController
   - Background
+  - PrefabManager
   layers:
   - Default
   - TransparentFX
