@@ -6,20 +6,66 @@ public class CharacterController : MonoBehaviour {
 
     float characterSpeed = 0.03f; //value to divide speed
     int coinsAmount; //how many coins collected
+    int bulletSpeed;
 
     bool isHiding = false; //is our player hiding?
     Vector2 currentHidingVector; //at what position is they hiding
     GameObject currentHidingObject; //which object are they hiding in
     GameObject player;
+    public Rigidbody2D bullet;
+    float timeToFire = 0;
+    float fireRate = 4;
+    Transform firePointLeft;
+    Transform firePointRight;
+    Transform firePointDown;
+    Transform firePointUp;
 
 	// Use this for initialization
 	void Start () {
 		player = GameObject.FindGameObjectWithTag("Player");
+        //bullet = GameObject.FindGameObjectWithTag("Bullet").GetComponent<Rigidbody2D>();
+        firePointLeft = transform.FindChild("FirePointLeft");
+        firePointRight = transform.FindChild("FirePointRight");
+        firePointDown = transform.FindChild("FirePointDown");
+        firePointUp = transform.FindChild("FirePointUp");
 	}
 	
 	// Update is called once per frame
 	void Update () {
         MovementDir();
+        if (fireRate == 0)
+        {
+            if (Input.GetKey(KeyCode.LeftArrow))
+            {
+                Shoot(Vector3.left,firePointLeft);
+            }else if (Input.GetKey(KeyCode.RightArrow))
+            {
+                Shoot(Vector3.right,firePointRight);
+            }else if (Input.GetKey(KeyCode.DownArrow))
+            {
+                Shoot(Vector3.down, firePointDown);
+            }else if (Input.GetKey(KeyCode.UpArrow))
+            {
+                Shoot(Vector3.up, firePointUp);
+            }
+        }
+        else if (Input.GetKey(KeyCode.LeftArrow) && Time.time > timeToFire)
+        {
+            timeToFire = Time.time + 1 / fireRate;
+            Shoot(Vector3.left, firePointLeft);
+        }else if (Input.GetKey(KeyCode.RightArrow) && Time.time > timeToFire)
+        {
+            timeToFire = Time.time + 1 / fireRate;
+            Shoot(Vector3.right,firePointRight);
+        }else if (Input.GetKey(KeyCode.DownArrow) && Time.time > timeToFire)
+        {
+            timeToFire = Time.time + 1 / fireRate;
+            Shoot(Vector3.down, firePointDown);
+        }else if (Input.GetKey(KeyCode.UpArrow) && Time.time > timeToFire)
+        {
+            timeToFire = Time.time + 1 / fireRate;
+            Shoot(Vector3.up, firePointUp);
+        }
     }
 
     void MovementDir() //not using horizontal and vertical because arrow keys are reserved for shooting
@@ -74,18 +120,25 @@ public class CharacterController : MonoBehaviour {
     /// <param name="coll"></param>
     void OnCollisionEnter2D (Collision2D coll)
     {
-        //Coins are destroyed and score added
-        if (coll.gameObject.tag == "Coin")
-        {
-            Destroy(coll.gameObject);
-            coinsAmount = coinsAmount + 1;
-            print(coinsAmount);
-        }
-
         //Dead if touched by enemy
         if (coll.gameObject.tag == "Enemy")
         {
             print("You're Dead");
+        }
+    }
+
+    /// <summary>
+    /// Checks collision with 2D trigger colliders
+    /// </summary>
+    /// <param name="other"></param>
+    void OnTriggerEnter2D(Collider2D other)
+    {
+        //Coins are destroyed and score added
+        if (other.gameObject.tag == "Coin")
+        {
+            Destroy(other.gameObject);
+            coinsAmount = coinsAmount + 1;
+            print(coinsAmount);
         }
     }
 
@@ -97,7 +150,6 @@ public class CharacterController : MonoBehaviour {
     {
         if (coll.gameObject.tag == "HidingSpot")
         {
-            print("Enter Spot");
 
             if (Input.GetKey(KeyCode.Space))
             {
@@ -110,5 +162,15 @@ public class CharacterController : MonoBehaviour {
                 this.transform.Translate(100, 100, 0);
             }
         }
+    }
+
+    /// <summary>
+    /// Shooting a bullet to the left (WIP)
+    /// </summary>
+    void Shoot(Vector3 dir, Transform fp)
+    {
+        Rigidbody2D shot;
+        shot = Instantiate(bullet, fp.transform.position, Quaternion.Euler(new Vector3(0, 0, 1))) as Rigidbody2D;
+        shot.velocity = transform.TransformDirection(dir * 10);
     }
 }
