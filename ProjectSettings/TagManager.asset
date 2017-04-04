@@ -13,6 +13,7 @@ TagManager:
   - MotivationController
   - Background
   - PrefabManager
+  - PuzzleTile
   layers:
   - Default
   - TransparentFX
