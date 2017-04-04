@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: 9b3f08a44dc529e43b7f618fe8c936a0
-timeCreated: 1491216358
+timeCreated: 1491299905
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -74,6 +74,22 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+  - buildTarget: Android
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: WebGL
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -81,12 +97,12 @@ TextureImporter:
       name: coins_0
       rect:
         serializedVersion: 2
-        x: 1
-        y: 1
-        width: 30
-        height: 30
+        x: 7
+        y: 6
+        width: 17
+        height: 21
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
@@ -94,12 +110,12 @@ TextureImporter:
       name: coins_1
       rect:
         serializedVersion: 2
-        x: 32
-        y: 1
-        width: 30
-        height: 30
+        x: 40
+        y: 6
+        width: 15
+        height: 21
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
@@ -107,12 +123,12 @@ TextureImporter:
       name: coins_2
       rect:
         serializedVersion: 2
-        x: 63
-        y: 1
-        width: 30
-        height: 30
+        x: 74
+        y: 6
+        width: 12
+        height: 21
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
@@ -120,12 +136,12 @@ TextureImporter:
       name: coins_3
       rect:
         serializedVersion: 2
-        x: 94
-        y: 1
-        width: 30
-        height: 30
+        x: 107
+        y: 6
+        width: 8
+        height: 21
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
@@ -133,12 +149,12 @@ TextureImporter:
       name: coins_4
       rect:
         serializedVersion: 2
-        x: 125
-        y: 1
-        width: 30
-        height: 30
+        x: 141
+        y: 6
+        width: 4
+        height: 21
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
@@ -146,12 +162,12 @@ TextureImporter:
       name: coins_5
       rect:
         serializedVersion: 2
-        x: 156
-        y: 1
-        width: 30
-        height: 30
+        x: 171
+        y: 6
+        width: 8
+        height: 21
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
@@ -159,12 +175,12 @@ TextureImporter:
       name: coins_6
       rect:
         serializedVersion: 2
-        x: 187
-        y: 1
-        width: 30
-        height: 30
+        x: 202
+        y: 6
+        width: 12
+        height: 21
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
@@ -172,12 +188,12 @@ TextureImporter:
       name: coins_7
       rect:
         serializedVersion: 2
-        x: 218
-        y: 1
-        width: 30
-        height: 30
+        x: 232
+        y: 5
+        width: 15
+        height: 22
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
