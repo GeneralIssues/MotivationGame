@@ -3,19 +3,33 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class PuzzleController : MonoBehaviour {
+public class PuzzleController : MonoBehaviour{
 
-    public static int puzzleSize = 1;
-    public Image[,] images = new Image[puzzleSize, puzzleSize];
+    public string name;
+    public string nameY;
+    public static int puzzleSize = 3;
+    public GameObject[,] images = new GameObject[puzzleSize, puzzleSize];
 
 	// Use this for initialization
-	void Start () {
-        
+	void Start (){
+	    for (int i = 0; i < puzzleSize*puzzleSize; i++){
+	        name = "Image" + i;
+            GameObject tempObj = GameObject.Find(name);
+            Debug.Log((int)tempObj.GetComponent<RectTransform>().localPosition.x + " " +(int)tempObj.GetComponent<RectTransform>().localPosition.y);
+	        images[
+	            (int) tempObj.GetComponent<RectTransform>().localPosition.x,
+	            (int) tempObj.GetComponent<RectTransform>().localPosition.y] = tempObj;
+
+	    }
+       /*
         for (int y = 0; y < puzzleSize; y++) {
-            for (int x = 0; x < puzzleSize; x++) {
-                
+            for (int x = 0; x < puzzleSize; x++){
+                name = GameObject.Find("Image" + x);
+                images[x,y] = 
+                //Debug.Log(name);
             }
         }
+        */
 
 
     }
@@ -23,7 +37,9 @@ public class PuzzleController : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		if (Input.GetKeyDown(KeyCode.Space)) {
-            images[0, 0].GetComponent<Image>().color = Color.black;
-        }
+		    for (int i = 0; i < puzzleSize; i++){
+		        images[i, i].GetComponent<Image>().color = Color.black;
+		    }
+		}
 	}
 }
