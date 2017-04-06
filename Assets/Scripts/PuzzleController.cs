@@ -8,7 +8,8 @@ public class PuzzleController : MonoBehaviour{
     string nameImg;
     public static int puzzleSize = 3;
     public GameObject[,] images = new GameObject[puzzleSize, puzzleSize];
-    GameObject[,] currentPos;
+    Vector2 currentPos;
+    Vector2 winningPos;
 
 	// Use this for initialization
 	void Start (){
@@ -16,35 +17,73 @@ public class PuzzleController : MonoBehaviour{
         for (int i = 0; i < puzzleSize*puzzleSize; i++){
 	        nameImg = "Image" + i;
             GameObject tempObj = GameObject.Find(nameImg);
-            Debug.Log((int)tempObj.GetComponent<RectTransform>().localPosition.x + " " +(int)tempObj.GetComponent<RectTransform>().localPosition.y);
+            //Debug.Log((int)tempObj.GetComponent<RectTransform>().localPosition.x + " " +(int)tempObj.GetComponent<RectTransform>().localPosition.y);
 	        images[
 	            (int) tempObj.GetComponent<RectTransform>().localPosition.x,
 	            (int) tempObj.GetComponent<RectTransform>().localPosition.y] = tempObj;
-
 	    }
 
         //Find block positions
         for (int y = 0; y < puzzleSize; y++) {
             for (int x = 0; x < puzzleSize; x++){
                 if (images[x, y].GetComponent<Image>().color == Color.white) {
-                    currentPos[x, y] = images[x, y];
+                    currentPos.x = images[x, y].transform.localPosition.x;
+                    currentPos.y = images[x, y].transform.localPosition.y;
+                    Debug.Log(currentPos);
+                }
+
+                if (images[x, y].GetComponent<Image>().color == Color.green) {
+                    winningPos.x = images[x, y].transform.localPosition.x;
+                    winningPos.y = images[x, y].transform.localPosition.y;
+                    Debug.Log(winningPos);
                 }
             }
         }
-
-
     }
 	
 	// Update is called once per frame
 	void Update () {
-		if (Input.GetKeyDown(KeyCode.Space)) {
-		    for (int i = 0; i < puzzleSize; i++){
-		        images[i, i].GetComponent<Image>().color = Color.gray;
-		    }
-		}
-
-        if (Input.GetKeyDown(KeyCode.UpArrow)) {
-            currentPos = currentPos;
+        if (currentPos == winningPos) {
+            Debug.Log("Puzzle done");
         }
-	}
+
+        if (Input.GetKeyDown(KeyCode.UpArrow) && currentPos.y < puzzleSize - 1 && ValidMove(new Vector2(currentPos.x, currentPos.y + 1))) {
+            images[(int)currentPos.x, (int)currentPos.y].GetComponent<Image>().color = Color.white;
+            currentPos.y = currentPos.y + 1;
+            images[(int)currentPos.x, (int)currentPos.y].GetComponent<Image>().color = Color.blue;
+
+        }
+
+        if (Input.GetKeyDown(KeyCode.LeftArrow) && currentPos.x > 0 && ValidMove(new Vector2(currentPos.x - 1, currentPos.y))) {
+            images[(int)currentPos.x, (int)currentPos.y].GetComponent<Image>().color = Color.white;
+            currentPos.x = currentPos.x - 1;
+            images[(int)currentPos.x, (int)currentPos.y].GetComponent<Image>().color = Color.blue;
+
+        }
+
+        if (Input.GetKeyDown(KeyCode.DownArrow) && currentPos.y > 0 && ValidMove(new Vector2(currentPos.x, currentPos.y - 1))) {
+            images[(int)currentPos.x, (int)currentPos.y].GetComponent<Image>().color = Color.white;
+            currentPos.y = currentPos.y - 1;
+            images[(int)currentPos.x, (int)currentPos.y].GetComponent<Image>().color = Color.blue;
+
+        }
+
+        if (Input.GetKeyDown(KeyCode.RightArrow) && currentPos.x < puzzleSize - 1 && ValidMove(new Vector2(currentPos.x + 1, currentPos.y))) {
+            images[(int)currentPos.x, (int)currentPos.y].GetComponent<Image>().color = Color.white;
+            currentPos.x = currentPos.x + 1;
+            images[(int)currentPos.x, (int)currentPos.y].GetComponent<Image>().color = Color.blue;
+
+        }
+    }
+
+    bool ValidMove (Vector2 nextMove) {
+        Debug.Log(currentPos + " vs " + nextMove);
+
+        if (images[(int)nextMove.x, (int)nextMove.y].GetComponent<Image>().color != Color.white) {
+            return true;
+        }
+        else {
+            return false;
+        }
+    }
 }
