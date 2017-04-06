@@ -1,13 +1,13 @@
 fileFormatVersion: 2
-guid: 521f1d92275b26645bc79572a24ac101
-timeCreated: 1490101302
+guid: f0bfe237369b4e948b4a69b050be9888
+timeCreated: 1491486769
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
-    21300000: astronant_low_2_0
-    21300002: astronant_low_2_1
-    21300004: astronant_low_2_2
-    21300006: astronant_low_2_3
+    21300000: enemy_left_0
+    21300002: enemy_left_1
+    21300004: enemy_left_2
+    21300006: enemy_left_3
   serializedVersion: 4
   mipmaps:
     mipMapMode: 0
@@ -44,7 +44,7 @@ TextureImporter:
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
-  spritePixelsToUnits: 32
+  spritePixelsToUnits: 100
   alphaUsage: 1
   alphaIsTransparency: 1
   spriteTessellationDetail: -1
@@ -70,27 +70,11 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
-  - buildTarget: Android
-    maxTextureSize: 2048
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-  - buildTarget: WebGL
-    maxTextureSize: 2048
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: astronant_low_2_0
+      name: enemy_left_0
       rect:
         serializedVersion: 2
         x: 3
@@ -103,7 +87,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: astronant_low_2_1
+      name: enemy_left_1
       rect:
         serializedVersion: 2
         x: 35
@@ -116,7 +100,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: astronant_low_2_2
+      name: enemy_left_2
       rect:
         serializedVersion: 2
         x: 67
@@ -129,7 +113,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: astronant_low_2_3
+      name: enemy_left_3
       rect:
         serializedVersion: 2
         x: 99

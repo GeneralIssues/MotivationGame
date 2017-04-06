@@ -18,7 +18,7 @@ public class EndGame : MonoBehaviour {
     /// <summary>
     /// Checks collision with 2D trigger colliders and ends the game
     /// </summary>
-    /// <param name="other"></param>
+    /// <param name="other">The Collider2D on the object</param>
     void OnTriggerEnter2D(Collider2D other)
     {
         //Coins are destroyed and score added

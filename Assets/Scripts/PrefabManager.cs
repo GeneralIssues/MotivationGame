@@ -30,12 +30,16 @@ public class PrefabManager : MonoBehaviour
             return m_Instance;
         }
     }
+    void Start()
+    {
+        list.AddRange(GameObject.FindGameObjectsWithTag("NPC"));
+    }
     void Update()
     {
         enemies = GameObject.FindGameObjectsWithTag("Enemy");
         coins = GameObject.FindGameObjectsWithTag("Coin");
         NPCs = GameObject.FindGameObjectsWithTag("NPC");
-        list.AddRange(GameObject.FindGameObjectsWithTag("NPC"));
+        
     }
 
 }
