@@ -10,10 +10,13 @@ public class PrefabManager : MonoBehaviour
     public GameObject BulletPrefab;
     public GameObject CoinPrefab;
     public GameObject EnemyPrefab;
+    public GameObject NPCPrefab;
 
     //Arrays of placed items and enemies
     public GameObject[] enemies;
     public GameObject[] coins;
+    public GameObject[] NPCs;
+    public List<GameObject> list = new List<GameObject>();
     //Singleton
     private static PrefabManager m_Instance = null;
     public static PrefabManager Instance
@@ -31,6 +34,8 @@ public class PrefabManager : MonoBehaviour
     {
         enemies = GameObject.FindGameObjectsWithTag("Enemy");
         coins = GameObject.FindGameObjectsWithTag("Coin");
+        NPCs = GameObject.FindGameObjectsWithTag("NPC");
+        list.AddRange(GameObject.FindGameObjectsWithTag("NPC"));
     }
 
 }

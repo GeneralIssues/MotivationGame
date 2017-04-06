@@ -36,6 +36,7 @@ public class EndGame : MonoBehaviour {
 
             //Minus action score for every enemy left aline
             mc.GetComponent<MotivationController>().DecreaseActionScore(pm.GetComponent<PrefabManager>().enemies.Length * 5);
+            mc.GetComponent<MotivationController>().DecreaseImmersionScore(pm.GetComponent<PrefabManager>().list.Count * 2);
             Application.Quit();
         }
     }
