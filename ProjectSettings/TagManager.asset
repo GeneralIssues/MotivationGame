@@ -14,6 +14,14 @@ TagManager:
   - Background
   - PrefabManager
   - NPC
+  - WallTop
+  - WallBottom
+  - WallLeft
+  - WallRight
+  - WallCorner1
+  - WallCorner2
+  - WallCorner3
+  - WallCorner4
   layers:
   - Default
   - TransparentFX
