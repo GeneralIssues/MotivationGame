@@ -315,7 +315,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1677187838234924, guid: a0c78e9c1bdafe9468a18fddba1c69b9, type: 2}
       propertyPath: m_Name
-      value: Puzzle0
+      value: f
       objectReference: {fileID: 0}
     - target: {fileID: 114160838582783894, guid: a0c78e9c1bdafe9468a18fddba1c69b9,
         type: 2}
