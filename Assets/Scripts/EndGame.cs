@@ -18,7 +18,7 @@ public class EndGame : MonoBehaviour {
     /// <summary>
     /// Checks collision with 2D trigger colliders and ends the game
     /// </summary>
-    /// <param name="other"></param>
+    /// <param name="other">The Collider2D on the object</param>
     void OnTriggerEnter2D(Collider2D other)
     {
         //Coins are destroyed and score added
@@ -36,6 +36,7 @@ public class EndGame : MonoBehaviour {
 
             //Minus action score for every enemy left aline
             mc.GetComponent<MotivationController>().DecreaseActionScore(pm.GetComponent<PrefabManager>().enemies.Length * 5);
+            mc.GetComponent<MotivationController>().DecreaseImmersionScore(pm.GetComponent<PrefabManager>().list.Count * 2);
             Application.Quit();
         }
     }
