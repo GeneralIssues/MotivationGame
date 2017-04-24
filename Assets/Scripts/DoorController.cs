@@ -28,8 +28,8 @@ public class DoorController : MonoBehaviour{
 
     void OnTriggerEnter2D(Collider2D coll){
         if (coll.tag == "Player"){
-            if (this.name == "Door1" && !door1Done)
-            {
+            GameObject.FindGameObjectWithTag("Player").GetComponent<CharacterController>().PuzzleActive = true;
+            if (this.name == "Door1" && !door1Done){
                 Instantiate(pm.GetComponent<PrefabManager>().Puzzle1);
                 Time.timeScale = 0;
                 door1Done = true;

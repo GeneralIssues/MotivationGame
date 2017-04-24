@@ -3557,6 +3557,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cc: {fileID: 0}
   pm: {fileID: 0}
+  door1Done: 0
 --- !u!212 &212002512085233628
 SpriteRenderer:
   m_ObjectHideFlags: 1

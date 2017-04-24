@@ -35,13 +35,13 @@ public class PuzzleController : MonoBehaviour{
                 if (images[x, y].GetComponent<Image>().color == Color.white) {
                     currentPos.x = images[x, y].transform.localPosition.x;
                     currentPos.y = images[x, y].transform.localPosition.y;
-                    Debug.Log(currentPos);
+                    //Debug.Log(currentPos);
                 }
 
                 if (images[x, y].GetComponent<Image>().color == Color.green) {
                     winningPos.x = images[x, y].transform.localPosition.x;
                     winningPos.y = images[x, y].transform.localPosition.y;
-                    Debug.Log(winningPos);
+                    //Debug.Log(winningPos);
                 }
 
                 if (images[x, y].GetComponent<Image>().color == Color.red) {
@@ -57,6 +57,7 @@ public class PuzzleController : MonoBehaviour{
             Destroy(GameObject.Find("Puzzle 1 1(Clone)"));
             Time.timeScale = 1;
             GameObject.Find("Door1").GetComponent<Animator>().enabled = true;
+            GameObject.FindGameObjectWithTag("Player").GetComponent<CharacterController>().PuzzleActive = false;
         }
 
         if (Input.GetKeyDown(KeyCode.UpArrow) && currentPos.y < puzzleSize - 1 && ValidMove(new Vector2(currentPos.x, currentPos.y + 1))) {
@@ -89,7 +90,7 @@ public class PuzzleController : MonoBehaviour{
     }
 
     bool ValidMove (Vector2 nextMove) {
-        Debug.Log(currentPos + " vs " + nextMove);
+        //Debug.Log(currentPos + " vs " + nextMove);
 
         if (images[(int)nextMove.x, (int)nextMove.y].GetComponent<Image>().color != Color.white &&
             images[(int)nextMove.x, (int)nextMove.y].GetComponent<Image>().color != Color.black) {

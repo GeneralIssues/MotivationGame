@@ -8,6 +8,8 @@ public class CharacterController : MonoBehaviour {
     int coinsAmount; //how many coins collected
     int bulletSpeed;
 
+    public bool PuzzleActive;
+
     //Hiding variables
     bool isHiding = false; //is our player hiding?
     Vector2 currentHidingVector; //at what position is they hiding
@@ -43,7 +45,7 @@ public class CharacterController : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
         MovementDir();
-        if (fireRate == 0)
+        if (fireRate == 0 && !PuzzleActive)
         {
             if (Input.GetKey(KeyCode.LeftArrow))
             {
@@ -51,6 +53,7 @@ public class CharacterController : MonoBehaviour {
             }else if (Input.GetKey(KeyCode.RightArrow))
             {
                 Shoot(Vector3.right,firePointRight);
+                //bullet.GetComponent<SpriteRenderer>().flipX = true;
             }else if (Input.GetKey(KeyCode.DownArrow))
             {
                 Shoot(Vector3.down, firePointDown);
@@ -182,5 +185,13 @@ public class CharacterController : MonoBehaviour {
         Rigidbody2D shot;
         shot = Instantiate(bullet, fp.transform.position, Quaternion.Euler(new Vector3(0, 0, 1))) as Rigidbody2D;
         shot.velocity = transform.TransformDirection(dir * 10);
+        if (fp == firePointRight){
+            shot.transform.eulerAngles = new Vector3(0, 0, 180);
+        }else if (fp == firePointDown){
+            shot.transform.eulerAngles = new Vector3(0, 0, 90);
+        }else if (fp == firePointUp){
+            shot.transform.eulerAngles = new Vector3(0, 0, -90);
+        }
+
     }
 }

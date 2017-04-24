@@ -222,6 +222,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 27e5a60f68892364bb611111bbae560b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  PuzzleActive: 0
   mc: {fileID: 0}
   bullet: {fileID: 50822435451211486, guid: b2906279d0fd68c4da376231e6ea6afa, type: 2}
 --- !u!212 &212184051182788112

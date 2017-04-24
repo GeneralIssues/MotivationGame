@@ -4,13 +4,13 @@ using UnityEngine;
 
 public class RoomSwitcher : MonoBehaviour
 {
-    public GameObject cc;
+    public GameObject Cc;
 
 
     // Use this for initialization
     void Start()
     {
-        cc = GameObject.FindGameObjectWithTag("MainCamera");
+        Cc = GameObject.FindGameObjectWithTag("MainCamera");
     }
 
     // Update is called once per frame
@@ -25,21 +25,23 @@ public class RoomSwitcher : MonoBehaviour
         {
             if (this.name == "1up")
             {
-                print("this");
-                cc.GetComponent<CameraController>().MoveCamToRoom("1Cam");
-                //cc.GetComponent<Camera>().transform.position = GameObject.Find("2Cam").transform.position;
+                Cc.GetComponent<CameraController>().MoveCamToRoom("1Cam");
+                GameObject.Find("Door2 2").GetComponent<Animator>().enabled = true;
+                GameObject.Find("Door2 2").GetComponent<Animator>().speed = 5;
+                GameObject.FindGameObjectWithTag("Player").transform.position =
+                    GameObject.Find("Spawn").transform.position;
             }
-            else if (this.name == "Door2")
+            else if (this.name == "1left")
             {
-                //cc.GetComponent<CameraController>().MoveCamToRoom(GameObject.Find("2Cam"));
+                Cc.GetComponent<CameraController>().MoveCamToRoom("2Cam");
             }
-            else if (this.name == "Door3")
+            else if (this.name == "1right")
             {
-                //cc.GetComponent<CameraController>().MoveCamToRoom(GameObject.Find("3Cam"));
+                Cc.GetComponent<CameraController>().MoveCamToRoom("3Cam");
             }
-            else if (this.name == "Door4")
+            else if (this.name == "1down")
             {
-               // cc.GetComponent<CameraController>().MoveCamToRoom(GameObject.Find("4Cam"));
+               Cc.GetComponent<CameraController>().MoveCamToRoom("4Cam");
             }
         }
     }
