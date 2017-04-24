@@ -15,7 +15,7 @@ public class CameraController : MonoBehaviour{
 	void Update (){
 	}
 
-   public void MoveCamToRoom(GameObject place){
-        transform.position = new Vector3(GameObject.Find(place.name).transform.position.x, GameObject.Find(place.name).transform.position.y, -10);
+   public void MoveCamToRoom(string name) { 
+        transform.position = new Vector3(GameObject.Find(name).transform.position.x, GameObject.Find(name).transform.position.y, -10);
     }
 }

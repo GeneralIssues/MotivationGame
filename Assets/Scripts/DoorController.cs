@@ -5,11 +5,15 @@ using UnityEngine;
 public class DoorController : MonoBehaviour{
 
     public GameObject cc;
+    public GameObject pm;
 
-	// Use this for initialization
-	void Start () {
-		//cc = GameObject.Find("Main Camera");
-	}
+    public bool door1Done;
+
+    // Use this for initialization
+    void Start () {
+        //cc = GameObject.Find("Main Camera");
+        pm = GameObject.FindGameObjectWithTag("PrefabManager");
+    }
 	
 	// Update is called once per frame
 	void Update () {
@@ -24,11 +28,14 @@ public class DoorController : MonoBehaviour{
 
     void OnTriggerEnter2D(Collider2D coll){
         if (coll.tag == "Player"){
-            if (this.name == "Door1"){
-                Instantiate(PrefabManager)
-
+            if (this.name == "Door1" && !door1Done)
+            {
+                Instantiate(pm.GetComponent<PrefabManager>().Puzzle1);
+                Time.timeScale = 0;
+                door1Done = true;
                 //cc.GetComponent<CameraController>().MoveCamToRoom(GameObject.Find("1Cam"));
-            }else if (this.name == "Door2"){
+            }
+            else if (this.name == "Door2"){
 
 
                 //cc.GetComponent<CameraController>().MoveCamToRoom(GameObject.Find("2Cam"));

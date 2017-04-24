@@ -11,6 +11,7 @@ public class PrefabManager : MonoBehaviour
     public GameObject CoinPrefab;
     public GameObject EnemyPrefab;
     public GameObject NPCPrefab;
+    public GameObject Puzzle1;
 
     //Arrays of placed items and enemies
     public GameObject[] enemies;

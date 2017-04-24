@@ -54,7 +54,9 @@ public class PuzzleController : MonoBehaviour{
 	// Update is called once per frame
 	void Update () {
         if (currentPos == winningPos && currentPointCount == maxPointCount) {
-            Debug.Log("Puzzle done");
+            Destroy(GameObject.Find("Puzzle 1 1(Clone)"));
+            Time.timeScale = 1;
+            GameObject.Find("Door1").GetComponent<Animator>().enabled = true;
         }
 
         if (Input.GetKeyDown(KeyCode.UpArrow) && currentPos.y < puzzleSize - 1 && ValidMove(new Vector2(currentPos.x, currentPos.y + 1))) {

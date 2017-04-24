@@ -22,6 +22,8 @@ TagManager:
   - WallCorner2
   - WallCorner3
   - WallCorner4
+  - PuzzleTile
+  - Door
   layers:
   - Default
   - TransparentFX

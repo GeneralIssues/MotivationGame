@@ -349,7 +349,7 @@ GameObject:
   - component: {fileID: 95948277323094764}
   - component: {fileID: 61340720121877810}
   m_Layer: 0
-  m_Name: Door (1)
+  m_Name: Door2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -512,8 +512,9 @@ GameObject:
   - component: {fileID: 212056774249403622}
   - component: {fileID: 95305151710982706}
   - component: {fileID: 61482366610742578}
+  - component: {fileID: 114790616469971164}
   m_Layer: 0
-  m_Name: Door
+  m_Name: Door1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -661,7 +662,7 @@ GameObject:
   - component: {fileID: 95378022042887480}
   - component: {fileID: 61059595088042690}
   m_Layer: 0
-  m_Name: Door (3)
+  m_Name: Door4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -989,7 +990,7 @@ GameObject:
   - component: {fileID: 95714108004777694}
   - component: {fileID: 61663032444216594}
   m_Layer: 0
-  m_Name: Door (2)
+  m_Name: Door3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3543,6 +3544,19 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &114790616469971164
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1331620624334322}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc1cb1c0c43d3734086ed60523b55d54, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cc: {fileID: 0}
+  pm: {fileID: 0}
 --- !u!212 &212002512085233628
 SpriteRenderer:
   m_ObjectHideFlags: 1
