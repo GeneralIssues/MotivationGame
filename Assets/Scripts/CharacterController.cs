@@ -44,7 +44,8 @@ public class CharacterController : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        MovementDir();
+        if (!PuzzleActive)
+            MovementDir();
         if (fireRate == 0 && !PuzzleActive)
         {
             if (Input.GetKey(KeyCode.LeftArrow))

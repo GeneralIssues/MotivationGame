@@ -17,8 +17,12 @@ public class PuzzleController : MonoBehaviour{
     int maxPointCount;
     int currentPointCount;
 
-	// Use this for initialization
-	void Start (){
+    GameObject current;
+
+    // Use this for initialization
+    void Start (){
+        current = this.transform.parent.gameObject;
+
         //Fill images array with images at the correct location
         for (int i = 0; i < puzzleSize*puzzleSize; i++){
 	        nameImg = "Image" + i;
@@ -53,13 +57,32 @@ public class PuzzleController : MonoBehaviour{
 	
 	// Update is called once per frame
 	void Update () {
-        if (currentPos == winningPos && currentPointCount == maxPointCount) {
-            Destroy(GameObject.Find("Puzzle 1 1(Clone)"));
-            Time.timeScale = 1;
-            GameObject.Find("Door1").GetComponent<Animator>().enabled = true;
+        PuzzleMovement();
+
+        //For getting out of a failed puzzle
+        if (Input.GetKey(KeyCode.Space)) {
             GameObject.FindGameObjectWithTag("Player").GetComponent<CharacterController>().PuzzleActive = false;
         }
 
+        if (currentPos == winningPos && currentPointCount == maxPointCount) {
+            Destroy(GameObject.Find("Puzzle 1 1(Clone)"));
+            Time.timeScale = 1;
+
+            //We find the root door object
+            while (current.tag != "Door" || current.tag != "Finish") {
+                current = current.transform.parent.gameObject;
+            }
+
+            //When the correct door is found, we open it
+            if (current.tag == "Door") {
+                current.GetComponent<Animator>().enabled = true;
+                GameObject.FindGameObjectWithTag("Player").GetComponent<CharacterController>().PuzzleActive = false;
+            }
+        }
+    }
+
+    void PuzzleMovement ()
+    {
         if (Input.GetKeyDown(KeyCode.UpArrow) && currentPos.y < puzzleSize - 1 && ValidMove(new Vector2(currentPos.x, currentPos.y + 1))) {
             images[(int)currentPos.x, (int)currentPos.y].GetComponent<Image>().color = Color.white;
             currentPos.y = currentPos.y + 1;

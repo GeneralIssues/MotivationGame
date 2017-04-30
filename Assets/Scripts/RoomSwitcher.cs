@@ -4,25 +4,40 @@ using UnityEngine;
 
 public class RoomSwitcher : MonoBehaviour
 {
-    public GameObject Cc;
-
+    public GameObject CamController;
+    public GameObject DoorLink;
+    public GameObject CamPos;
 
     // Use this for initialization
     void Start()
     {
-        Cc = GameObject.FindGameObjectWithTag("MainCamera");
+        CamController = GameObject.FindGameObjectWithTag("MainCamera");
     }
 
     // Update is called once per frame
     void Update()
     {
-
+        if (DoorLink.GetComponent<Animator>().enabled == true) {
+            this.transform.parent.GetComponent<Animator>().enabled = true;
+            this.transform.parent.GetComponent<BoxCollider2D>().enabled = false;
+        }
     }
 
     void OnTriggerEnter2D(Collider2D coll)
     {
         if (coll.tag == "Player")
         {
+            if (this.tag != "Finish") {
+                GameObject.FindGameObjectWithTag("Player").transform.position =
+                    DoorLink.transform.position;
+                CamController.GetComponent<CameraController>().transform.position =
+                    CamPos.transform.position - new Vector3(0, 0, 20);
+            }
+            else if (this.tag == "Finish") {
+                print("Game Level Done");
+            }
+
+            /*
             if (this.name == "1up")
             {
                 Cc.GetComponent<CameraController>().MoveCamToRoom("1Cam");
@@ -43,6 +58,7 @@ public class RoomSwitcher : MonoBehaviour
             {
                Cc.GetComponent<CameraController>().MoveCamToRoom("4Cam");
             }
+            */
         }
     }
 }
