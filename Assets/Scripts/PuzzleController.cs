@@ -21,7 +21,7 @@ public class PuzzleController : MonoBehaviour{
 
     // Use this for initialization
     void Start (){
-        current = this.transform.parent.gameObject;
+        current = this.transform.gameObject;
 
         //Fill images array with images at the correct location
         for (int i = 0; i < puzzleSize*puzzleSize; i++){
@@ -69,7 +69,7 @@ public class PuzzleController : MonoBehaviour{
             Time.timeScale = 1;
 
             //We find the root door object
-            while (current.tag != "Door" || current.tag != "Finish") {
+            while (current.tag != "Door") {
                 current = current.transform.parent.gameObject;
             }
 

@@ -435,6 +435,7 @@ GameObject:
   - component: {fileID: 212037736219270072}
   - component: {fileID: 95981191696208988}
   - component: {fileID: 61473115983579924}
+  - component: {fileID: 114723374841863884}
   m_Layer: 0
   m_Name: Door (1)
   m_TagString: Untagged
@@ -1409,6 +1410,7 @@ GameObject:
   - component: {fileID: 212845201696339038}
   - component: {fileID: 95590603339207668}
   - component: {fileID: 61368464774290780}
+  - component: {fileID: 114537241521817276}
   m_Layer: 0
   m_Name: Door
   m_TagString: Untagged
@@ -2797,7 +2799,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1482485541021054}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 14.343633, y: -6.7458763, z: 0}
+  m_LocalPosition: {x: 55.19119, y: 7.5262494, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4823033977541728}
@@ -3371,6 +3373,32 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &114537241521817276
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1945061783732076}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc1cb1c0c43d3734086ed60523b55d54, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pm: {fileID: 0}
+  doorOpen: 0
+--- !u!114 &114723374841863884
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1295119835556804}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc1cb1c0c43d3734086ed60523b55d54, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pm: {fileID: 0}
+  doorOpen: 0
 --- !u!114 &114860256821339352
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3382,7 +3410,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d1832fbab8cb74a46a70f88eeefe31e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cc: {fileID: 0}
+  CamController: {fileID: 0}
+  DoorLink: {fileID: 0}
+  CamPos: {fileID: 0}
 --- !u!114 &114938188831204664
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3394,7 +3424,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d1832fbab8cb74a46a70f88eeefe31e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cc: {fileID: 0}
+  CamController: {fileID: 0}
+  DoorLink: {fileID: 0}
+  CamPos: {fileID: 0}
 --- !u!212 &212007110792288338
 SpriteRenderer:
   m_ObjectHideFlags: 1

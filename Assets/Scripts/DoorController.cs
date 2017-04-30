@@ -18,6 +18,9 @@ public class DoorController : MonoBehaviour{
             this.GetComponent<SpriteRenderer>().color = Color.green;
         }
 
+        //Door is not a trigger at start
+        this.GetComponent<BoxCollider2D>().isTrigger = false;
+
         this.GetComponent<Animator>().enabled = false;
     }
 
@@ -40,23 +43,13 @@ public class DoorController : MonoBehaviour{
                 puzzle.transform.parent = this.transform;
                 Time.timeScale = 0;
                 doorOpen = true;
-                //cc.GetComponent<CameraController>().MoveCamToRoom(GameObject.Find("1Cam"));
             }
-            /*
-            else if (this.name == "Door2"){
-
-
-                //cc.GetComponent<CameraController>().MoveCamToRoom(GameObject.Find("2Cam"));
-            }else if (this.name == "Door3"){
-
-
-                //cc.GetComponent<CameraController>().MoveCamToRoom(GameObject.Find("3Cam"));
-            }else if (this.name == "Door4"){
-
-
-                //cc.GetComponent<CameraController>().MoveCamToRoom(GameObject.Find("4Cam"));
-            }
-            */
         }
     }
+
+    void OnCollisionEnter2D(Collision2D coll)
+    {
+        Debug.Log("Collision");
+    }
+
 }

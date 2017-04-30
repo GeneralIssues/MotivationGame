@@ -12,6 +12,9 @@ public class RoomSwitcher : MonoBehaviour
     void Start()
     {
         CamController = GameObject.FindGameObjectWithTag("MainCamera");
+
+        //Switcher a trigger at start
+        this.GetComponent<BoxCollider2D>().isTrigger = true;
     }
 
     // Update is called once per frame
