@@ -7,9 +7,12 @@ public class PuzzleController : MonoBehaviour{
 
     string nameImg;
 
-    public static int puzzleSize = 3;
+    public int puzzleSize = 3;
 
-    public GameObject[,] images = new GameObject[puzzleSize, puzzleSize];
+    public GameObject[,] images;
+
+    GameObject[,] imagesOrg;
+    Color[] imagesColor;
 
     Vector2 currentPos;
     Vector2 winningPos;
@@ -21,6 +24,11 @@ public class PuzzleController : MonoBehaviour{
 
     // Use this for initialization
     void Start (){
+        //Create the needed arrays
+        images = new GameObject[puzzleSize, puzzleSize];
+        imagesOrg = new GameObject[puzzleSize, puzzleSize];
+        imagesColor = new Color[puzzleSize * puzzleSize];
+
         current = this.transform.gameObject;
 
         //Fill images array with images at the correct location
@@ -53,6 +61,15 @@ public class PuzzleController : MonoBehaviour{
                 }
             }
         }
+
+        //Save a copy of puzzle
+        int tempPos = 0;
+        for (int y = 0; y < puzzleSize; y++) {
+            for (int x = 0; x < puzzleSize; x++) {
+                imagesColor[tempPos] = images[x, y].GetComponent<Image>().color;
+                tempPos++;
+            }
+        }
     }
 	
 	// Update is called once per frame
@@ -61,9 +78,10 @@ public class PuzzleController : MonoBehaviour{
 
         //For getting out of a failed puzzle
         if (Input.GetKey(KeyCode.Space)) {
-            GameObject.FindGameObjectWithTag("Player").GetComponent<CharacterController>().PuzzleActive = false;
+            SetOriginalPuzzle();
         }
 
+        //Winning position
         if (currentPos == winningPos && currentPointCount == maxPointCount) {
             Destroy(GameObject.Find("Puzzle 1 1(Clone)"));
             Time.timeScale = 1;
@@ -78,6 +96,9 @@ public class PuzzleController : MonoBehaviour{
                 current.GetComponent<Animator>().enabled = true;
                 GameObject.FindGameObjectWithTag("Player").GetComponent<CharacterController>().PuzzleActive = false;
             }
+        }
+        else if (currentPos == winningPos && currentPointCount != maxPointCount) {
+            SetOriginalPuzzle();
         }
     }
 
@@ -117,10 +138,49 @@ public class PuzzleController : MonoBehaviour{
 
         if (images[(int)nextMove.x, (int)nextMove.y].GetComponent<Image>().color != Color.white &&
             images[(int)nextMove.x, (int)nextMove.y].GetComponent<Image>().color != Color.black) {
+            if (images[(int)nextMove.x, (int)nextMove.y].GetComponent<Image>().color == Color.red)
+                currentPointCount++;
+            print(maxPointCount + " : " + currentPointCount);
             return true;
         }
         else {
             return false;
+        }
+    }
+
+    void SetOriginalPuzzle()
+    {
+        maxPointCount = 0;
+        currentPointCount = 0;
+
+        //Set the images the original colour
+        int tempPos = 0;
+        for (int y = 0; y < puzzleSize; y++) {
+            for (int x = 0; x < puzzleSize; x++) {
+                images[x, y].GetComponent<Image>().color = imagesColor[tempPos];
+                tempPos++;
+            }
+        }
+
+        //Find block positions again
+        for (int y = 0; y < puzzleSize; y++) {
+            for (int x = 0; x < puzzleSize; x++) {
+                if (images[x, y].GetComponent<Image>().color == Color.white) {
+                    currentPos.x = images[x, y].transform.localPosition.x;
+                    currentPos.y = images[x, y].transform.localPosition.y;
+                    //Debug.Log(currentPos);
+                }
+
+                if (images[x, y].GetComponent<Image>().color == Color.green) {
+                    winningPos.x = images[x, y].transform.localPosition.x;
+                    winningPos.y = images[x, y].transform.localPosition.y;
+                    //Debug.Log(winningPos);
+                }
+
+                if (images[x, y].GetComponent<Image>().color == Color.red) {
+                    maxPointCount++;
+                }
+            }
         }
     }
 }
