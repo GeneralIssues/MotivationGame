@@ -83,7 +83,8 @@ public class PuzzleController : MonoBehaviour{
 
         //Winning position
         if (currentPos == winningPos && currentPointCount == maxPointCount) {
-            Destroy(GameObject.Find("Puzzle 1 1(Clone)"));
+            //Destroy(GameObject.Find("Puzzle 1(Clone)"));
+            Destroy(GameObject.FindGameObjectWithTag("Puzzle"));
             Time.timeScale = 1;
 
             //We find the root door object

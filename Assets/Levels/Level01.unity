@@ -1279,6 +1279,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pm: {fileID: 0}
+  puzzle: {fileID: 0}
   doorOpen: 0
 --- !u!1 &69442231
 GameObject:
@@ -4964,6 +4965,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pm: {fileID: 0}
+  puzzle: {fileID: 0}
   doorOpen: 0
 --- !u!1 &259799113
 GameObject:
@@ -7749,6 +7751,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pm: {fileID: 0}
+  puzzle: {fileID: 0}
   doorOpen: 0
 --- !u!1 &375635863
 GameObject:
@@ -9269,6 +9272,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pm: {fileID: 0}
+  puzzle: {fileID: 1583024386386080, guid: e4629f6fdab63994baf67001d72e2140, type: 2}
   doorOpen: 0
 --- !u!1 &476828384
 GameObject:
@@ -9883,6 +9887,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pm: {fileID: 0}
+  puzzle: {fileID: 0}
   doorOpen: 0
 --- !u!1 &525641934
 GameObject:
@@ -11417,6 +11422,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pm: {fileID: 0}
+  puzzle: {fileID: 0}
   doorOpen: 0
 --- !u!1 &616682076
 GameObject:
@@ -19304,6 +19310,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pm: {fileID: 0}
+  puzzle: {fileID: 0}
   doorOpen: 0
 --- !u!1 &1089174405
 GameObject:
@@ -28600,6 +28607,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pm: {fileID: 0}
+  puzzle: {fileID: 0}
   doorOpen: 0
 --- !u!1 &1619161429
 GameObject:
@@ -34382,6 +34390,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pm: {fileID: 0}
+  puzzle: {fileID: 0}
   doorOpen: 0
 --- !u!1 &1950131169
 GameObject:

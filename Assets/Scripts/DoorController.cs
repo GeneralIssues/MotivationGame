@@ -6,6 +6,7 @@ public class DoorController : MonoBehaviour{
 
     //public GameObject cc;
     public GameObject pm;
+    public GameObject puzzle;
 
     public bool doorOpen = false;
 
@@ -35,21 +36,25 @@ public class DoorController : MonoBehaviour{
          * */
 	}
 
-    void OnTriggerEnter2D(Collider2D coll){
-        if (coll.tag == "Player"){
-            GameObject.FindGameObjectWithTag("Player").GetComponent<CharacterController>().PuzzleActive = true;
-            if (!doorOpen){
-                GameObject puzzle = Instantiate(pm.GetComponent<PrefabManager>().Puzzle1) as GameObject;
-                puzzle.transform.parent = this.transform;
-                Time.timeScale = 0;
-                doorOpen = true;
-            }
-        }
+    void OnTriggerEnter2D(Collider2D coll)
+    {
     }
 
     void OnCollisionEnter2D(Collision2D coll)
     {
-        Debug.Log("Collision");
-    }
+        if (coll.gameObject.tag == "Player") {
+            GameObject.FindGameObjectWithTag("Player").GetComponent<CharacterController>().PuzzleActive = true;
+            if (!doorOpen) {
+                //GameObject puzzle = Instantiate(pm.GetComponent<PrefabManager>().Puzzle1) as GameObject;
+                GameObject tempPuzzle = Instantiate(puzzle) as GameObject;
+                tempPuzzle.transform.parent = this.transform;
+                Time.timeScale = 0;
+                doorOpen = true;
+            }
+        }
 
+        if (coll.gameObject.tag == "Bullet") {
+            print("Bullet hit door");
+        }
+    }
 }

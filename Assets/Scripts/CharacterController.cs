@@ -44,7 +44,7 @@ public class CharacterController : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        if (!PuzzleActive)
+        //if (!PuzzleActive)
             MovementDir();
         if (fireRate == 0 && !PuzzleActive)
         {

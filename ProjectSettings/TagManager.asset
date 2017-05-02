@@ -24,6 +24,7 @@ TagManager:
   - WallCorner4
   - PuzzleTile
   - Door
+  - Puzzle
   layers:
   - Default
   - TransparentFX
