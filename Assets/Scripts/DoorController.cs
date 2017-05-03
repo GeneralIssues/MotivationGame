@@ -8,16 +8,15 @@ public class DoorController : MonoBehaviour{
     public GameObject pm;
     public GameObject puzzle;
 
-    public bool doorOpen = false;
-
     // Use this for initialization
     void Start () {
         //cc = GameObject.Find("Main Camera");
         //pm = GameObject.FindGameObjectWithTag("PrefabManager");
 
-        if (this.tag == "Finish") {
+        if (this.tag == "Finish")
             this.GetComponent<SpriteRenderer>().color = Color.green;
-        }
+        if (puzzle == null)
+            this.GetComponent<SpriteRenderer>().color = Color.grey;
 
         //Door is not a trigger at start
         this.GetComponent<BoxCollider2D>().isTrigger = false;
@@ -44,13 +43,14 @@ public class DoorController : MonoBehaviour{
     {
         if (coll.gameObject.tag == "Player") {
             GameObject.FindGameObjectWithTag("Player").GetComponent<CharacterController>().PuzzleActive = true;
-            if (!doorOpen) {
+            if (puzzle != null) {
                 //GameObject puzzle = Instantiate(pm.GetComponent<PrefabManager>().Puzzle1) as GameObject;
                 GameObject tempPuzzle = Instantiate(puzzle) as GameObject;
                 tempPuzzle.transform.parent = this.transform;
                 Time.timeScale = 0;
-                //doorOpen = true;
             }
+            else
+                NoPuzzleAttachedOpen();
         }
 
         if (coll.gameObject.tag == "Bullet") {
@@ -63,5 +63,12 @@ public class DoorController : MonoBehaviour{
         if (coll.gameObject.tag == "Player") {
             Destroy(GameObject.FindGameObjectWithTag("Puzzle"));
         }
+    }
+
+    void NoPuzzleAttachedOpen()
+    {
+        GameObject.FindGameObjectWithTag("Player").GetComponent<CharacterController>().PuzzleActive = true;
+        this.GetComponent<Animator>().enabled = true;
+        Time.timeScale = 1;
     }
 }
