@@ -1749,6 +1749,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pm: {fileID: 0}
+  puzzle: {fileID: 0}
   doorOpen: 0
 --- !u!1 &57213461
 GameObject:
@@ -2417,6 +2418,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pm: {fileID: 0}
+  puzzle: {fileID: 0}
   doorOpen: 0
 --- !u!1 &84176396
 GameObject:
@@ -12503,6 +12505,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pm: {fileID: 0}
+  puzzle: {fileID: 0}
   doorOpen: 0
 --- !u!1 &449836454
 GameObject:
@@ -13407,6 +13410,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pm: {fileID: 0}
+  puzzle: {fileID: 0}
   doorOpen: 0
 --- !u!1 &474589841
 GameObject:
@@ -14022,6 +14026,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pm: {fileID: 0}
+  puzzle: {fileID: 0}
   doorOpen: 0
 --- !u!1 &500302702
 GameObject:
@@ -15192,6 +15197,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pm: {fileID: 0}
+  puzzle: {fileID: 0}
   doorOpen: 0
 --- !u!1 &537861056
 GameObject:
@@ -23300,6 +23306,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pm: {fileID: 0}
+  puzzle: {fileID: 0}
   doorOpen: 0
 --- !u!1 &781808811
 GameObject:
@@ -29474,6 +29481,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pm: {fileID: 0}
+  puzzle: {fileID: 0}
   doorOpen: 0
 --- !u!1 &990503082
 GameObject:
@@ -30988,7 +30996,7 @@ GameObject:
   - component: {fileID: 1038269417}
   m_Layer: 0
   m_Name: RoomSwitch1
-  m_TagString: Untagged
+  m_TagString: Finish
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -32745,6 +32753,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pm: {fileID: 0}
+  puzzle: {fileID: 0}
   doorOpen: 0
 --- !u!1 &1071479526
 GameObject:
@@ -37411,6 +37420,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pm: {fileID: 0}
+  puzzle: {fileID: 0}
   doorOpen: 0
 --- !u!1 &1203078213
 GameObject:
@@ -39404,6 +39414,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pm: {fileID: 0}
+  puzzle: {fileID: 0}
   doorOpen: 0
 --- !u!1 &1270435198
 GameObject:
@@ -42621,6 +42632,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pm: {fileID: 0}
+  puzzle: {fileID: 0}
   doorOpen: 0
 --- !u!1 &1406808669
 GameObject:
@@ -45994,6 +46006,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pm: {fileID: 0}
+  puzzle: {fileID: 0}
   doorOpen: 0
 --- !u!1 &1508035869
 GameObject:
@@ -46923,6 +46936,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pm: {fileID: 0}
+  puzzle: {fileID: 0}
   doorOpen: 0
 --- !u!1 &1530257058
 GameObject:
@@ -50867,6 +50881,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pm: {fileID: 0}
+  puzzle: {fileID: 0}
   doorOpen: 0
 --- !u!1 &1655056255
 GameObject:
@@ -56282,6 +56297,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pm: {fileID: 0}
+  puzzle: {fileID: 0}
   doorOpen: 0
 --- !u!1 &1856906523
 GameObject:
@@ -60695,6 +60711,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pm: {fileID: 0}
+  puzzle: {fileID: 0}
   doorOpen: 0
 --- !u!1 &2001716733
 GameObject:
@@ -61479,6 +61496,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pm: {fileID: 0}
+  puzzle: {fileID: 0}
   doorOpen: 0
 --- !u!1 &2040614297
 GameObject:
@@ -64503,6 +64521,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pm: {fileID: 0}
+  puzzle: {fileID: 0}
   doorOpen: 0
 --- !u!1 &2126580654
 GameObject:

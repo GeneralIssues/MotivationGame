@@ -34788,7 +34788,7 @@ GameObject:
   - component: {fileID: 1975952445}
   m_Layer: 0
   m_Name: RoomSwitch1
-  m_TagString: Untagged
+  m_TagString: Finish
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -34821,7 +34821,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CamController: {fileID: 0}
   DoorLink: {fileID: 613828795}
-  CamPos: {fileID: 0}
+  CamPos: {fileID: 1770558966}
 --- !u!61 &1975952446
 BoxCollider2D:
   m_ObjectHideFlags: 0

@@ -437,7 +437,7 @@ GameObject:
   - component: {fileID: 61473115983579924}
   - component: {fileID: 114723374841863884}
   m_Layer: 0
-  m_Name: Door (1)
+  m_Name: Right
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1412,7 +1412,7 @@ GameObject:
   - component: {fileID: 61368464774290780}
   - component: {fileID: 114537241521817276}
   m_Layer: 0
-  m_Name: Door
+  m_Name: Left
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2591,7 +2591,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1760481905763704}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 2}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4266125211574476}
@@ -2799,7 +2799,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1482485541021054}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 55.19119, y: 7.5262494, z: 0}
+  m_LocalPosition: {x: -4.833133, y: -17.03581, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4823033977541728}
@@ -3385,6 +3385,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pm: {fileID: 0}
+  puzzle: {fileID: 0}
   doorOpen: 0
 --- !u!114 &114723374841863884
 MonoBehaviour:
@@ -3398,6 +3399,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pm: {fileID: 0}
+  puzzle: {fileID: 0}
   doorOpen: 0
 --- !u!114 &114860256821339352
 MonoBehaviour:
