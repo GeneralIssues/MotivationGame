@@ -13,11 +13,6 @@ public class DoorController : MonoBehaviour{
         //cc = GameObject.Find("Main Camera");
         //pm = GameObject.FindGameObjectWithTag("PrefabManager");
 
-        if (this.tag == "Finish")
-            this.GetComponent<SpriteRenderer>().color = Color.green;
-        if (puzzle == null)
-            this.GetComponent<SpriteRenderer>().color = Color.grey;
-
         //Door is not a trigger at start
         this.GetComponent<BoxCollider2D>().isTrigger = false;
 
@@ -68,6 +63,7 @@ public class DoorController : MonoBehaviour{
     void NoPuzzleAttachedOpen()
     {
         GameObject.FindGameObjectWithTag("Player").GetComponent<CharacterController>().PuzzleActive = true;
+        this.GetComponent<BoxCollider2D>().isTrigger = true;
         this.GetComponent<Animator>().enabled = true;
         Time.timeScale = 1;
     }
