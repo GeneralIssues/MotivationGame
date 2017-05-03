@@ -13,7 +13,7 @@ public class DoorController : MonoBehaviour{
     // Use this for initialization
     void Start () {
         //cc = GameObject.Find("Main Camera");
-        pm = GameObject.FindGameObjectWithTag("PrefabManager");
+        //pm = GameObject.FindGameObjectWithTag("PrefabManager");
 
         if (this.tag == "Finish") {
             this.GetComponent<SpriteRenderer>().color = Color.green;
@@ -49,12 +49,19 @@ public class DoorController : MonoBehaviour{
                 GameObject tempPuzzle = Instantiate(puzzle) as GameObject;
                 tempPuzzle.transform.parent = this.transform;
                 Time.timeScale = 0;
-                doorOpen = true;
+                //doorOpen = true;
             }
         }
 
         if (coll.gameObject.tag == "Bullet") {
             print("Bullet hit door");
+        }
+    }
+
+    void OnCollisionExit2D(Collision2D coll)
+    {
+        if (coll.gameObject.tag == "Player") {
+            Destroy(GameObject.FindGameObjectWithTag("Puzzle"));
         }
     }
 }

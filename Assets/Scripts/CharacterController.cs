@@ -41,11 +41,16 @@ public class CharacterController : MonoBehaviour {
         firePointUp = transform.FindChild("FirePointUp");
         mc = GameObject.FindGameObjectWithTag("MotivationController");
     }
+
+    //For moving away from puzzle
+    Transform doorPos;
 	
 	// Update is called once per frame
 	void Update () {
-        //if (!PuzzleActive)
+        if (!PuzzleActive)
             MovementDir();
+        else
+            MoveAwayFromPuzzle();
         if (fireRate == 0 && !PuzzleActive)
         {
             if (Input.GetKey(KeyCode.LeftArrow))
@@ -95,14 +100,12 @@ public class CharacterController : MonoBehaviour {
         else
         {
             //Move up
-            if (Input.GetKey(KeyCode.W))
-            {
+            if (Input.GetKey(KeyCode.W)) {
                 this.transform.Translate(new Vector3(0, 1) * characterSpeed);
             }
 
             //Move left
-            if (Input.GetKey(KeyCode.A))
-            {
+            if (Input.GetKey(KeyCode.A)) {
                 this.GetComponent<Animator>().Play("WalkingSide");
 
                 this.GetComponent<SpriteRenderer>().flipX = false;
@@ -110,14 +113,12 @@ public class CharacterController : MonoBehaviour {
             }
 
             //Move down
-            if (Input.GetKey(KeyCode.S))
-            {
+            if (Input.GetKey(KeyCode.S)) {
                 this.transform.Translate(new Vector3(0, -1) * characterSpeed);
             }
 
             //Move right
-            if (Input.GetKey(KeyCode.D))
-            {
+            if (Input.GetKey(KeyCode.D)) {
                 this.GetComponent<Animator>().Play("WalkingSide");
 
                 this.GetComponent<SpriteRenderer>().flipX = true;
@@ -129,15 +130,57 @@ public class CharacterController : MonoBehaviour {
     }
 
     /// <summary>
+    /// When we're in a puzzle and move away from it we remove the puzzle
+    /// </summary>
+    void MoveAwayFromPuzzle()
+    {
+        //Move away down
+        if (Input.GetKey(KeyCode.W) && this.transform.position.y > doorPos.position.y) {
+            this.transform.Translate(new Vector3(-1, 0) * characterSpeed);
+            Destroy(GameObject.FindGameObjectWithTag("Puzzle"));
+            Time.timeScale = 1;
+            PuzzleActive = false;
+        }
+
+        //Move away left
+        if (Input.GetKey(KeyCode.A) && this.transform.position.x < doorPos.position.x) {
+            this.transform.Translate(new Vector3(-1, 0) * characterSpeed);
+            Destroy(GameObject.FindGameObjectWithTag("Puzzle"));
+            Time.timeScale = 1;
+            PuzzleActive = false;
+        }
+
+        //Move away down
+        if (Input.GetKey(KeyCode.S) && this.transform.position.y < doorPos.position.y) {
+            this.transform.Translate(new Vector3(-1, 0) * characterSpeed);
+            Destroy(GameObject.FindGameObjectWithTag("Puzzle"));
+            Time.timeScale = 1;
+            PuzzleActive = false;
+        }
+
+        //Move away right
+        if (Input.GetKey(KeyCode.D) && this.transform.position.x > doorPos.position.x) {
+            this.transform.Translate(new Vector3(-1, 0) * characterSpeed);
+            Destroy(GameObject.FindGameObjectWithTag("Puzzle"));
+            Time.timeScale = 1;
+            PuzzleActive = false;
+        }
+    }
+
+    /// <summary>
     /// Checking the object that we collide with so we know what to do
     /// </summary>
     /// <param name="coll"></param>
     void OnCollisionEnter2D (Collision2D coll)
     {
         //Dead if touched by enemy
-        if (coll.gameObject.tag == "Enemy")
-        {
+        if (coll.gameObject.tag == "Enemy"){
             print("You're Dead");
+        }
+
+        //Door touched
+        if (coll.gameObject.tag == "Door") {
+            doorPos = coll.gameObject.transform;
         }
     }
 
