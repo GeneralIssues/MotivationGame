@@ -101,6 +101,8 @@ public class CharacterController : MonoBehaviour {
         {
             //Move up
             if (Input.GetKey(KeyCode.W)) {
+                this.GetComponent<Animator>().Play("WalkingUp");
+
                 this.transform.Translate(new Vector3(0, 1) * characterSpeed);
             }
 
@@ -114,6 +116,8 @@ public class CharacterController : MonoBehaviour {
 
             //Move down
             if (Input.GetKey(KeyCode.S)) {
+                this.GetComponent<Animator>().Play("WalkingDown");
+
                 this.transform.Translate(new Vector3(0, -1) * characterSpeed);
             }
 

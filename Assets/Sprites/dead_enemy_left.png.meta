@@ -1,13 +1,13 @@
 fileFormatVersion: 2
-guid: d7d08467861a4e74995193b312d28e4b
-timeCreated: 1493839196
+guid: 2ef49494381f9bd479c807ba72d5fd5f
+timeCreated: 1493839505
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
-    21300000: Astrnant_back_0
-    21300002: Astrnant_back_1
-    21300004: Astrnant_back_2
-    21300006: Astrnant_back_3
+    21300000: dead_enemy_left_0
+    21300002: dead_enemy_left_1
+    21300004: dead_enemy_left_2
+    21300006: dead_enemy_left_3
   serializedVersion: 4
   mipmaps:
     mipMapMode: 0
@@ -70,32 +70,42 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
-  - buildTarget: Android
-    maxTextureSize: 2048
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-  - buildTarget: WebGL
-    maxTextureSize: 2048
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Astrnant_back_0
+      name: dead_enemy_left_0
       rect:
         serializedVersion: 2
-        x: 6
-        y: 2
-        width: 21
+        x: 3
+        y: 3
+        width: 25
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: dead_enemy_left_1
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 3
+        width: 26
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: dead_enemy_left_2
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 3
+        width: 27
         height: 29
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -103,38 +113,12 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Astrnant_back_1
+      name: dead_enemy_left_3
       rect:
         serializedVersion: 2
-        x: 38
-        y: 1
-        width: 21
-        height: 29
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: Astrnant_back_2
-      rect:
-        serializedVersion: 2
-        x: 70
-        y: 2
-        width: 21
-        height: 29
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: Astrnant_back_3
-      rect:
-        serializedVersion: 2
-        x: 102
-        y: 1
-        width: 21
+        x: 96
+        y: 3
+        width: 29
         height: 29
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
