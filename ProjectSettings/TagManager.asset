@@ -18,6 +18,7 @@ TagManager:
   - Door
   - Puzzle
   - ChangeLevel
+  - Text
   layers:
   - Default
   - TransparentFX

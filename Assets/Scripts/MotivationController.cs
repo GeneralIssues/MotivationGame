@@ -29,8 +29,9 @@ public class MotivationController : MonoBehaviour {
 	}
 	
 	// Update is called once per frame
-	void Update (){
-	    AcText.text = "Action: " + ActionScore  + " Achievement: " + AchievementScore  + " Mastery: " + MasteryScore  + " Immersion: " + ImmersionScore;
+	void Update ()
+    {
+        AcText.text = "Action: " + ActionScore  + " Achievement: " + AchievementScore  + " Mastery: " + MasteryScore  + " Immersion: " + ImmersionScore;
 	}
 
     //Action Score Functions
