@@ -49,15 +49,13 @@ public class CharacterController : MonoBehaviour {
         firePointDown = transform.FindChild("FirePointDown");
         firePointUp = transform.FindChild("FirePointUp");
         mc = GameObject.FindGameObjectWithTag("MotivationController");
-
-        print(scene.name);
     }
 
     //For moving away from puzzle
     Transform doorPos;
 	
 	// Update is called once per frame
-	void Update () {
+	void FixedUpdate () {
         if (!PuzzleActive)
             MovementDir();
         else

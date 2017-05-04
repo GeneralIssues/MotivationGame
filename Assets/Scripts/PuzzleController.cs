@@ -141,7 +141,6 @@ public class PuzzleController : MonoBehaviour{
             images[(int)nextMove.x, (int)nextMove.y].GetComponent<Image>().color != Color.black) {
             if (images[(int)nextMove.x, (int)nextMove.y].GetComponent<Image>().color == Color.red)
                 currentPointCount++;
-            print(maxPointCount + " : " + currentPointCount);
             return true;
         }
         else {
