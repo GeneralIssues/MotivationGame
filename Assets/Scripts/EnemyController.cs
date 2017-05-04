@@ -9,6 +9,9 @@ public class EnemyController : MonoBehaviour {
     public GameObject player;
     public float range = 5;
 
+    float enemyHP = 100;
+    float bulletDmg = 40;
+
 	// Use this for initialization
 	void Start () {
 		player = GameObject.FindGameObjectWithTag("Player");
@@ -27,6 +30,11 @@ public class EnemyController : MonoBehaviour {
             if (Vector3.Distance(transform.position, player.transform.position) > range)
                 state = "Chilling";
         }
+
+        //Death of enemy
+        if (enemyHP <= 0) {
+            this.GetComponent<Animator>().Play("enemyDead");
+        }
     }
 
     void OnTriggerStay2D(Collider2D coll)
@@ -35,6 +43,13 @@ public class EnemyController : MonoBehaviour {
         {
             print("Triggering enemy");
 
+        }
+    }
+
+    void OnCollisionEnter2D(Collision2D coll)
+    {
+        if (coll.gameObject.tag == "Bullet") {
+            enemyHP -= bulletDmg;
         }
     }
 }

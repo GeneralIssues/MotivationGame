@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class CharacterController : MonoBehaviour {
 
-    float characterSpeed = 0.03f; //value to divide speed
+    float characterSpeed = 0.05f; //value to divide speed - higher is faster
     int coinsAmount; //how many coins collected
     int bulletSpeed;
 
@@ -25,7 +25,7 @@ public class CharacterController : MonoBehaviour {
     //Variables related to shooting
     public Rigidbody2D bullet;
     float timeToFire = 0;
-    float fireRate = 4;
+    float fireRate = 2; //Higher is faster
 
     //Points for spawning bullets
     Transform firePointLeft;

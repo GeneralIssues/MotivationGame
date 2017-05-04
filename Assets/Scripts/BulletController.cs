@@ -23,6 +23,6 @@ public class BulletController : MonoBehaviour
 
         this.transform.eulerAngles = coll.transform.eulerAngles + new Vector3(0, 0, 180);
         this.GetComponent<Animator>().Play("fireballSplash");
-        //Destroy(this.gameObject);
+        this.GetComponent<CircleCollider2D>().isTrigger = true;
     }
 }
