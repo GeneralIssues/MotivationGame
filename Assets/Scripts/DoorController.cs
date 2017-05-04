@@ -8,6 +8,9 @@ public class DoorController : MonoBehaviour{
     public GameObject pm;
     public GameObject puzzle;
 
+    public int doorHP = 100;
+    int bulletDmg = 20;
+
     // Use this for initialization
     void Start () {
         //cc = GameObject.Find("Main Camera");
@@ -21,13 +24,18 @@ public class DoorController : MonoBehaviour{
 
     // Update is called once per frame
     void Update () {
-		
+
         /*
          * if door is touched and click Space, open puzzle
          * If puzzle is solved, play door open animation at and make collider a trigger
          * When trigger is triggered, move camera and player
          * 
          * */
+
+        if (doorHP <= 0) {
+            this.GetComponent<BoxCollider2D>().isTrigger = true;
+            this.GetComponent<Animator>().enabled = true;
+        }
 	}
 
     void OnTriggerEnter2D(Collider2D coll)
@@ -49,7 +57,8 @@ public class DoorController : MonoBehaviour{
         }
 
         if (coll.gameObject.tag == "Bullet") {
-            print("Bullet hit door");
+            doorHP -= bulletDmg;
+            print(doorHP/100f);
         }
     }
 
@@ -62,7 +71,7 @@ public class DoorController : MonoBehaviour{
 
     void NoPuzzleAttachedOpen()
     {
-        GameObject.FindGameObjectWithTag("Player").GetComponent<CharacterController>().PuzzleActive = true;
+        GameObject.FindGameObjectWithTag("Player").GetComponent<CharacterController>().PuzzleActive = false;
         this.GetComponent<BoxCollider2D>().isTrigger = true;
         this.GetComponent<Animator>().enabled = true;
         Time.timeScale = 1;

@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class CharacterController : MonoBehaviour {
 
@@ -32,6 +33,9 @@ public class CharacterController : MonoBehaviour {
     Transform firePointDown;
     Transform firePointUp;
 
+    //Gets currently active scene
+    Scene scene = SceneManager.GetActiveScene();
+
 	// Use this for initialization
 	void Start () {
 		player = GameObject.FindGameObjectWithTag("Player");
@@ -40,6 +44,8 @@ public class CharacterController : MonoBehaviour {
         firePointDown = transform.FindChild("FirePointDown");
         firePointUp = transform.FindChild("FirePointUp");
         mc = GameObject.FindGameObjectWithTag("MotivationController");
+
+        print(scene.name);
     }
 
     //For moving away from puzzle
@@ -51,7 +57,7 @@ public class CharacterController : MonoBehaviour {
             MovementDir();
         else
             MoveAwayFromPuzzle();
-        if (fireRate == 0 && !PuzzleActive)
+        /*if (fireRate == 0 && !PuzzleActive)
         {
             if (Input.GetKey(KeyCode.LeftArrow))
             {
@@ -67,23 +73,24 @@ public class CharacterController : MonoBehaviour {
             {
                 Shoot(Vector3.up, firePointUp);
             }
-        }
-        else if (Input.GetKey(KeyCode.LeftArrow) && Time.time > timeToFire)
-        {
-            timeToFire = Time.time + 1 / fireRate;
-            Shoot(Vector3.left, firePointLeft);
-        }else if (Input.GetKey(KeyCode.RightArrow) && Time.time > timeToFire)
-        {
-            timeToFire = Time.time + 1 / fireRate;
-            Shoot(Vector3.right,firePointRight);
-        }else if (Input.GetKey(KeyCode.DownArrow) && Time.time > timeToFire)
-        {
-            timeToFire = Time.time + 1 / fireRate;
-            Shoot(Vector3.down, firePointDown);
-        }else if (Input.GetKey(KeyCode.UpArrow) && Time.time > timeToFire)
-        {
-            timeToFire = Time.time + 1 / fireRate;
-            Shoot(Vector3.up, firePointUp);
+        }*/
+        if (scene.name != "MainHub") {
+            if (Input.GetKey(KeyCode.LeftArrow) && Time.time > timeToFire) {
+                timeToFire = Time.time + 1 / fireRate;
+                Shoot(Vector3.left, firePointLeft);
+            }
+            else if (Input.GetKey(KeyCode.RightArrow) && Time.time > timeToFire) {
+                timeToFire = Time.time + 1 / fireRate;
+                Shoot(Vector3.right, firePointRight);
+            }
+            else if (Input.GetKey(KeyCode.DownArrow) && Time.time > timeToFire) {
+                timeToFire = Time.time + 1 / fireRate;
+                Shoot(Vector3.down, firePointDown);
+            }
+            else if (Input.GetKey(KeyCode.UpArrow) && Time.time > timeToFire) {
+                timeToFire = Time.time + 1 / fireRate;
+                Shoot(Vector3.up, firePointUp);
+            }
         }
     }
 

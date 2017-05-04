@@ -9,19 +9,23 @@ public class RoomSwitcher : MonoBehaviour
     public GameObject DoorLink;
     public GameObject CamPos;
 
+    GameObject parentDoor;
+
     // Use this for initialization
     void Start()
     {
         CamController = GameObject.FindGameObjectWithTag("MainCamera");
 
+        parentDoor = this.transform.parent.gameObject;
+
         //The parent object is painted green of this is finish
         if (this.gameObject.tag == "Finish")
-            this.transform.parent.gameObject.GetComponent<SpriteRenderer>().color = Color.green;
+            parentDoor.GetComponent<SpriteRenderer>().color = Color.green;
 
         //The parent object is painted grey of there is no puzzle
-        if (this.transform.parent.gameObject.GetComponent<DoorController>().puzzle == null
+        if (parentDoor.GetComponent<DoorController>().puzzle == null
             && this.tag != "ChangeLevel")
-            this.transform.parent.gameObject.GetComponent<SpriteRenderer>().color = Color.grey;
+            parentDoor.GetComponent<SpriteRenderer>().color = Color.grey;
             //this.GetComponent<Animator>().enabled = true; //enable to open instead
 
         //Switcher a trigger at start
@@ -31,11 +35,27 @@ public class RoomSwitcher : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (this.tag != "ChangeLevel")
+        if (this.tag != "ChangeLevel") {
             if (DoorLink.GetComponent<Animator>().enabled == true) {
-                this.transform.parent.GetComponent<Animator>().enabled = true;
-                this.transform.parent.GetComponent<BoxCollider2D>().enabled = false;
+                parentDoor.GetComponent<Animator>().enabled = true;
+                parentDoor.GetComponent<BoxCollider2D>().enabled = false;
             }
+        }
+        
+        if (this.gameObject.tag != "Finish" && parentDoor.GetComponent<DoorController>().puzzle == null) {
+            parentDoor.GetComponent<SpriteRenderer>().color
+                = Color.HSVToRGB(1f, 0f, parentDoor.GetComponent<DoorController>().doorHP / 150f);
+        }
+        else if (this.gameObject.tag != "Finish") {
+            parentDoor.GetComponent<SpriteRenderer>().color
+                = Color.HSVToRGB(1f, 0f, parentDoor.GetComponent<DoorController>().doorHP / 100f);
+        }
+        else if (this.gameObject.tag == "Finish") {
+            parentDoor.GetComponent<SpriteRenderer>().color
+                = Color.HSVToRGB(0.3f, 1f, parentDoor.GetComponent<DoorController>().doorHP / 100f);
+        }
+
+        DoorLink.GetComponent<SpriteRenderer>().color = parentDoor.GetComponent<SpriteRenderer>().color;
     }
 
     void OnTriggerEnter2D(Collider2D coll)

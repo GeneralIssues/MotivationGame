@@ -3685,7 +3685,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pm: {fileID: 0}
   puzzle: {fileID: 0}
-  doorOpen: 0
 --- !u!61 &77981394
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4311,7 +4310,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pm: {fileID: 0}
   puzzle: {fileID: 0}
-  doorOpen: 0
 --- !u!61 &89319483
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5729,7 +5727,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pm: {fileID: 0}
   puzzle: {fileID: 0}
-  doorOpen: 0
 --- !u!61 &119095882
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -12256,7 +12253,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pm: {fileID: 0}
   puzzle: {fileID: 0}
-  doorOpen: 0
 --- !u!61 &299323092
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -13143,7 +13139,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pm: {fileID: 0}
   puzzle: {fileID: 0}
-  doorOpen: 0
 --- !u!61 &319545780
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -14911,7 +14906,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pm: {fileID: 0}
   puzzle: {fileID: 0}
-  doorOpen: 0
 --- !u!61 &355667005
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -19557,7 +19551,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pm: {fileID: 0}
   puzzle: {fileID: 0}
-  doorOpen: 0
 --- !u!61 &490053475
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -20208,7 +20201,7 @@ GameObject:
   - component: {fileID: 503802108}
   m_Layer: 0
   m_Name: RoomSwitch1
-  m_TagString: Untagged
+  m_TagString: Finish
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -21981,7 +21974,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pm: {fileID: 0}
   puzzle: {fileID: 0}
-  doorOpen: 0
 --- !u!61 &543582932
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -22901,7 +22893,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pm: {fileID: 0}
   puzzle: {fileID: 0}
-  doorOpen: 0
 --- !u!61 &559153330
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -24942,7 +24933,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pm: {fileID: 0}
   puzzle: {fileID: 0}
-  doorOpen: 0
 --- !u!61 &600191980
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -25361,7 +25351,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pm: {fileID: 0}
   puzzle: {fileID: 0}
-  doorOpen: 0
 --- !u!61 &614461822
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -40987,7 +40976,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pm: {fileID: 0}
   puzzle: {fileID: 0}
-  doorOpen: 0
 --- !u!61 &987085099
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -41106,7 +41094,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pm: {fileID: 0}
   puzzle: {fileID: 0}
-  doorOpen: 0
 --- !u!61 &987839327
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -49919,7 +49906,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pm: {fileID: 0}
   puzzle: {fileID: 0}
-  doorOpen: 0
 --- !u!61 &1213506168
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -57549,7 +57535,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pm: {fileID: 0}
   puzzle: {fileID: 0}
-  doorOpen: 0
 --- !u!61 &1390582184
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -61703,7 +61688,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pm: {fileID: 0}
   puzzle: {fileID: 0}
-  doorOpen: 0
 --- !u!61 &1536132592
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -66637,7 +66621,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pm: {fileID: 0}
   puzzle: {fileID: 0}
-  doorOpen: 0
 --- !u!61 &1638816768
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -67040,7 +67023,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pm: {fileID: 0}
   puzzle: {fileID: 0}
-  doorOpen: 0
 --- !u!61 &1646886762
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -68423,7 +68405,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pm: {fileID: 0}
   puzzle: {fileID: 0}
-  doorOpen: 0
 --- !u!61 &1672937553
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -70831,7 +70812,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pm: {fileID: 0}
   puzzle: {fileID: 0}
-  doorOpen: 0
 --- !u!61 &1738681557
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -72667,7 +72647,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pm: {fileID: 0}
   puzzle: {fileID: 0}
-  doorOpen: 0
 --- !u!61 &1777431047
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -75484,7 +75463,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pm: {fileID: 0}
   puzzle: {fileID: 0}
-  doorOpen: 0
 --- !u!61 &1850885653
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -79406,7 +79384,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pm: {fileID: 0}
   puzzle: {fileID: 0}
-  doorOpen: 0
 --- !u!61 &1945627607
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -79592,7 +79569,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pm: {fileID: 0}
   puzzle: {fileID: 0}
-  doorOpen: 0
 --- !u!61 &1949673925
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -81385,7 +81361,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pm: {fileID: 0}
   puzzle: {fileID: 0}
-  doorOpen: 0
 --- !u!61 &1983931682
 BoxCollider2D:
   m_ObjectHideFlags: 0
