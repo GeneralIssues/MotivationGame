@@ -57,7 +57,8 @@ public class RoomSwitcher : MonoBehaviour
         }
 
         //The linked door is the same color
-        DoorLink.GetComponent<SpriteRenderer>().color = parentDoor.GetComponent<SpriteRenderer>().color;
+        if (this.tag != "ChangeLevel")
+            DoorLink.GetComponent<SpriteRenderer>().color = parentDoor.GetComponent<SpriteRenderer>().color;
     }
 
     void OnTriggerEnter2D(Collider2D coll)

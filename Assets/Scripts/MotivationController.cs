@@ -19,6 +19,11 @@ public class MotivationController : MonoBehaviour {
    [Range(0, 100)]
    public int ImmersionScore;
 
+    void Awake()
+    {
+        DontDestroyOnLoad(this.transform.gameObject);
+    }
+
     // Use this for initialization
     void Start () {
 	}
