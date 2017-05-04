@@ -19,5 +19,3 @@ EditorBuildSettings:
     path: Assets/Levels/Level05.unity
   - enabled: 1
     path: Assets/Levels/Level06.unity
-  - enabled: 1
-    path: Assets/Levels/Start.unity
