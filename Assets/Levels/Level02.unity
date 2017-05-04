@@ -206,7 +206,7 @@ Transform:
   - {fileID: 1890084765}
   - {fileID: 247446271}
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &3850955
 GameObject:
@@ -1750,6 +1750,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pm: {fileID: 0}
   puzzle: {fileID: 0}
+  doorHP: 100
 --- !u!1 &57213461
 GameObject:
   m_ObjectHideFlags: 0
@@ -1932,7 +1933,7 @@ Transform:
   - {fileID: 1390189472}
   - {fileID: 1185187923}
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &59806240
 GameObject:
@@ -2418,6 +2419,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pm: {fileID: 0}
   puzzle: {fileID: 0}
+  doorHP: 100
 --- !u!1 &84176396
 GameObject:
   m_ObjectHideFlags: 0
@@ -12504,6 +12506,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pm: {fileID: 0}
   puzzle: {fileID: 0}
+  doorHP: 100
 --- !u!1 &449836454
 GameObject:
   m_ObjectHideFlags: 0
@@ -12686,7 +12689,7 @@ Transform:
   - {fileID: 2001716734}
   - {fileID: 1562081303}
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &455923480
 GameObject:
@@ -13408,6 +13411,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pm: {fileID: 0}
   puzzle: {fileID: 0}
+  doorHP: 100
 --- !u!1 &474589841
 GameObject:
   m_ObjectHideFlags: 0
@@ -14023,6 +14027,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pm: {fileID: 0}
   puzzle: {fileID: 0}
+  doorHP: 100
 --- !u!1 &500302702
 GameObject:
   m_ObjectHideFlags: 0
@@ -15193,6 +15198,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pm: {fileID: 0}
   puzzle: {fileID: 0}
+  doorHP: 100
 --- !u!1 &537861056
 GameObject:
   m_ObjectHideFlags: 0
@@ -17790,7 +17796,7 @@ Transform:
   - {fileID: 592956832}
   - {fileID: 906123806}
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &624303279
 GameObject:
@@ -23301,6 +23307,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pm: {fileID: 0}
   puzzle: {fileID: 0}
+  doorHP: 100
 --- !u!1 &781808811
 GameObject:
   m_ObjectHideFlags: 0
@@ -26767,7 +26774,7 @@ Transform:
   - {fileID: 537861057}
   - {fileID: 154933966}
   m_Father: {fileID: 0}
-  m_RootOrder: 13
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &890525767
 GameObject:
@@ -29475,6 +29482,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pm: {fileID: 0}
   puzzle: {fileID: 0}
+  doorHP: 100
 --- !u!1 &990503082
 GameObject:
   m_ObjectHideFlags: 0
@@ -31447,7 +31455,7 @@ Transform:
   - {fileID: 29512428}
   - {fileID: 1678203676}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1046013816
 GameObject:
@@ -32746,6 +32754,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pm: {fileID: 0}
   puzzle: {fileID: 0}
+  doorHP: 100
 --- !u!1 &1071479526
 GameObject:
   m_ObjectHideFlags: 0
@@ -37412,6 +37421,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pm: {fileID: 0}
   puzzle: {fileID: 0}
+  doorHP: 100
 --- !u!1 &1203078213
 GameObject:
   m_ObjectHideFlags: 0
@@ -38060,7 +38070,7 @@ Transform:
   - {fileID: 474589842}
   - {fileID: 299083340}
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1229460114
 GameObject:
@@ -39405,6 +39415,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pm: {fileID: 0}
   puzzle: {fileID: 0}
+  doorHP: 100
 --- !u!1 &1270435198
 GameObject:
   m_ObjectHideFlags: 0
@@ -40588,7 +40599,7 @@ Transform:
   - {fileID: 1057667900}
   - {fileID: 1795171955}
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1312383830
 GameObject:
@@ -42622,6 +42633,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pm: {fileID: 0}
   puzzle: {fileID: 0}
+  doorHP: 100
 --- !u!1 &1406808669
 GameObject:
   m_ObjectHideFlags: 0
@@ -45995,6 +46007,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pm: {fileID: 0}
   puzzle: {fileID: 0}
+  doorHP: 100
 --- !u!1 &1508035869
 GameObject:
   m_ObjectHideFlags: 0
@@ -46924,6 +46937,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pm: {fileID: 0}
   puzzle: {fileID: 0}
+  doorHP: 100
 --- !u!1 &1530257058
 GameObject:
   m_ObjectHideFlags: 0
@@ -50868,6 +50882,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pm: {fileID: 0}
   puzzle: {fileID: 0}
+  doorHP: 100
 --- !u!1 &1655056255
 GameObject:
   m_ObjectHideFlags: 0
@@ -52117,7 +52132,7 @@ Transform:
   - {fileID: 308958625}
   - {fileID: 25316432}
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1699895681
 GameObject:
@@ -56283,6 +56298,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pm: {fileID: 0}
   puzzle: {fileID: 0}
+  doorHP: 100
 --- !u!1 &1856906523
 GameObject:
   m_ObjectHideFlags: 0
@@ -59964,53 +59980,6 @@ SpriteRenderer:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
---- !u!1001 &1976512910
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 4821371248899374, guid: 06f2eaf2e0230054c8785254ea04e599, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 0.84857655
-      objectReference: {fileID: 0}
-    - target: {fileID: 4821371248899374, guid: 06f2eaf2e0230054c8785254ea04e599, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 1.6069595
-      objectReference: {fileID: 0}
-    - target: {fileID: 4821371248899374, guid: 06f2eaf2e0230054c8785254ea04e599, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4821371248899374, guid: 06f2eaf2e0230054c8785254ea04e599, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4821371248899374, guid: 06f2eaf2e0230054c8785254ea04e599, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4821371248899374, guid: 06f2eaf2e0230054c8785254ea04e599, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4821371248899374, guid: 06f2eaf2e0230054c8785254ea04e599, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4821371248899374, guid: 06f2eaf2e0230054c8785254ea04e599, type: 2}
-      propertyPath: m_RootOrder
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 114151546918219496, guid: 06f2eaf2e0230054c8785254ea04e599,
-        type: 2}
-      propertyPath: AcText
-      value: 
-      objectReference: {fileID: 1826269494}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: 06f2eaf2e0230054c8785254ea04e599, type: 2}
-  m_IsPrefabParent: 0
 --- !u!1 &1977476215
 GameObject:
   m_ObjectHideFlags: 0
@@ -60696,6 +60665,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pm: {fileID: 0}
   puzzle: {fileID: 0}
+  doorHP: 100
 --- !u!1 &2001716733
 GameObject:
   m_ObjectHideFlags: 0
@@ -61480,6 +61450,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pm: {fileID: 0}
   puzzle: {fileID: 0}
+  doorHP: 100
 --- !u!1 &2040614297
 GameObject:
   m_ObjectHideFlags: 0
@@ -64504,6 +64475,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pm: {fileID: 0}
   puzzle: {fileID: 0}
+  doorHP: 100
 --- !u!1 &2126580654
 GameObject:
   m_ObjectHideFlags: 0

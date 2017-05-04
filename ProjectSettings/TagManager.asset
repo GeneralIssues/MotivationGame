@@ -19,6 +19,7 @@ TagManager:
   - Puzzle
   - ChangeLevel
   - Text
+  - End
   layers:
   - Default
   - TransparentFX

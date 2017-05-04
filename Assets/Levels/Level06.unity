@@ -5222,6 +5222,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pm: {fileID: 0}
   puzzle: {fileID: 0}
+  doorHP: 100
 --- !u!61 &135872131
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -6250,6 +6251,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pm: {fileID: 0}
   puzzle: {fileID: 0}
+  doorHP: 100
 --- !u!61 &155314067
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -7567,6 +7569,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pm: {fileID: 0}
   puzzle: {fileID: 0}
+  doorHP: 100
 --- !u!61 &191958039
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -9986,6 +9989,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pm: {fileID: 0}
   puzzle: {fileID: 0}
+  doorHP: 100
 --- !u!61 &285165343
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -10269,6 +10273,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pm: {fileID: 0}
   puzzle: {fileID: 0}
+  doorHP: 100
 --- !u!61 &288169131
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -15062,6 +15067,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pm: {fileID: 0}
   puzzle: {fileID: 0}
+  doorHP: 100
 --- !u!61 &423951874
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -19823,6 +19829,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pm: {fileID: 0}
   puzzle: {fileID: 0}
+  doorHP: 100
 --- !u!61 &560084714
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -22691,6 +22698,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pm: {fileID: 0}
   puzzle: {fileID: 0}
+  doorHP: 100
 --- !u!61 &627588138
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -24224,6 +24232,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pm: {fileID: 0}
   puzzle: {fileID: 0}
+  doorHP: 100
 --- !u!61 &672593242
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -25462,6 +25471,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pm: {fileID: 0}
   puzzle: {fileID: 0}
+  doorHP: 100
 --- !u!61 &694302129
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -25580,6 +25590,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pm: {fileID: 0}
   puzzle: {fileID: 0}
+  doorHP: 100
 --- !u!61 &699657611
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -26977,6 +26988,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pm: {fileID: 0}
   puzzle: {fileID: 0}
+  doorHP: 100
 --- !u!61 &742992761
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -29736,6 +29748,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pm: {fileID: 0}
   puzzle: {fileID: 0}
+  doorHP: 100
 --- !u!61 &810251760
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -36567,6 +36580,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pm: {fileID: 0}
   puzzle: {fileID: 0}
+  doorHP: 100
 --- !u!61 &994694949
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -38916,6 +38930,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pm: {fileID: 0}
   puzzle: {fileID: 0}
+  doorHP: 100
 --- !u!61 &1036942137
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -44046,6 +44061,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pm: {fileID: 0}
   puzzle: {fileID: 0}
+  doorHP: 100
 --- !u!61 &1187281426
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -45900,6 +45916,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pm: {fileID: 0}
   puzzle: {fileID: 0}
+  doorHP: 100
 --- !u!61 &1229207087
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -49479,6 +49496,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pm: {fileID: 0}
   puzzle: {fileID: 0}
+  doorHP: 100
 --- !u!61 &1315939676
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -49597,6 +49615,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pm: {fileID: 0}
   puzzle: {fileID: 0}
+  doorHP: 100
 --- !u!61 &1317104452
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -50362,7 +50381,7 @@ Transform:
   m_Children:
   - {fileID: 1389115642}
   m_Father: {fileID: 0}
-  m_RootOrder: 15
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1344402971
 GameObject:
@@ -52560,6 +52579,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pm: {fileID: 0}
   puzzle: {fileID: 0}
+  doorHP: 100
 --- !u!61 &1405699239
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -67327,6 +67347,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pm: {fileID: 0}
   puzzle: {fileID: 0}
+  doorHP: 100
 --- !u!61 &1793718732
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -75218,53 +75239,6 @@ SpriteRenderer:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
---- !u!1001 &1976512910
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 4821371248899374, guid: 06f2eaf2e0230054c8785254ea04e599, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: -20.2
-      objectReference: {fileID: 0}
-    - target: {fileID: 4821371248899374, guid: 06f2eaf2e0230054c8785254ea04e599, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 1.8
-      objectReference: {fileID: 0}
-    - target: {fileID: 4821371248899374, guid: 06f2eaf2e0230054c8785254ea04e599, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4821371248899374, guid: 06f2eaf2e0230054c8785254ea04e599, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4821371248899374, guid: 06f2eaf2e0230054c8785254ea04e599, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4821371248899374, guid: 06f2eaf2e0230054c8785254ea04e599, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4821371248899374, guid: 06f2eaf2e0230054c8785254ea04e599, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4821371248899374, guid: 06f2eaf2e0230054c8785254ea04e599, type: 2}
-      propertyPath: m_RootOrder
-      value: 14
-      objectReference: {fileID: 0}
-    - target: {fileID: 114151546918219496, guid: 06f2eaf2e0230054c8785254ea04e599,
-        type: 2}
-      propertyPath: AcText
-      value: 
-      objectReference: {fileID: 1826269494}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: 06f2eaf2e0230054c8785254ea04e599, type: 2}
-  m_IsPrefabParent: 0
 --- !u!1 &1977558340
 GameObject:
   m_ObjectHideFlags: 0
@@ -77038,6 +77012,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pm: {fileID: 0}
   puzzle: {fileID: 0}
+  doorHP: 100
 --- !u!61 &2016878698
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -78636,6 +78611,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pm: {fileID: 0}
   puzzle: {fileID: 0}
+  doorHP: 100
 --- !u!61 &2080032790
 BoxCollider2D:
   m_ObjectHideFlags: 0
