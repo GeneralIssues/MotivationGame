@@ -9,17 +9,17 @@ public class BulletController : MonoBehaviour
 
     void Start()
     {
+        this.GetComponent<Animator>().Play("Fireball");
         Destroy(gameObject, lifetime);
         mc = GameObject.FindGameObjectWithTag("MotivationController");
     }
 
     void OnCollisionEnter2D(Collision2D coll)
     {
-        if (coll.gameObject.tag == "Enemy")
-        {
+        if (coll.gameObject.tag == "Enemy") {
+            Destroy(this.gameObject);
             mc.GetComponent<MotivationController>().IncreaseActionScore(5);
         }
-
 
         this.transform.eulerAngles = coll.transform.eulerAngles + new Vector3(0, 0, 180);
         this.GetComponent<Animator>().Play("fireballSplash");

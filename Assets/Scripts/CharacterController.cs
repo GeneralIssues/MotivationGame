@@ -34,7 +34,12 @@ public class CharacterController : MonoBehaviour {
     Transform firePointUp;
 
     //Gets currently active scene
-    Scene scene = SceneManager.GetActiveScene();
+    Scene scene;
+
+    void Awake()
+    {
+        scene = SceneManager.GetActiveScene();
+    }
 
 	// Use this for initialization
 	void Start () {
