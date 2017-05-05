@@ -5,29 +5,44 @@ using UnityEngine;
 public class EndDoor : MonoBehaviour {
 
     public GameObject MotivationController;
-    int numRoomsDone;
+    public GameObject endDoor;
+
+    public int numRoomsDone;
+
+    bool[] hasBeenToLevel = { false, false, false, false, false, false };
 
     // Use this for initialization
     void Start () {
         MotivationController = GameObject.FindGameObjectWithTag("MotivationController");
 
-        this.GetComponent<SpriteRenderer>().color = Color.red;
-        this.GetComponent<Animator>().enabled = false;
-        this.GetComponent<BoxCollider2D>().enabled = true;
+        endDoor.GetComponent<SpriteRenderer>().color = Color.red;
+        endDoor.GetComponent<Animator>().enabled = false;
+        endDoor.GetComponent<BoxCollider2D>().enabled = true;
     }
 	
 	// Update is called once per frame
 	void Update () {
-		for (int i = 0; i < 6; i++) {
-            if (MotivationController.GetComponent<MotivationController>().hasBeenToLevel[i - 1] == true) {
+        
+    }
+
+    public void CheckEndDoor ()
+    {
+        hasBeenToLevel[0] = MotivationController.GetComponent<MotivationController>().hasBeenToLevel[0];
+        hasBeenToLevel[1] = MotivationController.GetComponent<MotivationController>().hasBeenToLevel[1];
+        hasBeenToLevel[2] = MotivationController.GetComponent<MotivationController>().hasBeenToLevel[2];
+        hasBeenToLevel[3] = MotivationController.GetComponent<MotivationController>().hasBeenToLevel[3];
+        hasBeenToLevel[4] = MotivationController.GetComponent<MotivationController>().hasBeenToLevel[4];
+        hasBeenToLevel[5] = MotivationController.GetComponent<MotivationController>().hasBeenToLevel[5];
+
+        for (int i = 0; i < hasBeenToLevel.Length; i++) {
+            if (hasBeenToLevel[i])
                 numRoomsDone++;
-            }
         }
-        print(numRoomsDone);
+
         if (numRoomsDone >= 4) {
-            this.GetComponent<SpriteRenderer>().color = Color.green;
-            this.GetComponent<Animator>().enabled = true;
-            this.GetComponent<BoxCollider2D>().enabled = false;
+            endDoor.GetComponent<SpriteRenderer>().color = Color.green;
+            endDoor.GetComponent<Animator>().enabled = true;
+            endDoor.GetComponent<BoxCollider2D>().enabled = false;
         }
-	}
+    }
 }

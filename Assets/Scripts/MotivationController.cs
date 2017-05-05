@@ -166,6 +166,8 @@ public class MotivationController : MonoBehaviour {
                     ImmersionScore = 0;
                     break;
             }
+
+            GameObject.FindGameObjectWithTag("End").GetComponent<EndDoor>().CheckEndDoor();
         }
         
         //If we return from Level01 to MainHub
