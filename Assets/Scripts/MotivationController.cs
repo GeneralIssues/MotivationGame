@@ -97,7 +97,7 @@ public class MotivationController : MonoBehaviour {
                     break;
 
                 case "Level02":
-                    hasBeenToLevel[0] = true;
+                    hasBeenToLevel[1] = true;
 
                     level2[0] = ActionScore;
                     level2[1] = AchievementScore;
