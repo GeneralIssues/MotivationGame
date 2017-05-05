@@ -180,7 +180,7 @@ public class MotivationController : MonoBehaviour {
     /// <summary>
     /// Saving the stats from each room and average into a file
     /// </summary>
-    void SaveStats ()
+    public void SaveStats ()
     {
         string path = @"C:/Users/Patrick/Desktop/variables.txt";
 
@@ -284,6 +284,7 @@ public class MotivationController : MonoBehaviour {
         // We decrease achievement score my 10 for every room left
         while (numberOfLevelsEntered <= 6) {
             avAchievement -= 10;
+            numberOfLevelsEntered++;
         }
 
         string average = "Action: " + avAction 

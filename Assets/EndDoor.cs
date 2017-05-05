@@ -45,4 +45,11 @@ public class EndDoor : MonoBehaviour {
             endDoor.GetComponent<BoxCollider2D>().enabled = false;
         }
     }
+
+    void OnTriggerEnter2D (Collider2D coll)
+    {
+        if (coll.tag == "Player") {
+            MotivationController.GetComponent<MotivationController>().SaveStats();
+        }
+    }
 }
