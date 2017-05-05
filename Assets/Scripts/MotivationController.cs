@@ -27,7 +27,7 @@ public class MotivationController : MonoBehaviour {
     int[] level5 = new int[4];
     int[] level6 = new int[4];
 
-    bool[] hasBeenToLevel = new bool[6];
+    public bool[] hasBeenToLevel = {false, false, false, false, false, false};
 
     string currentScene;
     string lastScene;
@@ -77,7 +77,7 @@ public class MotivationController : MonoBehaviour {
             string levelName = lastScene;
             switch (levelName) {
                 case "Level01":
-                    print("Level01");
+                    hasBeenToLevel[0] = true;
 
                     level1[0] = ActionScore;
                     level1[1] = AchievementScore;
@@ -89,7 +89,10 @@ public class MotivationController : MonoBehaviour {
                     MasteryScore = 0;
                     ImmersionScore = 0;
                     break;
+
                 case "Level02":
+                    hasBeenToLevel[0] = true;
+
                     level2[0] = ActionScore;
                     level2[1] = AchievementScore;
                     level2[2] = MasteryScore;
@@ -100,7 +103,10 @@ public class MotivationController : MonoBehaviour {
                     MasteryScore = 0;
                     ImmersionScore = 0;
                     break;
+
                 case "Level03":
+                    hasBeenToLevel[2] = true;
+
                     level3[0] = ActionScore;
                     level3[1] = AchievementScore;
                     level3[2] = MasteryScore;
@@ -111,7 +117,10 @@ public class MotivationController : MonoBehaviour {
                     MasteryScore = 0;
                     ImmersionScore = 0;
                     break;
+
                 case "Level04":
+                    hasBeenToLevel[3] = true;
+
                     level4[0] = ActionScore;
                     level4[1] = AchievementScore;
                     level4[2] = MasteryScore;
@@ -122,7 +131,10 @@ public class MotivationController : MonoBehaviour {
                     MasteryScore = 0;
                     ImmersionScore = 0;
                     break;
+
                 case "Level05":
+                    hasBeenToLevel[4] = true;
+
                     level5[0] = ActionScore;
                     level5[1] = AchievementScore;
                     level5[2] = MasteryScore;
@@ -133,7 +145,10 @@ public class MotivationController : MonoBehaviour {
                     MasteryScore = 0;
                     ImmersionScore = 0;
                     break;
+
                 case "Level06":
+                    hasBeenToLevel[5] = true;
+
                     level6[0] = ActionScore;
                     level6[1] = AchievementScore;
                     level6[2] = MasteryScore;
