@@ -58,7 +58,6 @@ public class DoorController : MonoBehaviour{
 
         if (coll.gameObject.tag == "Bullet") {
             doorHP -= bulletDmg;
-            print(doorHP/100f);
         }
     }
 

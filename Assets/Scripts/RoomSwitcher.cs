@@ -41,19 +41,21 @@ public class RoomSwitcher : MonoBehaviour
                 parentDoor.GetComponent<BoxCollider2D>().enabled = false;
             }
         }
-        
-        //We draw the door in another value according to damage
-        if (this.gameObject.tag != "Finish" && parentDoor.GetComponent<DoorController>().puzzle == null) {
-            parentDoor.GetComponent<SpriteRenderer>().color
-                = Color.HSVToRGB(1f, 0f, parentDoor.GetComponent<DoorController>().doorHP / 150f);
-        }
-        else if (this.gameObject.tag != "Finish") {
-            parentDoor.GetComponent<SpriteRenderer>().color
-                = Color.HSVToRGB(1f, 0f, parentDoor.GetComponent<DoorController>().doorHP / 100f);
-        }
-        else if (this.gameObject.tag == "Finish") {
-            parentDoor.GetComponent<SpriteRenderer>().color
-                = Color.HSVToRGB(0.3f, 1f, parentDoor.GetComponent<DoorController>().doorHP / 100f);
+
+        if (this.tag != "ChangeLevel") {
+            //We draw the door in another value according to damage
+            if (this.gameObject.tag != "Finish" && parentDoor.GetComponent<DoorController>().puzzle == null) {
+                parentDoor.GetComponent<SpriteRenderer>().color
+                    = Color.HSVToRGB(1f, 0f, parentDoor.GetComponent<DoorController>().doorHP / 150f);
+            }
+            else if (this.gameObject.tag != "Finish") {
+                parentDoor.GetComponent<SpriteRenderer>().color
+                    = Color.HSVToRGB(1f, 0f, parentDoor.GetComponent<DoorController>().doorHP / 100f);
+            }
+            else if (this.gameObject.tag == "Finish") {
+                parentDoor.GetComponent<SpriteRenderer>().color
+                    = Color.HSVToRGB(0.3f, 1f, parentDoor.GetComponent<DoorController>().doorHP / 100f);
+            }
         }
 
         //The linked door is the same color
