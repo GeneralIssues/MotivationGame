@@ -9,12 +9,16 @@ public class RoomSwitcher : MonoBehaviour
     public GameObject DoorLink;
     public GameObject CamPos;
 
+    public GameObject MotivationController;
+
     GameObject parentDoor;
+    int doorNum;
 
     // Use this for initialization
     void Start()
     {
         CamController = GameObject.FindGameObjectWithTag("MainCamera");
+        MotivationController = GameObject.FindGameObjectWithTag("MotivationController");
 
         parentDoor = this.transform.parent.gameObject;
 
@@ -25,11 +29,18 @@ public class RoomSwitcher : MonoBehaviour
         //The parent object is painted grey of there is no puzzle
         if (parentDoor.GetComponent<DoorController>().puzzle == null
             && this.tag != "ChangeLevel")
-            parentDoor.GetComponent<SpriteRenderer>().color = Color.grey;
+            //parentDoor.GetComponent<SpriteRenderer>().color = Color.grey;
             //this.GetComponent<Animator>().enabled = true; //enable to open instead
 
         //Switcher a trigger at start
         this.GetComponent<BoxCollider2D>().isTrigger = true;
+
+        //Return of this door is open
+        if (this.tag == "ChangeLevel") {
+            doorNum = int.Parse(parentDoor.name.Substring(6)) - 1;
+            print(doorNum);
+            print(MotivationController.GetComponent<MotivationController>().hasBeenToLevel[doorNum]);
+        }
     }
 
     // Update is called once per frame
@@ -48,7 +59,7 @@ public class RoomSwitcher : MonoBehaviour
                 parentDoor.GetComponent<SpriteRenderer>().color
                     = Color.HSVToRGB(1f, 0f, parentDoor.GetComponent<DoorController>().doorHP / 150f);
             }
-            else if (this.gameObject.tag != "Finish") {
+            else if (this.gameObject.tag != "Finish" && parentDoor.GetComponent<DoorController>().puzzle != null) {
                 parentDoor.GetComponent<SpriteRenderer>().color
                     = Color.HSVToRGB(1f, 0f, parentDoor.GetComponent<DoorController>().doorHP / 100f);
             }
@@ -56,11 +67,18 @@ public class RoomSwitcher : MonoBehaviour
                 parentDoor.GetComponent<SpriteRenderer>().color
                     = Color.HSVToRGB(0.3f, 1f, parentDoor.GetComponent<DoorController>().doorHP / 100f);
             }
-        }
 
-        //The linked door is the same color
-        if (this.tag != "ChangeLevel")
+            //The linked door is the same color
             DoorLink.GetComponent<SpriteRenderer>().color = parentDoor.GetComponent<SpriteRenderer>().color;
+        }
+        
+        //We keep the door open in mainhub
+        if (this.tag == "ChangeLevel"
+            && MotivationController.GetComponent<MotivationController>()
+                .hasBeenToLevel[doorNum] == true) {
+            parentDoor.GetComponent<Animator>().enabled = true;
+            parentDoor.GetComponent<BoxCollider2D>().enabled = false;
+        }
     }
 
     void OnTriggerEnter2D(Collider2D coll)
