@@ -34,12 +34,6 @@ public class DoorController : MonoBehaviour{
          * When trigger is triggered, move camera and player
          * 
          * */
-
-        if (doorHP <= 0) {
-            this.GetComponent<BoxCollider2D>().isTrigger = true;
-            this.GetComponent<Animator>().enabled = true;
-            MotivationController.GetComponent<MotivationController>().IncreaseActionScore(5); //Scorer
-        }
 	}
 
     void OnTriggerEnter2D(Collider2D coll)
@@ -62,6 +56,11 @@ public class DoorController : MonoBehaviour{
 
         if (coll.gameObject.tag == "Bullet") {
             doorHP -= bulletDmg;
+            if (doorHP <= 0) {
+                this.GetComponent<BoxCollider2D>().isTrigger = true;
+                this.GetComponent<Animator>().enabled = true;
+                MotivationController.GetComponent<MotivationController>().IncreaseActionScore(5); //Scorer
+            }
         }
     }
 
