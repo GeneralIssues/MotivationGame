@@ -4239,19 +4239,15 @@ Transform:
 --- !u!114 &1025938925
 MonoBehaviour:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114031783146397874, guid: 23140b4f2df640d45a51d0eadeee7b5c,
-    type: 2}
+  m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1025938923}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dc1cb1c0c43d3734086ed60523b55d54, type: 3}
+  m_Script: {fileID: 11500000, guid: c460c1a7b6a7dbc4d9161df46e4536e3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pm: {fileID: 0}
-  puzzle: {fileID: 0}
   MotivationController: {fileID: 0}
-  doorHP: 100
 --- !u!61 &1025938926
 BoxCollider2D:
   m_ObjectHideFlags: 0
