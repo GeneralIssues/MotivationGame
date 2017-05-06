@@ -13986,6 +13986,11 @@ Prefab:
       propertyPath: m_SortingOrder
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 114743240385172170, guid: 3b273dd3b238b5f42999e110d43654f2,
+        type: 2}
+      propertyPath: aTexture
+      value: 
+      objectReference: {fileID: 2800000, guid: ce12f295dbc568c4c9ed7a1bf78eb0cd, type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 3b273dd3b238b5f42999e110d43654f2, type: 2}
   m_IsPrefabParent: 0

@@ -95,6 +95,7 @@ public class CharacterController : MonoBehaviour {
                 Shoot(Vector3.up, firePointUp);
             }
         }
+
     }
 
     void MovementDir() //not using horizontal and vertical because arrow keys are reserved for shooting
@@ -181,6 +182,7 @@ public class CharacterController : MonoBehaviour {
         }
     }
 
+
     /// <summary>
     /// Checking the object that we collide with so we know what to do
     /// </summary>
@@ -190,7 +192,9 @@ public class CharacterController : MonoBehaviour {
         //Dead if touched by enemy
         if (coll.gameObject.tag == "Enemy"){
             //restart
-            SceneManager.LoadScene(SceneManager.GetSceneByName("Start").name);
+            //SceneManager.LoadScene("Start"); //This creates a duplicate MotivationController
+
+
         }
 
         //Door touched

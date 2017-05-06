@@ -20,6 +20,7 @@ TagManager:
   - ChangeLevel
   - Text
   - End
+  - esc
   layers:
   - Default
   - TransparentFX

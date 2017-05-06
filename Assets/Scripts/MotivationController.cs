@@ -10,6 +10,10 @@ public class MotivationController : MonoBehaviour {
     //UI variables
     public Text AcText;
 
+    public bool isPause;
+    public GameObject escapeMenues;
+
+
     //Motivation Variables
     [Range(0, 100)]
     public int ActionScore;
@@ -46,6 +50,7 @@ public class MotivationController : MonoBehaviour {
     void Start () {
         currentScene = SceneManager.GetActiveScene().name;
         lastScene = SceneManager.GetActiveScene().name;
+        escapeMenues = this.gameObject.transform.GetChild(0).GetChild(0).GetChild(2).gameObject;
 
         //Make us go from start to MainHub
         if (SceneManager.GetActiveScene().name == "Start") {
@@ -53,8 +58,10 @@ public class MotivationController : MonoBehaviour {
         }
     }
 
-    // Update is called once per frame
-    void Update ()
+
+
+// Update is called once per frame
+void Update ()
     {
         AcText.text = "Action: " + ActionScore  + " Achievement: " + AchievementScore  + " Mastery: " + MasteryScore  + " Immersion: " + ImmersionScore;
 
@@ -66,6 +73,10 @@ public class MotivationController : MonoBehaviour {
         if (gameEnded){
             System.IO.File.WriteAllText("C:/Users/General/Desktop/variables.txt", "Action: " + ActionScore + " Achievement: " + AchievementScore + " Mastery: " + MasteryScore + " Immersion: " + ImmersionScore);
         }*/
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            setPauseEscape();
+        }
     }
 
     /// <summary>
@@ -349,4 +360,21 @@ public class MotivationController : MonoBehaviour {
     {
         ImmersionScore -= dec;
     }
+
+    public void setPauseEscape()
+    {
+        if (!isPause)
+        {
+            Time.timeScale = 0;
+            escapeMenues.SetActive(true);
+            isPause = true;
+        }
+        else
+        {
+            Time.timeScale = 1;
+            escapeMenues.SetActive(false);
+            isPause = false;
+        }
+    }
+
 }

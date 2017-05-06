@@ -3,6 +3,7 @@
 
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PrefabManager : MonoBehaviour
 {
@@ -12,6 +13,8 @@ public class PrefabManager : MonoBehaviour
     public GameObject EnemyPrefab;
     public GameObject NPCPrefab;
     public GameObject Puzzle1;
+
+    public Text text1;
 
     //Arrays of placed items and enemies
     public GameObject[] enemies;
@@ -34,12 +37,14 @@ public class PrefabManager : MonoBehaviour
     void Start()
     {
         list.AddRange(GameObject.FindGameObjectsWithTag("NPC"));
+        text1 = GameObject.Find("AmountOfCoins").GetComponent<Text>();
     }
     void Update()
     {
         enemies = GameObject.FindGameObjectsWithTag("Enemy");
         coins = GameObject.FindGameObjectsWithTag("Coin");
         NPCs = GameObject.FindGameObjectsWithTag("NPC");
+        text1.text = "Amount of coins left in level: " + (coins.Length.ToString());
         
     }
 
