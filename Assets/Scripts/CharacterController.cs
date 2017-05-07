@@ -10,6 +10,7 @@ public class CharacterController : MonoBehaviour {
     int bulletSpeed;
 
     public bool PuzzleActive;
+    bool dead = false;
 
     //Hiding variables
     bool isHiding = false; //is our player hiding?
@@ -35,6 +36,8 @@ public class CharacterController : MonoBehaviour {
 
     //Gets currently active scene
     Scene scene;
+    
+    private IEnumerator coroutine;
 
     void Awake()
     {
@@ -56,8 +59,27 @@ public class CharacterController : MonoBehaviour {
 	
 	// Update is called once per frame
 	void FixedUpdate () {
-        if (!PuzzleActive)
+        if (!PuzzleActive && !dead)
             MovementDir();
+
+        if (scene.name != "MainHub") {
+            if (Input.GetKey(KeyCode.LeftArrow) && Time.time > timeToFire) {
+                timeToFire = Time.time + 1 / fireRate;
+                Shoot(Vector3.left, firePointLeft);
+            }
+            else if (Input.GetKey(KeyCode.RightArrow) && Time.time > timeToFire) {
+                timeToFire = Time.time + 1 / fireRate;
+                Shoot(Vector3.right, firePointRight);
+            }
+            else if (Input.GetKey(KeyCode.DownArrow) && Time.time > timeToFire) {
+                timeToFire = Time.time + 1 / fireRate;
+                Shoot(Vector3.down, firePointDown);
+            }
+            else if (Input.GetKey(KeyCode.UpArrow) && Time.time > timeToFire) {
+                timeToFire = Time.time + 1 / fireRate;
+                Shoot(Vector3.up, firePointUp);
+            }
+        }
         else
             MoveAwayFromPuzzle();
         /*if (fireRate == 0 && !PuzzleActive)
@@ -77,25 +99,6 @@ public class CharacterController : MonoBehaviour {
                 Shoot(Vector3.up, firePointUp);
             }
         }*/
-        if (scene.name != "MainHub") {
-            if (Input.GetKey(KeyCode.LeftArrow) && Time.time > timeToFire) {
-                timeToFire = Time.time + 1 / fireRate;
-                Shoot(Vector3.left, firePointLeft);
-            }
-            else if (Input.GetKey(KeyCode.RightArrow) && Time.time > timeToFire) {
-                timeToFire = Time.time + 1 / fireRate;
-                Shoot(Vector3.right, firePointRight);
-            }
-            else if (Input.GetKey(KeyCode.DownArrow) && Time.time > timeToFire) {
-                timeToFire = Time.time + 1 / fireRate;
-                Shoot(Vector3.down, firePointDown);
-            }
-            else if (Input.GetKey(KeyCode.UpArrow) && Time.time > timeToFire) {
-                timeToFire = Time.time + 1 / fireRate;
-                Shoot(Vector3.up, firePointUp);
-            }
-        }
-
     }
 
     void MovementDir() //not using horizontal and vertical because arrow keys are reserved for shooting
@@ -110,34 +113,58 @@ public class CharacterController : MonoBehaviour {
         // Else, we move normally
         else
         {
-            //Move up
-            if (Input.GetKey(KeyCode.W)) {
-                this.GetComponent<Animator>().Play("WalkingUp");
-
-                this.transform.Translate(new Vector3(0, 1) * characterSpeed);
-            }
-
             //Move left
-            if (Input.GetKey(KeyCode.A)) {
+            if (Input.GetKey(KeyCode.A) && Input.GetKey(KeyCode.W)) {
+                this.GetComponent<Animator>().Play("WalkingSide");
+
+                this.GetComponent<SpriteRenderer>().flipX = false;
+                this.transform.Translate(new Vector3(-0.8f, 0.8f) * characterSpeed);
+            }
+            else if (Input.GetKey(KeyCode.A) && Input.GetKey(KeyCode.S)) {
+                this.GetComponent<Animator>().Play("WalkingSide");
+
+                this.GetComponent<SpriteRenderer>().flipX = false;
+                this.transform.Translate(new Vector3(-0.8f, -0.8f) * characterSpeed);
+            }
+            else if (Input.GetKey(KeyCode.A)) {
                 this.GetComponent<Animator>().Play("WalkingSide");
 
                 this.GetComponent<SpriteRenderer>().flipX = false;
                 this.transform.Translate(new Vector3(-1, 0) * characterSpeed);
             }
 
-            //Move down
-            if (Input.GetKey(KeyCode.S)) {
-                this.GetComponent<Animator>().Play("WalkingDown");
-
-                this.transform.Translate(new Vector3(0, -1) * characterSpeed);
-            }
-
             //Move right
-            if (Input.GetKey(KeyCode.D)) {
+            if (Input.GetKey(KeyCode.D) && Input.GetKey(KeyCode.W)) {
+                this.GetComponent<Animator>().Play("WalkingSide");
+
+                this.GetComponent<SpriteRenderer>().flipX = true;
+                this.transform.Translate(new Vector3(0.8f, 0.8f) * characterSpeed);
+            }
+            else if (Input.GetKey(KeyCode.D) && Input.GetKey(KeyCode.S)) {
+                this.GetComponent<Animator>().Play("WalkingSide");
+
+                this.GetComponent<SpriteRenderer>().flipX = true;
+                this.transform.Translate(new Vector3(0.8f, -0.8f) * characterSpeed);
+            }
+            else if (Input.GetKey(KeyCode.D)) {
                 this.GetComponent<Animator>().Play("WalkingSide");
 
                 this.GetComponent<SpriteRenderer>().flipX = true;
                 this.transform.Translate(new Vector3(1, 0) * characterSpeed);
+            }
+            
+            //Move up 
+            if (Input.GetKey(KeyCode.W) && !Input.GetKey(KeyCode.A) && !Input.GetKey(KeyCode.D)) {
+                this.GetComponent<Animator>().Play("WalkingUp");
+
+                this.transform.Translate(new Vector3(0, 1) * characterSpeed);
+            }
+
+            //Move down
+            if (Input.GetKey(KeyCode.S) && !Input.GetKey(KeyCode.A) && !Input.GetKey(KeyCode.D)) {
+                this.GetComponent<Animator>().Play("WalkingDown");
+
+                this.transform.Translate(new Vector3(0, -1) * characterSpeed);
             }
 
             this.GetComponent<Animator>().StopPlayback();
@@ -190,11 +217,13 @@ public class CharacterController : MonoBehaviour {
     void OnCollisionEnter2D (Collision2D coll)
     {
         //Dead if touched by enemy
-        if (coll.gameObject.tag == "Enemy"){
-            //restart
-            //SceneManager.LoadScene("Start"); //This creates a duplicate MotivationController
+        if (coll.gameObject.tag == "Enemy") {
+            dead = true;
+            //this.GetComponent<BoxCollider2D>().isTrigger = true;
+            this.GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezePosition;
+            this.GetComponent<Animator>().Play("Dead");
 
-
+            StartCoroutine(RestartScene());
         }
 
         //Door touched
@@ -256,5 +285,11 @@ public class CharacterController : MonoBehaviour {
             shot.transform.eulerAngles = new Vector3(0, 0, -90);
         }
 
+    }
+
+    private IEnumerator RestartScene()
+    {
+        yield return new WaitForSeconds(5f);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 }

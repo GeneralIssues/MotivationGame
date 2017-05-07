@@ -925,7 +925,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 279537416}
   m_LocalRotation: {x: -0, y: -0, z: 0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: -2, y: -4.02, z: 0}
+  m_LocalPosition: {x: -2, y: -4, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 324529317}
@@ -1859,7 +1859,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4384302136658146, guid: 75659c5220138474aa506bdac03cb620, type: 2}
       propertyPath: m_RootOrder
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 114236892005066072, guid: 75659c5220138474aa506bdac03cb620,
         type: 2}
@@ -1952,15 +1952,15 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4374555003983180, guid: 3b273dd3b238b5f42999e110d43654f2, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -58.12
+      value: -58.33
       objectReference: {fileID: 0}
     - target: {fileID: 4374555003983180, guid: 3b273dd3b238b5f42999e110d43654f2, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 17.93
+      value: 18.03
       objectReference: {fileID: 0}
     - target: {fileID: 4374555003983180, guid: 3b273dd3b238b5f42999e110d43654f2, type: 2}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: -2
       objectReference: {fileID: 0}
     - target: {fileID: 4374555003983180, guid: 3b273dd3b238b5f42999e110d43654f2, type: 2}
       propertyPath: m_LocalRotation.x
@@ -1981,16 +1981,6 @@ Prefab:
     - target: {fileID: 4374555003983180, guid: 3b273dd3b238b5f42999e110d43654f2, type: 2}
       propertyPath: m_RootOrder
       value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114743240385172170, guid: 3b273dd3b238b5f42999e110d43654f2,
-        type: 2}
-      propertyPath: aTexture
-      value: 
-      objectReference: {fileID: 2800000, guid: ce12f295dbc568c4c9ed7a1bf78eb0cd, type: 3}
-    - target: {fileID: 114743240385172170, guid: 3b273dd3b238b5f42999e110d43654f2,
-        type: 2}
-      propertyPath: escapeMenues
-      value: 
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 3b273dd3b238b5f42999e110d43654f2, type: 2}
@@ -4478,7 +4468,7 @@ Transform:
   - {fileID: 29512428}
   - {fileID: 1678203676}
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1047701223
 GameObject:
@@ -4949,7 +4939,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1231880558}
   m_LocalRotation: {x: 0, y: 0, z: 1, w: 0}
-  m_LocalPosition: {x: 12, y: -4.02, z: 0}
+  m_LocalPosition: {x: 12, y: -4, z: 0}
   m_LocalScale: {x: 1.0000005, y: 1.0000005, z: 1}
   m_Children: []
   m_Father: {fileID: 324529317}

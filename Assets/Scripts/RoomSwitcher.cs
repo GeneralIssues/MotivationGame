@@ -69,7 +69,8 @@ public class RoomSwitcher : MonoBehaviour
             }
 
             //The linked door is the same color
-            DoorLink.GetComponent<SpriteRenderer>().color = parentDoor.GetComponent<SpriteRenderer>().color;
+            //The doors won't paint at all if this is activated. Or at least some wont
+            //DoorLink.GetComponent<SpriteRenderer>().color = parentDoor.GetComponent<SpriteRenderer>().color;
         }
         
         //We keep the door open in mainhub
