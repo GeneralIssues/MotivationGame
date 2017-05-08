@@ -62,7 +62,7 @@ public class CharacterController : MonoBehaviour {
         if (!PuzzleActive && !dead)
             MovementDir();
 
-        if (scene.name != "MainHub" || !PuzzleActive) {
+        if (scene.name != "MainHub") {
             if (Input.GetKey(KeyCode.LeftArrow) && Time.time > timeToFire) {
                 timeToFire = Time.time + 1 / fireRate;
                 Shoot(Vector3.left, firePointLeft);
