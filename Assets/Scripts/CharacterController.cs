@@ -62,7 +62,7 @@ public class CharacterController : MonoBehaviour {
         if (!PuzzleActive && !dead)
             MovementDir();
 
-        if (scene.name != "MainHub") {
+        if (scene.name != "MainHub" || !PuzzleActive) {
             if (Input.GetKey(KeyCode.LeftArrow) && Time.time > timeToFire) {
                 timeToFire = Time.time + 1 / fireRate;
                 Shoot(Vector3.left, firePointLeft);
@@ -80,95 +80,70 @@ public class CharacterController : MonoBehaviour {
                 Shoot(Vector3.up, firePointUp);
             }
         }
-        else
+
+        if (PuzzleActive) {
+            print("Getting here");
             MoveAwayFromPuzzle();
-        /*if (fireRate == 0 && !PuzzleActive)
-        {
-            if (Input.GetKey(KeyCode.LeftArrow))
-            {
-                Shoot(Vector3.left,firePointLeft);
-            }else if (Input.GetKey(KeyCode.RightArrow))
-            {
-                Shoot(Vector3.right,firePointRight);
-                //bullet.GetComponent<SpriteRenderer>().flipX = true;
-            }else if (Input.GetKey(KeyCode.DownArrow))
-            {
-                Shoot(Vector3.down, firePointDown);
-            }else if (Input.GetKey(KeyCode.UpArrow))
-            {
-                Shoot(Vector3.up, firePointUp);
-            }
-        }*/
+        }
     }
 
     void MovementDir() //not using horizontal and vertical because arrow keys are reserved for shooting
     {
-        // If we're hiding and decide to move, we have to move from object
-        if (isHiding && Input.GetKey(KeyCode.F))
-        {
-            this.transform.position = currentHidingVector;
-            currentHidingObject.GetComponent<SpriteRenderer>().color = Color.white;
-            isHiding = false;
+        //Move left
+        if (Input.GetKey(KeyCode.A) && Input.GetKey(KeyCode.W) && !Input.GetKey(KeyCode.D)) {
+            this.GetComponent<Animator>().Play("WalkingSide");
+
+            this.GetComponent<SpriteRenderer>().flipX = false;
+            this.transform.Translate(new Vector3(-0.8f, 0.8f) * characterSpeed);
         }
-        // Else, we move normally
-        else
-        {
-            //Move left
-            if (Input.GetKey(KeyCode.A) && Input.GetKey(KeyCode.W)) {
-                this.GetComponent<Animator>().Play("WalkingSide");
+        else if (Input.GetKey(KeyCode.A) && Input.GetKey(KeyCode.S)) {
+            this.GetComponent<Animator>().Play("WalkingSide");
 
-                this.GetComponent<SpriteRenderer>().flipX = false;
-                this.transform.Translate(new Vector3(-0.8f, 0.8f) * characterSpeed);
-            }
-            else if (Input.GetKey(KeyCode.A) && Input.GetKey(KeyCode.S)) {
-                this.GetComponent<Animator>().Play("WalkingSide");
-
-                this.GetComponent<SpriteRenderer>().flipX = false;
-                this.transform.Translate(new Vector3(-0.8f, -0.8f) * characterSpeed);
-            }
-            else if (Input.GetKey(KeyCode.A)) {
-                this.GetComponent<Animator>().Play("WalkingSide");
-
-                this.GetComponent<SpriteRenderer>().flipX = false;
-                this.transform.Translate(new Vector3(-1, 0) * characterSpeed);
-            }
-
-            //Move right
-            if (Input.GetKey(KeyCode.D) && Input.GetKey(KeyCode.W)) {
-                this.GetComponent<Animator>().Play("WalkingSide");
-
-                this.GetComponent<SpriteRenderer>().flipX = true;
-                this.transform.Translate(new Vector3(0.8f, 0.8f) * characterSpeed);
-            }
-            else if (Input.GetKey(KeyCode.D) && Input.GetKey(KeyCode.S)) {
-                this.GetComponent<Animator>().Play("WalkingSide");
-
-                this.GetComponent<SpriteRenderer>().flipX = true;
-                this.transform.Translate(new Vector3(0.8f, -0.8f) * characterSpeed);
-            }
-            else if (Input.GetKey(KeyCode.D)) {
-                this.GetComponent<Animator>().Play("WalkingSide");
-
-                this.GetComponent<SpriteRenderer>().flipX = true;
-                this.transform.Translate(new Vector3(1, 0) * characterSpeed);
-            }
-            
-            //Move up 
-            if (Input.GetKey(KeyCode.W) && !Input.GetKey(KeyCode.A) && !Input.GetKey(KeyCode.D)) {
-                this.GetComponent<Animator>().Play("WalkingUp");
-
-                this.transform.Translate(new Vector3(0, 1) * characterSpeed);
-            }
-
-            //Move down
-            if (Input.GetKey(KeyCode.S) && !Input.GetKey(KeyCode.A) && !Input.GetKey(KeyCode.D)) {
-                this.GetComponent<Animator>().Play("WalkingDown");
-
-                this.transform.Translate(new Vector3(0, -1) * characterSpeed);
-            }
-
-            this.GetComponent<Animator>().StopPlayback();
+            this.GetComponent<SpriteRenderer>().flipX = false;
+            this.transform.Translate(new Vector3(-0.8f, -0.8f) * characterSpeed);
         }
+        else if (Input.GetKey(KeyCode.A)) {
+            this.GetComponent<Animator>().Play("WalkingSide");
+
+            this.GetComponent<SpriteRenderer>().flipX = false;
+            this.transform.Translate(new Vector3(-1, 0) * characterSpeed);
+        }
+
+        //Move right
+        if (Input.GetKey(KeyCode.D) && Input.GetKey(KeyCode.W) && !Input.GetKey(KeyCode.A)) {
+            this.GetComponent<Animator>().Play("WalkingSide");
+
+            this.GetComponent<SpriteRenderer>().flipX = true;
+            this.transform.Translate(new Vector3(0.8f, 0.8f) * characterSpeed);
+        }
+        else if (Input.GetKey(KeyCode.D) && Input.GetKey(KeyCode.S)) {
+            this.GetComponent<Animator>().Play("WalkingSide");
+
+            this.GetComponent<SpriteRenderer>().flipX = true;
+            this.transform.Translate(new Vector3(0.8f, -0.8f) * characterSpeed);
+        }
+        else if (Input.GetKey(KeyCode.D)) {
+            this.GetComponent<Animator>().Play("WalkingSide");
+
+            this.GetComponent<SpriteRenderer>().flipX = true;
+            this.transform.Translate(new Vector3(1, 0) * characterSpeed);
+        }
+        
+        //Move up 
+        if (Input.GetKey(KeyCode.W) && !Input.GetKey(KeyCode.A) && !Input.GetKey(KeyCode.D)) {
+            this.GetComponent<Animator>().Play("WalkingUp");
+
+            this.transform.Translate(new Vector3(0, 1) * characterSpeed);
+        }
+
+        //Move down
+        if (Input.GetKey(KeyCode.S) && !Input.GetKey(KeyCode.A) && !Input.GetKey(KeyCode.D)) {
+            this.GetComponent<Animator>().Play("WalkingDown");
+
+            this.transform.Translate(new Vector3(0, -1) * characterSpeed);
+        }
+
+        this.GetComponent<Animator>().StopPlayback();
     }
 
     /// <summary>
@@ -176,6 +151,8 @@ public class CharacterController : MonoBehaviour {
     /// </summary>
     void MoveAwayFromPuzzle()
     {
+        print("Method ran");
+
         //Move away down
         if (Input.GetKey(KeyCode.W) && this.transform.position.y > doorPos.position.y) {
             this.transform.Translate(new Vector3(-1, 0) * characterSpeed);
@@ -186,6 +163,7 @@ public class CharacterController : MonoBehaviour {
 
         //Move away left
         if (Input.GetKey(KeyCode.A) && this.transform.position.x < doorPos.position.x) {
+            print("Move away");
             this.transform.Translate(new Vector3(-1, 0) * characterSpeed);
             Destroy(GameObject.FindGameObjectWithTag("Puzzle"));
             Time.timeScale = 1;
@@ -229,6 +207,7 @@ public class CharacterController : MonoBehaviour {
         //Door touched
         if (coll.gameObject.tag == "Door") {
             doorPos = coll.gameObject.transform;
+            print(doorPos);
         }
     }
 

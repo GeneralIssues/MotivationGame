@@ -10,7 +10,7 @@ public class DoorController : MonoBehaviour{
     public GameObject MotivationController;
 
     public int doorHP = 100;
-    int bulletDmg = 20;
+    int bulletDmg = 35;
 
     // Use this for initialization
     void Start () {
@@ -43,12 +43,12 @@ public class DoorController : MonoBehaviour{
     void OnCollisionEnter2D(Collision2D coll)
     {
         if (coll.gameObject.tag == "Player") {
-            GameObject.FindGameObjectWithTag("Player").GetComponent<CharacterController>().PuzzleActive = true;
             if (puzzle != null) {
+                GameObject.FindGameObjectWithTag("Player").GetComponent<CharacterController>().PuzzleActive = true;
                 //GameObject puzzle = Instantiate(pm.GetComponent<PrefabManager>().Puzzle1) as GameObject;
                 GameObject tempPuzzle = Instantiate(puzzle) as GameObject;
                 tempPuzzle.transform.parent = this.transform;
-                Time.timeScale = 0;
+                //Time.timeScale = 0;
             }
             else
                 NoPuzzleAttachedOpen();
