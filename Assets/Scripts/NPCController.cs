@@ -45,14 +45,14 @@ public class NPCController : MonoBehaviour {
 
     // Update is called once per frame
     void Update() {
-        if (Input.GetKeyDown(KeyCode.Space))
+    /*    if (Input.GetKeyDown(KeyCode.Space))
         {
             StopAllCoroutines();
             if (npctext.text != ""){
                 npctext.text = "";
                 mc.GetComponent<MotivationController>().DecreaseImmersionScore(5);
             }
-        }
+        }*/
     }
 
     void OnTriggerStay2D(Collider2D coll){
@@ -136,6 +136,15 @@ public class NPCController : MonoBehaviour {
         }
     }
 
+    void OnTriggerExit2D (Collider2D coll)
+    {
+        StopAllCoroutines();
+        if (npctext.text != "") {
+            npctext.text = "";
+            mc.GetComponent<MotivationController>().DecreaseImmersionScore(5);
+        }
+    }
+
     IEnumerator DialogueStart(string[] texts)
     {
 
@@ -151,7 +160,7 @@ public class NPCController : MonoBehaviour {
     IEnumerator Dialogue(string text)
     {
         npctext.text = text;
-        yield return StartCoroutine(WaitForKeyDown(KeyCode.F));
+        yield return StartCoroutine(WaitForKeyDown(KeyCode.E));
     }
     IEnumerator WaitForKeyDown(KeyCode keyCode)
     {
