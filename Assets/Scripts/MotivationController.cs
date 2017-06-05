@@ -32,6 +32,8 @@ public class MotivationController : MonoBehaviour {
     string currentScene;
     string lastScene;
 
+    public bool gameEnded;
+
     void Awake()
     {
         DontDestroyOnLoad(this.transform.gameObject);
@@ -56,6 +58,10 @@ public class MotivationController : MonoBehaviour {
         //Scene has changed if current scene is no longer the current one
         if (currentScene != SceneManager.GetActiveScene().name) {
             SceneChanged();
+        }
+
+        if (gameEnded){
+            System.IO.File.WriteAllText("C:/Users/General/Desktop/variables.txt", "Action: " + ActionScore + " Achievement: " + AchievementScore + " Mastery: " + MasteryScore + " Immersion: " + ImmersionScore);
         }
     }
 
