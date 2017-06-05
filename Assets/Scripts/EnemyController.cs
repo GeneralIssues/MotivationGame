@@ -11,12 +11,15 @@ public class EnemyController : MonoBehaviour {
 
     bool enemyDead = false;
 
+    public GameObject MotivationController;
+
     float enemyHP = 100;
     float bulletDmg = 40;
 
 	// Use this for initialization
 	void Start () {
 		player = GameObject.FindGameObjectWithTag("Player");
+        MotivationController = GameObject.FindWithTag("MotivationController");
 	}
 	
 	// Update is called once per frame
@@ -45,6 +48,7 @@ public class EnemyController : MonoBehaviour {
                 this.GetComponent<Animator>().Play("enemyDead");
                 this.GetComponent<BoxCollider2D>().isTrigger = true;
                 this.GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezeAll;
+                MotivationController.GetComponent<MotivationController>().IncreaseActionScore(5);
             }
         }
     }

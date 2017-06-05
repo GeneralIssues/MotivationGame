@@ -7763,6 +7763,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pm: {fileID: 0}
   puzzle: {fileID: 0}
+  MotivationController: {fileID: 0}
   doorHP: 100
 --- !u!61 &259327492
 BoxCollider2D:
@@ -9782,6 +9783,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pm: {fileID: 0}
   puzzle: {fileID: 1914527438084620, guid: e4629f6fdab63994baf67001d72e2140, type: 2}
+  MotivationController: {fileID: 0}
   doorHP: 100
 --- !u!61 &326248046
 BoxCollider2D:
@@ -11312,6 +11314,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pm: {fileID: 0}
   puzzle: {fileID: 1670012011120810, guid: 6f09576975296b64192dd2aaec5eedf4, type: 2}
+  MotivationController: {fileID: 0}
   doorHP: 100
 --- !u!61 &385958290
 BoxCollider2D:
@@ -12918,7 +12921,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4384302136658146, guid: 75659c5220138474aa506bdac03cb620, type: 2}
       propertyPath: m_RootOrder
-      value: 11
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 114236892005066072, guid: 75659c5220138474aa506bdac03cb620,
         type: 2}
@@ -17086,6 +17089,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pm: {fileID: 0}
   puzzle: {fileID: 0}
+  MotivationController: {fileID: 0}
   doorHP: 100
 --- !u!61 &576317508
 BoxCollider2D:
@@ -19436,7 +19440,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4623870623645762, guid: 0af9bb801e000e241bab36eabba6285e, type: 2}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 1614985024989880, guid: 0af9bb801e000e241bab36eabba6285e, type: 2}
       propertyPath: m_Name
@@ -26466,6 +26470,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pm: {fileID: 0}
   puzzle: {fileID: 0}
+  MotivationController: {fileID: 0}
   doorHP: 100
 --- !u!61 &867798716
 BoxCollider2D:
@@ -28463,6 +28468,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pm: {fileID: 0}
   puzzle: {fileID: 1033696111583662, guid: b63e79c608971f644a51b1c1a3382019, type: 2}
+  MotivationController: {fileID: 0}
   doorHP: 100
 --- !u!61 &909442718
 BoxCollider2D:
@@ -28995,6 +29001,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pm: {fileID: 0}
   puzzle: {fileID: 1914527438084620, guid: e4629f6fdab63994baf67001d72e2140, type: 2}
+  MotivationController: {fileID: 0}
   doorHP: 100
 --- !u!61 &925399831
 BoxCollider2D:
@@ -30141,6 +30148,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pm: {fileID: 0}
   puzzle: {fileID: 1518843313768998, guid: b967a897153f62a44a046ba099d7f67c, type: 2}
+  MotivationController: {fileID: 0}
   doorHP: 100
 --- !u!61 &961205945
 BoxCollider2D:
@@ -34429,6 +34437,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pm: {fileID: 0}
   puzzle: {fileID: 1091562832452878, guid: 40391c877730e9e46ae55ab607d91994, type: 2}
+  MotivationController: {fileID: 0}
   doorHP: 100
 --- !u!61 &1088919313
 BoxCollider2D:
@@ -37076,6 +37085,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pm: {fileID: 0}
   puzzle: {fileID: 0}
+  MotivationController: {fileID: 0}
   doorHP: 100
 --- !u!61 &1161170097
 BoxCollider2D:
@@ -37778,7 +37788,7 @@ Transform:
   - {fileID: 1296659931}
   - {fileID: 1465083960}
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1181903517
 GameObject:
@@ -39222,6 +39232,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pm: {fileID: 0}
   puzzle: {fileID: 0}
+  MotivationController: {fileID: 0}
   doorHP: 100
 --- !u!61 &1221675597
 BoxCollider2D:
@@ -41475,6 +41486,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pm: {fileID: 0}
   puzzle: {fileID: 1670012011120810, guid: 6f09576975296b64192dd2aaec5eedf4, type: 2}
+  MotivationController: {fileID: 0}
   doorHP: 100
 --- !u!61 &1297601991
 BoxCollider2D:
@@ -42059,6 +42071,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pm: {fileID: 0}
   puzzle: {fileID: 0}
+  MotivationController: {fileID: 0}
   doorHP: 100
 --- !u!61 &1317849052
 BoxCollider2D:
@@ -43025,7 +43038,7 @@ Transform:
   m_Children:
   - {fileID: 1389115642}
   m_Father: {fileID: 0}
-  m_RootOrder: 15
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1344126786
 GameObject:
@@ -44358,7 +44371,7 @@ Transform:
   - {fileID: 1970507454}
   - {fileID: 1547078236}
   m_Father: {fileID: 0}
-  m_RootOrder: 17
+  m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1376459127
 GameObject:
@@ -46032,6 +46045,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pm: {fileID: 0}
   puzzle: {fileID: 0}
+  MotivationController: {fileID: 0}
   doorHP: 100
 --- !u!61 &1438738410
 BoxCollider2D:
@@ -49023,6 +49037,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pm: {fileID: 0}
   puzzle: {fileID: 1670012011120810, guid: 6f09576975296b64192dd2aaec5eedf4, type: 2}
+  MotivationController: {fileID: 0}
   doorHP: 100
 --- !u!61 &1528741128
 BoxCollider2D:
@@ -49410,6 +49425,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pm: {fileID: 0}
   puzzle: {fileID: 0}
+  MotivationController: {fileID: 0}
   doorHP: 100
 --- !u!61 &1542617791
 BoxCollider2D:
@@ -50914,6 +50930,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pm: {fileID: 0}
   puzzle: {fileID: 0}
+  MotivationController: {fileID: 0}
   doorHP: 100
 --- !u!61 &1580856887
 BoxCollider2D:
@@ -51819,6 +51836,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pm: {fileID: 0}
   puzzle: {fileID: 1033696111583662, guid: b63e79c608971f644a51b1c1a3382019, type: 2}
+  MotivationController: {fileID: 0}
   doorHP: 100
 --- !u!61 &1614546624
 BoxCollider2D:
@@ -57528,6 +57546,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pm: {fileID: 0}
   puzzle: {fileID: 1670012011120810, guid: 6f09576975296b64192dd2aaec5eedf4, type: 2}
+  MotivationController: {fileID: 0}
   doorHP: 100
 --- !u!61 &1785815399
 BoxCollider2D:
@@ -61277,6 +61296,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pm: {fileID: 0}
   puzzle: {fileID: 1091562832452878, guid: 40391c877730e9e46ae55ab607d91994, type: 2}
+  MotivationController: {fileID: 0}
   doorHP: 100
 --- !u!61 &1907211816
 BoxCollider2D:
@@ -62366,7 +62386,7 @@ Transform:
   - {fileID: 1385551043}
   - {fileID: 1020219290}
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1953252530
 GameObject:
@@ -62764,6 +62784,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pm: {fileID: 0}
   puzzle: {fileID: 1518843313768998, guid: b967a897153f62a44a046ba099d7f67c, type: 2}
+  MotivationController: {fileID: 0}
   doorHP: 100
 --- !u!61 &1963140936
 BoxCollider2D:
@@ -63461,53 +63482,6 @@ SpriteRenderer:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
---- !u!1001 &1976512910
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 4821371248899374, guid: 06f2eaf2e0230054c8785254ea04e599, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: -10.2
-      objectReference: {fileID: 0}
-    - target: {fileID: 4821371248899374, guid: 06f2eaf2e0230054c8785254ea04e599, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 2.8
-      objectReference: {fileID: 0}
-    - target: {fileID: 4821371248899374, guid: 06f2eaf2e0230054c8785254ea04e599, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4821371248899374, guid: 06f2eaf2e0230054c8785254ea04e599, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4821371248899374, guid: 06f2eaf2e0230054c8785254ea04e599, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4821371248899374, guid: 06f2eaf2e0230054c8785254ea04e599, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4821371248899374, guid: 06f2eaf2e0230054c8785254ea04e599, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4821371248899374, guid: 06f2eaf2e0230054c8785254ea04e599, type: 2}
-      propertyPath: m_RootOrder
-      value: 12
-      objectReference: {fileID: 0}
-    - target: {fileID: 114151546918219496, guid: 06f2eaf2e0230054c8785254ea04e599,
-        type: 2}
-      propertyPath: AcText
-      value: 
-      objectReference: {fileID: 1826269494}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: 06f2eaf2e0230054c8785254ea04e599, type: 2}
-  m_IsPrefabParent: 0
 --- !u!1 &1977360267
 GameObject:
   m_ObjectHideFlags: 0
@@ -64972,6 +64946,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pm: {fileID: 0}
   puzzle: {fileID: 0}
+  MotivationController: {fileID: 0}
   doorHP: 100
 --- !u!61 &2040118657
 BoxCollider2D:
@@ -65541,6 +65516,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pm: {fileID: 0}
   puzzle: {fileID: 0}
+  MotivationController: {fileID: 0}
   doorHP: 100
 --- !u!61 &2058905049
 BoxCollider2D:
@@ -66475,7 +66451,7 @@ Transform:
   - {fileID: 961603738}
   - {fileID: 1767172659}
   m_Father: {fileID: 0}
-  m_RootOrder: 16
+  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2095176639
 GameObject:

@@ -18,7 +18,6 @@ public class BulletController : MonoBehaviour
     {
         if (coll.gameObject.tag == "Enemy") {
             Destroy(this.gameObject);
-            mc.GetComponent<MotivationController>().IncreaseActionScore(5);
         }
 
         this.transform.eulerAngles = coll.transform.eulerAngles + new Vector3(0, 0, 180);
