@@ -7,6 +7,8 @@ public class PuzzleController : MonoBehaviour{
 
     string nameImg;
 
+    public GameObject MotivationController;
+
     public int puzzleSize = 3;
 
     public GameObject[,] images;
@@ -28,6 +30,8 @@ public class PuzzleController : MonoBehaviour{
         images = new GameObject[puzzleSize, puzzleSize];
         imagesOrg = new GameObject[puzzleSize, puzzleSize];
         imagesColor = new Color[puzzleSize * puzzleSize];
+
+        MotivationController = GameObject.FindGameObjectWithTag("MotivationController");
 
         current = this.transform.gameObject;
 
@@ -96,6 +100,8 @@ public class PuzzleController : MonoBehaviour{
             if (current.tag == "Door") {
                 current.GetComponent<Animator>().enabled = true;
                 GameObject.FindGameObjectWithTag("Player").GetComponent<CharacterController>().PuzzleActive = false;
+                MotivationController.GetComponent<MotivationController>().IncreaseMasteryScore(5); //Scorer
+
             }
         }
         else if (currentPos == winningPos && currentPointCount != maxPointCount) {

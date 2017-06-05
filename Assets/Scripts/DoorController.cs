@@ -7,6 +7,7 @@ public class DoorController : MonoBehaviour{
     //public GameObject cc;
     public GameObject pm;
     public GameObject puzzle;
+    public GameObject MotivationController;
 
     public int doorHP = 100;
     int bulletDmg = 20;
@@ -15,6 +16,8 @@ public class DoorController : MonoBehaviour{
     void Start () {
         //cc = GameObject.Find("Main Camera");
         //pm = GameObject.FindGameObjectWithTag("PrefabManager");
+
+        MotivationController = GameObject.FindWithTag("MotivationController");
 
         //Door is not a trigger at start
         this.GetComponent<BoxCollider2D>().isTrigger = false;
@@ -35,6 +38,7 @@ public class DoorController : MonoBehaviour{
         if (doorHP <= 0) {
             this.GetComponent<BoxCollider2D>().isTrigger = true;
             this.GetComponent<Animator>().enabled = true;
+            MotivationController.GetComponent<MotivationController>().IncreaseActionScore(5); //Scorer
         }
 	}
 

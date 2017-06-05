@@ -189,7 +189,8 @@ public class CharacterController : MonoBehaviour {
     {
         //Dead if touched by enemy
         if (coll.gameObject.tag == "Enemy"){
-            print("You're Dead");
+            //restart
+            SceneManager.LoadScene(SceneManager.GetSceneByName("Start").name);
         }
 
         //Door touched
