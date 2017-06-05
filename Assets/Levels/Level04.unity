@@ -1649,7 +1649,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 28785094}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 3.1, y: 4.86, z: 0}
+  m_LocalPosition: {x: 1.1, y: 4.86, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1964332326}
@@ -2673,6 +2673,7 @@ MonoBehaviour:
   CamController: {fileID: 0}
   DoorLink: {fileID: 543582929}
   CamPos: {fileID: 1825096094}
+  MotivationController: {fileID: 0}
 --- !u!61 &47010729
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3640,6 +3641,7 @@ MonoBehaviour:
   CamController: {fileID: 0}
   DoorLink: {fileID: 319545777}
   CamPos: {fileID: 1718368821}
+  MotivationController: {fileID: 0}
 --- !u!61 &73089011
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3787,6 +3789,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pm: {fileID: 0}
   puzzle: {fileID: 0}
+  MotivationController: {fileID: 0}
   doorHP: 100
 --- !u!61 &77981394
 BoxCollider2D:
@@ -3940,6 +3943,7 @@ MonoBehaviour:
   CamController: {fileID: 0}
   DoorLink: {fileID: 119095879}
   CamPos: {fileID: 1663633624}
+  MotivationController: {fileID: 0}
 --- !u!61 &80270905
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4449,6 +4453,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pm: {fileID: 0}
   puzzle: {fileID: 1518843313768998, guid: b967a897153f62a44a046ba099d7f67c, type: 2}
+  MotivationController: {fileID: 0}
   doorHP: 100
 --- !u!61 &89319483
 BoxCollider2D:
@@ -4876,7 +4881,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 98942836}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.8976364, y: 2.86, z: 0}
+  m_LocalPosition: {x: -3.9, y: 2.86, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1964332326}
@@ -5176,7 +5181,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 105396781}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 3.1, y: 1.8600001, z: 0}
+  m_LocalPosition: {x: 1.1, y: 1.8600001, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1964332326}
@@ -5425,7 +5430,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 113550329}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.0999999, y: 1.8600001, z: 0}
+  m_LocalPosition: {x: -0.9, y: 1.8600001, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1964332326}
@@ -5776,7 +5781,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 118747274}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 4.1, y: 4.86, z: 0}
+  m_LocalPosition: {x: 2.1, y: 4.86, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1964332326}
@@ -5867,6 +5872,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pm: {fileID: 0}
   puzzle: {fileID: 0}
+  MotivationController: {fileID: 0}
   doorHP: 100
 --- !u!61 &119095882
 BoxCollider2D:
@@ -6051,6 +6057,7 @@ MonoBehaviour:
   CamController: {fileID: 0}
   DoorLink: {fileID: 1672937550}
   CamPos: {fileID: 1663633624}
+  MotivationController: {fileID: 0}
 --- !u!61 &120713172
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -6695,7 +6702,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 141901636}
   m_LocalRotation: {x: -0, y: -0, z: 0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: -2.9, y: 1.86, z: 0}
+  m_LocalPosition: {x: -4.9, y: 1.86, z: 0}
   m_LocalScale: {x: 1.0000005, y: 1.0000005, z: 1}
   m_Children: []
   m_Father: {fileID: 1662109650}
@@ -7007,7 +7014,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 144879768}
   m_LocalRotation: {x: -0, y: -0, z: 0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: -2.9, y: 4.86, z: 0}
+  m_LocalPosition: {x: -4.9, y: 4.86, z: 0}
   m_LocalScale: {x: 1.0000005, y: 1.0000005, z: 1}
   m_Children: []
   m_Father: {fileID: 1662109650}
@@ -7156,7 +7163,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 146871308}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 3.1, y: 3.86, z: 0}
+  m_LocalPosition: {x: 1.1, y: 3.86, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1964332326}
@@ -8087,7 +8094,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4389818855750970, guid: a13aaf99d60f42b408f3eafafaeadb7c, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -19.99
+      value: -21.99
       objectReference: {fileID: 0}
     - target: {fileID: 4389818855750970, guid: a13aaf99d60f42b408f3eafafaeadb7c, type: 2}
       propertyPath: m_LocalPosition.y
@@ -8155,7 +8162,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 166966194}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.1, y: 7.86, z: 0}
+  m_LocalPosition: {x: -1.9, y: 7.86, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1662109650}
@@ -8906,7 +8913,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 194817948}
   m_LocalRotation: {x: 0, y: -0, z: 0.7071068, w: -0.7071068}
-  m_LocalPosition: {x: 5.1, y: 6.86, z: 0}
+  m_LocalPosition: {x: 3.1, y: 6.86, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1662109650}
@@ -9072,7 +9079,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 199249670}
   m_LocalRotation: {x: 0, y: -0, z: 0.7071068, w: -0.7071068}
-  m_LocalPosition: {x: 5.1, y: 7.86, z: 0}
+  m_LocalPosition: {x: 3.1, y: 7.86, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1662109650}
@@ -9176,6 +9183,7 @@ MonoBehaviour:
   CamController: {fileID: 0}
   DoorLink: {fileID: 355667002}
   CamPos: {fileID: 1825096094}
+  MotivationController: {fileID: 0}
 --- !u!61 &201213019
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -10519,7 +10527,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 244204681}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 2.1, y: 7.86, z: 0}
+  m_LocalPosition: {x: 0.1, y: 7.86, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1662109650}
@@ -10735,7 +10743,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 246635837}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 3.1, y: -0.1427186, z: 0}
+  m_LocalPosition: {x: 1.1, y: -0.1427186, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1964332326}
@@ -11771,7 +11779,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 288047833}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 3.1, y: 2.86, z: 0}
+  m_LocalPosition: {x: 1.1, y: 2.86, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1964332326}
@@ -11921,7 +11929,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 288812833}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 2.1, y: 6.86, z: 0}
+  m_LocalPosition: {x: 0.1, y: 6.86, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1964332326}
@@ -12543,6 +12551,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pm: {fileID: 0}
   puzzle: {fileID: 1184299035279844, guid: cc15fb28e2b699c4783ced7d61f3c337, type: 2}
+  MotivationController: {fileID: 0}
   doorHP: 100
 --- !u!61 &299323092
 BoxCollider2D:
@@ -12973,7 +12982,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 308794536}
   m_LocalRotation: {x: 0, y: -0, z: 0.7071068, w: -0.7071068}
-  m_LocalPosition: {x: 5.1, y: 5.86, z: 0}
+  m_LocalPosition: {x: 3.1, y: 5.86, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1662109650}
@@ -13430,6 +13439,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pm: {fileID: 0}
   puzzle: {fileID: 0}
+  MotivationController: {fileID: 0}
   doorHP: 100
 --- !u!61 &319545780
 BoxCollider2D:
@@ -13808,7 +13818,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 326993155}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.9, y: 2.86, z: 0}
+  m_LocalPosition: {x: -2.9, y: 2.86, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1964332326}
@@ -14098,6 +14108,7 @@ MonoBehaviour:
   CamController: {fileID: 0}
   DoorLink: {fileID: 1850885650}
   CamPos: {fileID: 1663633624}
+  MotivationController: {fileID: 0}
 --- !u!61 &333023833
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -14767,6 +14778,7 @@ MonoBehaviour:
   CamController: {fileID: 0}
   DoorLink: {fileID: 1777431044}
   CamPos: {fileID: 296676451}
+  MotivationController: {fileID: 0}
 --- !u!61 &347196547
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -15092,7 +15104,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 351218761}
   m_LocalRotation: {x: -0, y: -0, z: 1, w: 0}
-  m_LocalPosition: {x: 1.1, y: -1.1400003, z: 0}
+  m_LocalPosition: {x: -0.9, y: -1.1400003, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1662109650}
@@ -15198,6 +15210,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pm: {fileID: 0}
   puzzle: {fileID: 0}
+  MotivationController: {fileID: 0}
   doorHP: 100
 --- !u!61 &355667005
 BoxCollider2D:
@@ -15861,7 +15874,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 367026674}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -2.9, y: 2.86, z: 0}
+  m_LocalPosition: {x: -4.9, y: 2.86, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1964332326}
@@ -16332,7 +16345,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 376211366}
   m_LocalRotation: {x: 0, y: 0, z: 1, w: 0}
-  m_LocalPosition: {x: 5.1, y: -1.14, z: 0}
+  m_LocalPosition: {x: 3.1, y: -1.14, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1662109650}
@@ -16834,6 +16847,7 @@ MonoBehaviour:
   CamController: {fileID: 0}
   DoorLink: {fileID: 559153327}
   CamPos: {fileID: 1187446943}
+  MotivationController: {fileID: 0}
 --- !u!61 &384733287
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -18023,7 +18037,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 427104937}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.100000024, y: 0.85999995, z: 0}
+  m_LocalPosition: {x: -1.9, y: 0.85999995, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1964332326}
@@ -18713,7 +18727,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 460726463}
   m_LocalRotation: {x: 0, y: -0, z: 0.7071068, w: -0.7071068}
-  m_LocalPosition: {x: 5.1, y: 0.85999995, z: 0}
+  m_LocalPosition: {x: 3.1, y: 0.85999995, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1662109650}
@@ -19079,7 +19093,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4389818855750970, guid: a13aaf99d60f42b408f3eafafaeadb7c, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -20.18
+      value: -22.18
       objectReference: {fileID: 0}
     - target: {fileID: 4389818855750970, guid: a13aaf99d60f42b408f3eafafaeadb7c, type: 2}
       propertyPath: m_LocalPosition.y
@@ -19168,6 +19182,7 @@ MonoBehaviour:
   CamController: {fileID: 0}
   DoorLink: {fileID: 600191977}
   CamPos: {fileID: 1271766154}
+  MotivationController: {fileID: 0}
 --- !u!61 &477778954
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -19946,6 +19961,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pm: {fileID: 0}
   puzzle: {fileID: 1867444680469804, guid: fb09eb50ef8146449adc46e552b11483, type: 2}
+  MotivationController: {fileID: 0}
   doorHP: 100
 --- !u!61 &490053475
 BoxCollider2D:
@@ -20042,7 +20058,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 493303706}
   m_LocalRotation: {x: 0, y: 0, z: 1, w: 0}
-  m_LocalPosition: {x: 3.1, y: -1.14, z: 0}
+  m_LocalPosition: {x: 1.1, y: -1.14, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1662109650}
@@ -20631,6 +20647,7 @@ MonoBehaviour:
   CamController: {fileID: 0}
   DoorLink: {fileID: 1390582181}
   CamPos: {fileID: 1067397168}
+  MotivationController: {fileID: 0}
 --- !u!61 &503802109
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -20971,7 +20988,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 511581679}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.9, y: 1.8600001, z: 0}
+  m_LocalPosition: {x: -2.9, y: 1.8600001, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1964332326}
@@ -21334,7 +21351,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 524772028}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.8976364, y: 7.86, z: 0}
+  m_LocalPosition: {x: -3.9, y: 7.86, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1662109650}
@@ -21572,6 +21589,7 @@ MonoBehaviour:
   CamController: {fileID: 0}
   DoorLink: {fileID: 1949673922}
   CamPos: {fileID: 1671537898}
+  MotivationController: {fileID: 0}
 --- !u!61 &531216258
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -21762,7 +21780,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 534110660}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.0999999, y: 2.86, z: 0}
+  m_LocalPosition: {x: -0.9, y: 2.86, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1964332326}
@@ -21829,7 +21847,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 534427103}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.9, y: 6.86, z: 0}
+  m_LocalPosition: {x: -3.9, y: 6.86, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1964332326}
@@ -21896,7 +21914,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 534756226}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.8976364, y: 1.8600001, z: 0}
+  m_LocalPosition: {x: -3.9, y: 1.8600001, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1964332326}
@@ -22370,6 +22388,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pm: {fileID: 0}
   puzzle: {fileID: 1518843313768998, guid: b967a897153f62a44a046ba099d7f67c, type: 2}
+  MotivationController: {fileID: 0}
   doorHP: 100
 --- !u!61 &543582932
 BoxCollider2D:
@@ -23290,6 +23309,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pm: {fileID: 0}
   puzzle: {fileID: 1867444680469804, guid: fb09eb50ef8146449adc46e552b11483, type: 2}
+  MotivationController: {fileID: 0}
   doorHP: 100
 --- !u!61 &559153330
 BoxCollider2D:
@@ -23472,8 +23492,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CamController: {fileID: 0}
-  DoorLink: {fileID: 0}
-  CamPos: {fileID: 0}
+  DoorLink: {fileID: 1646886759}
+  CamPos: {fileID: 1271766154}
+  MotivationController: {fileID: 0}
 --- !u!61 &561109738
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -23603,6 +23624,7 @@ MonoBehaviour:
   CamController: {fileID: 0}
   DoorLink: {fileID: 987085096}
   CamPos: {fileID: 867198116}
+  MotivationController: {fileID: 0}
 --- !u!61 &561677952
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -24565,6 +24587,7 @@ MonoBehaviour:
   CamController: {fileID: 0}
   DoorLink: {fileID: 77981391}
   CamPos: {fileID: 867198116}
+  MotivationController: {fileID: 0}
 --- !u!61 &586222820
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -25382,6 +25405,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pm: {fileID: 0}
   puzzle: {fileID: 0}
+  MotivationController: {fileID: 0}
   doorHP: 100
 --- !u!61 &600191980
 BoxCollider2D:
@@ -25545,7 +25569,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 610329657}
   m_LocalRotation: {x: 0, y: 0, z: 1, w: 0}
-  m_LocalPosition: {x: 0.100000024, y: -1.14, z: 0}
+  m_LocalPosition: {x: -1.9, y: -1.14, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1662109650}
@@ -25801,6 +25825,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pm: {fileID: 0}
   puzzle: {fileID: 0}
+  MotivationController: {fileID: 0}
   doorHP: 100
 --- !u!61 &614461822
 BoxCollider2D:
@@ -25980,7 +26005,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 619381407}
   m_LocalRotation: {x: 0, y: 0, z: 0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: -2.9, y: -0.1427186, z: 0}
+  m_LocalPosition: {x: -4.9, y: -0.1427186, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1662109650}
@@ -29451,7 +29476,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 712076730}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 3.1, y: 7.86, z: 0}
+  m_LocalPosition: {x: 1.1, y: 7.86, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1662109650}
@@ -32057,6 +32082,7 @@ MonoBehaviour:
   CamController: {fileID: 0}
   DoorLink: {fileID: 89319480}
   CamPos: {fileID: 1120461926}
+  MotivationController: {fileID: 0}
 --- !u!61 &767160707
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -32981,7 +33007,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 784946805}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 3.1, y: 5.86, z: 0}
+  m_LocalPosition: {x: 1.1, y: 5.86, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1964332326}
@@ -34797,7 +34823,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 814367133}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.100000024, y: -0.1427186, z: 0}
+  m_LocalPosition: {x: -1.9, y: -0.1427186, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1964332326}
@@ -37881,7 +37907,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4389818855750970, guid: a13aaf99d60f42b408f3eafafaeadb7c, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -14.86
+      value: -16.86
       objectReference: {fileID: 0}
     - target: {fileID: 4389818855750970, guid: a13aaf99d60f42b408f3eafafaeadb7c, type: 2}
       propertyPath: m_LocalPosition.y
@@ -38645,7 +38671,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 917485860}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.100000024, y: 1.8600001, z: 0}
+  m_LocalPosition: {x: -1.9, y: 1.8600001, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1964332326}
@@ -38862,7 +38888,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 924938665}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.9, y: 4.86, z: 0}
+  m_LocalPosition: {x: -2.9, y: 4.86, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1964332326}
@@ -39213,7 +39239,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 937019496}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.0999999, y: 5.86, z: 0}
+  m_LocalPosition: {x: -0.9, y: 5.86, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1964332326}
@@ -39280,7 +39306,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 937681749}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 2.1, y: 2.86, z: 0}
+  m_LocalPosition: {x: 0.1, y: 2.86, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1964332326}
@@ -40436,7 +40462,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 958951145}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 4.1, y: 0.85999995, z: 0}
+  m_LocalPosition: {x: 2.1, y: 0.85999995, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1964332326}
@@ -40705,7 +40731,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 966796942}
   m_LocalRotation: {x: 0, y: 0, z: 0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: -2.9, y: -1.14, z: 0}
+  m_LocalPosition: {x: -4.9, y: -1.14, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1662109650}
@@ -41036,7 +41062,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 969505960}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 4.1, y: 1.8600001, z: 0}
+  m_LocalPosition: {x: 2.1, y: 1.8600001, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1964332326}
@@ -41478,6 +41504,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pm: {fileID: 0}
   puzzle: {fileID: 1670012011120810, guid: 6f09576975296b64192dd2aaec5eedf4, type: 2}
+  MotivationController: {fileID: 0}
   doorHP: 100
 --- !u!61 &987085099
 BoxCollider2D:
@@ -41597,6 +41624,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pm: {fileID: 0}
   puzzle: {fileID: 1184299035279844, guid: cc15fb28e2b699c4783ced7d61f3c337, type: 2}
+  MotivationController: {fileID: 0}
   doorHP: 100
 --- !u!61 &987839327
 BoxCollider2D:
@@ -42282,6 +42310,7 @@ MonoBehaviour:
   CamController: {fileID: 0}
   DoorLink: {fileID: 987839324}
   CamPos: {fileID: 686079957}
+  MotivationController: {fileID: 0}
 --- !u!61 &1000876916
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -42322,7 +42351,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1001154074}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.9, y: 4.86, z: 0}
+  m_LocalPosition: {x: -3.9, y: 4.86, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1964332326}
@@ -42606,7 +42635,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1009191147}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.8976364, y: 0.85999995, z: 0}
+  m_LocalPosition: {x: -3.9, y: 0.85999995, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1964332326}
@@ -43764,6 +43793,7 @@ MonoBehaviour:
   CamController: {fileID: 0}
   DoorLink: {fileID: 1983931679}
   CamPos: {fileID: 686079957}
+  MotivationController: {fileID: 0}
 --- !u!61 &1034202065
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -44641,7 +44671,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1048233076}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.9, y: 7.86, z: 0}
+  m_LocalPosition: {x: -2.9, y: 7.86, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1662109650}
@@ -45281,6 +45311,7 @@ MonoBehaviour:
   CamController: {fileID: 0}
   DoorLink: {fileID: 1945627604}
   CamPos: {fileID: 1067397168}
+  MotivationController: {fileID: 0}
 --- !u!61 &1063120513
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -45524,7 +45555,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1070928929}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 4.1, y: -0.1427186, z: 0}
+  m_LocalPosition: {x: 2.1, y: -0.1427186, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1964332326}
@@ -46126,7 +46157,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1077461829}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 3.1, y: 6.86, z: 0}
+  m_LocalPosition: {x: 1.1, y: 6.86, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1964332326}
@@ -47644,7 +47675,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1128406517}
   m_LocalRotation: {x: 0, y: 0, z: 1, w: 0}
-  m_LocalPosition: {x: -0.9, y: -1.14, z: 0}
+  m_LocalPosition: {x: -2.9, y: -1.14, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1662109650}
@@ -47727,7 +47758,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1131619847}
   m_LocalRotation: {x: -0, y: -0, z: 0.7071068, w: -0.7071068}
-  m_LocalPosition: {x: 5.1, y: 4.86, z: 0}
+  m_LocalPosition: {x: 3.1, y: 4.86, z: 0}
   m_LocalScale: {x: 1.0000005, y: 1.0000005, z: 1}
   m_Children: []
   m_Father: {fileID: 1662109650}
@@ -48393,7 +48424,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1149783675}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 4.1, y: 3.86, z: 0}
+  m_LocalPosition: {x: 2.1, y: 3.86, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1964332326}
@@ -48460,7 +48491,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1151293513}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.1, y: 4.86, z: 0}
+  m_LocalPosition: {x: -0.9, y: 4.86, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1964332326}
@@ -48683,6 +48714,7 @@ MonoBehaviour:
   CamController: {fileID: 0}
   DoorLink: {fileID: 1213506165}
   CamPos: {fileID: 296676451}
+  MotivationController: {fileID: 0}
 --- !u!61 &1159133603
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -49614,7 +49646,7 @@ Transform:
   - {fileID: 28674619}
   - {fileID: 1187446944}
   m_Father: {fileID: 0}
-  m_RootOrder: 14
+  m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1187446943
 GameObject:
@@ -49806,7 +49838,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1192037849}
   m_LocalRotation: {x: -0, y: -0, z: 0.7071068, w: -0.7071068}
-  m_LocalPosition: {x: 5.1, y: 1.86, z: 0}
+  m_LocalPosition: {x: 3.1, y: 1.86, z: 0}
   m_LocalScale: {x: 1.0000005, y: 1.0000005, z: 1}
   m_Children: []
   m_Father: {fileID: 1662109650}
@@ -50472,7 +50504,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1212755255}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 2.1, y: 1.8600001, z: 0}
+  m_LocalPosition: {x: 0.1, y: 1.8600001, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1964332326}
@@ -50563,6 +50595,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pm: {fileID: 0}
   puzzle: {fileID: 0}
+  MotivationController: {fileID: 0}
   doorHP: 100
 --- !u!61 &1213506168
 BoxCollider2D:
@@ -50755,7 +50788,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1226979429}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.9, y: 6.86, z: 0}
+  m_LocalPosition: {x: -2.9, y: 6.86, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1964332326}
@@ -51987,7 +52020,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1248175104}
   m_LocalRotation: {x: 0, y: 0, z: 0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: -2.9, y: 0.86, z: 0}
+  m_LocalPosition: {x: -4.9, y: 0.86, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1662109650}
@@ -52286,7 +52319,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1253099169}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.100000024, y: 3.86, z: 0}
+  m_LocalPosition: {x: -1.9, y: 3.86, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1964332326}
@@ -53103,7 +53136,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1265820237}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.9, y: -0.1427186, z: 0}
+  m_LocalPosition: {x: -2.9, y: -0.1427186, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1964332326}
@@ -54184,7 +54217,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1288854544}
   m_LocalRotation: {x: 0, y: 0, z: 0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: -2.9, y: 6.86, z: 0}
+  m_LocalPosition: {x: -4.9, y: 6.86, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1662109650}
@@ -55086,7 +55119,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1309017566}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.100000024, y: 6.86, z: 0}
+  m_LocalPosition: {x: -1.9, y: 6.86, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1964332326}
@@ -55154,7 +55187,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1310272630}
   m_LocalRotation: {x: 0, y: 0, z: 1, w: 0}
-  m_LocalPosition: {x: 4.1, y: -1.14, z: 0}
+  m_LocalPosition: {x: 2.1, y: -1.14, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1662109650}
@@ -56071,6 +56104,7 @@ MonoBehaviour:
   CamController: {fileID: 0}
   DoorLink: {fileID: 1738681554}
   CamPos: {fileID: 1067397168}
+  MotivationController: {fileID: 0}
 --- !u!61 &1338010271
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -57327,7 +57361,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1366885219}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -2.9, y: 7.86, z: 0}
+  m_LocalPosition: {x: -4.9, y: 7.86, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1662109650}
@@ -58230,6 +58264,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pm: {fileID: 0}
   puzzle: {fileID: 1033696111583662, guid: b63e79c608971f644a51b1c1a3382019, type: 2}
+  MotivationController: {fileID: 0}
   doorHP: 100
 --- !u!61 &1390582184
 BoxCollider2D:
@@ -58824,7 +58859,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1411599379}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.100000024, y: 2.86, z: 0}
+  m_LocalPosition: {x: -1.9, y: 2.86, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1964332326}
@@ -60174,7 +60209,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1448931695}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 4.1, y: 2.86, z: 0}
+  m_LocalPosition: {x: 2.1, y: 2.86, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1964332326}
@@ -60474,7 +60509,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1458438641}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.9, y: 5.86, z: 0}
+  m_LocalPosition: {x: -3.9, y: 5.86, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1964332326}
@@ -60692,7 +60727,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1464455852}
   m_LocalRotation: {x: -0, y: -0, z: 0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: -2.9, y: 3.86, z: 0}
+  m_LocalPosition: {x: -4.9, y: 3.86, z: 0}
   m_LocalScale: {x: 1.0000005, y: 1.0000005, z: 1}
   m_Children: []
   m_Father: {fileID: 1662109650}
@@ -60908,7 +60943,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1470783072}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 2.1, y: 5.86, z: 0}
+  m_LocalPosition: {x: 0.1, y: 5.86, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1964332326}
@@ -61591,7 +61626,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1491334608}
   m_LocalRotation: {x: 0, y: 0, z: 1, w: 0}
-  m_LocalPosition: {x: 2.1, y: -1.14, z: 0}
+  m_LocalPosition: {x: 0.1, y: -1.14, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1662109650}
@@ -62431,6 +62466,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pm: {fileID: 0}
   puzzle: {fileID: 1518843313768998, guid: b967a897153f62a44a046ba099d7f67c, type: 2}
+  MotivationController: {fileID: 0}
   doorHP: 100
 --- !u!61 &1536132592
 BoxCollider2D:
@@ -62944,7 +62980,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1548341748}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.9, y: 3.86, z: 0}
+  m_LocalPosition: {x: -2.9, y: 3.86, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1964332326}
@@ -63684,6 +63720,7 @@ MonoBehaviour:
   CamController: {fileID: 0}
   DoorLink: {fileID: 1638816765}
   CamPos: {fileID: 1718368821}
+  MotivationController: {fileID: 0}
 --- !u!61 &1560811808
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -64593,7 +64630,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1581808422}
   m_LocalRotation: {x: -0, y: -0, z: 0.7071068, w: -0.7071068}
-  m_LocalPosition: {x: 5.1, y: 3.86, z: 0}
+  m_LocalPosition: {x: 3.1, y: 3.86, z: 0}
   m_LocalScale: {x: 1.0000005, y: 1.0000005, z: 1}
   m_Children: []
   m_Father: {fileID: 1662109650}
@@ -65409,7 +65446,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1599929643}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 2.1, y: -0.1427186, z: 0}
+  m_LocalPosition: {x: 0.1, y: -0.1427186, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1964332326}
@@ -65916,6 +65953,7 @@ MonoBehaviour:
   CamController: {fileID: 0}
   DoorLink: {fileID: 1536132589}
   CamPos: {fileID: 296676451}
+  MotivationController: {fileID: 0}
 --- !u!61 &1605761294
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -66189,7 +66227,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1615983985}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.8976364, y: 3.86, z: 0}
+  m_LocalPosition: {x: -3.9, y: 3.86, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1964332326}
@@ -67365,6 +67403,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pm: {fileID: 0}
   puzzle: {fileID: 0}
+  MotivationController: {fileID: 0}
   doorHP: 100
 --- !u!61 &1638816768
 BoxCollider2D:
@@ -67768,6 +67807,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pm: {fileID: 0}
   puzzle: {fileID: 0}
+  MotivationController: {fileID: 0}
   doorHP: 100
 --- !u!61 &1646886762
 BoxCollider2D:
@@ -68164,7 +68204,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1653314803}
   m_LocalRotation: {x: -0, y: -0, z: 0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: -2.9000015, y: 2.86, z: 0}
+  m_LocalPosition: {x: -4.9, y: 2.86, z: 0}
   m_LocalScale: {x: 1.0000005, y: 1.0000005, z: 1}
   m_Children: []
   m_Father: {fileID: 1662109650}
@@ -68553,7 +68593,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1661827168}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 4.1, y: 5.86, z: 0}
+  m_LocalPosition: {x: 2.1, y: 5.86, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1964332326}
@@ -69151,6 +69191,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pm: {fileID: 0}
   puzzle: {fileID: 1670012011120810, guid: 6f09576975296b64192dd2aaec5eedf4, type: 2}
+  MotivationController: {fileID: 0}
   doorHP: 100
 --- !u!61 &1672937553
 BoxCollider2D:
@@ -69795,7 +69836,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1691421869}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 5.1, y: 2.86, z: 0}
+  m_LocalPosition: {x: 3.1, y: 2.86, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1964332326}
@@ -70521,7 +70562,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1713606982}
   m_LocalRotation: {x: -0, y: -0, z: 0.7071068, w: -0.7071068}
-  m_LocalPosition: {x: 5.1, y: 1.8600001, z: 0}
+  m_LocalPosition: {x: 3.1, y: 1.8600001, z: 0}
   m_LocalScale: {x: 1.0000005, y: 1.0000005, z: 1}
   m_Children: []
   m_Father: {fileID: 1662109650}
@@ -70692,6 +70733,7 @@ MonoBehaviour:
   CamController: {fileID: 0}
   DoorLink: {fileID: 299323089}
   CamPos: {fileID: 1220046100}
+  MotivationController: {fileID: 0}
 --- !u!61 &1716868423
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -70744,7 +70786,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4623870623645762, guid: 0af9bb801e000e241bab36eabba6285e, type: 2}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 1614985024989880, guid: 0af9bb801e000e241bab36eabba6285e, type: 2}
       propertyPath: m_Name
@@ -70959,7 +71001,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1720450797}
   m_LocalRotation: {x: 0, y: 0, z: 0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: -2.9, y: 5.86, z: 0}
+  m_LocalPosition: {x: -4.9, y: 5.86, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1662109650}
@@ -71198,7 +71240,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1724998532}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 4.1, y: 6.86, z: 0}
+  m_LocalPosition: {x: 2.1, y: 6.86, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1964332326}
@@ -71605,6 +71647,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pm: {fileID: 0}
   puzzle: {fileID: 1670012011120810, guid: 6f09576975296b64192dd2aaec5eedf4, type: 2}
+  MotivationController: {fileID: 0}
   doorHP: 100
 --- !u!61 &1738681557
 BoxCollider2D:
@@ -72053,6 +72096,7 @@ MonoBehaviour:
   CamController: {fileID: 0}
   DoorLink: {fileID: 490053472}
   CamPos: {fileID: 1220046100}
+  MotivationController: {fileID: 0}
 --- !u!61 &1754001796
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -73386,7 +73430,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1775618964}
   m_LocalRotation: {x: 0, y: -0, z: 0.7071068, w: -0.7071068}
-  m_LocalPosition: {x: 5.1, y: -0.1427186, z: 0}
+  m_LocalPosition: {x: 3.1, y: -0.1427186, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1662109650}
@@ -73492,6 +73536,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pm: {fileID: 0}
   puzzle: {fileID: 0}
+  MotivationController: {fileID: 0}
   doorHP: 100
 --- !u!61 &1777431047
 BoxCollider2D:
@@ -74571,7 +74616,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1808628720}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.1, y: 7.8600006, z: 0}
+  m_LocalPosition: {x: -0.9, y: 7.8600006, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1662109650}
@@ -74886,7 +74931,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1813489463}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 2.1, y: 4.86, z: 0}
+  m_LocalPosition: {x: 0.1, y: 4.86, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1964332326}
@@ -76150,7 +76195,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1845188768}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 4.1, y: 7.86, z: 0}
+  m_LocalPosition: {x: 2.1, y: 7.86, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1662109650}
@@ -76406,6 +76451,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pm: {fileID: 0}
   puzzle: {fileID: 0}
+  MotivationController: {fileID: 0}
   doorHP: 100
 --- !u!61 &1850885653
 BoxCollider2D:
@@ -77034,7 +77080,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1858933819}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.0999999, y: -0.1427186, z: 0}
+  m_LocalPosition: {x: -0.9, y: -0.1427186, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1964332326}
@@ -77168,7 +77214,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1868578790}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.1, y: 6.86, z: 0}
+  m_LocalPosition: {x: -0.9, y: 6.86, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1964332326}
@@ -78033,7 +78079,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1877302753}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.9, y: 5.86, z: 0}
+  m_LocalPosition: {x: -2.9, y: 5.86, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1964332326}
@@ -78107,7 +78153,7 @@ Transform:
   - {fileID: 1732041749}
   - {fileID: 1220046101}
   m_Father: {fileID: 0}
-  m_RootOrder: 13
+  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1879522338
 GameObject:
@@ -79752,7 +79798,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1922472334}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.1, y: 5.86, z: 0}
+  m_LocalPosition: {x: -1.9, y: 5.86, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1964332326}
@@ -80328,6 +80374,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pm: {fileID: 0}
   puzzle: {fileID: 0}
+  MotivationController: {fileID: 0}
   doorHP: 100
 --- !u!61 &1945627607
 BoxCollider2D:
@@ -80423,7 +80470,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1946151853}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.8976364, y: -0.1427186, z: 0}
+  m_LocalPosition: {x: -3.9, y: -0.1427186, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1964332326}
@@ -80493,7 +80540,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1949673922}
   m_LocalRotation: {x: -0, y: -0, z: -0.7071048, w: 0.70710886}
-  m_LocalPosition: {x: 5.33, y: 2.885, z: 0}
+  m_LocalPosition: {x: 3.33, y: 2.885, z: 0}
   m_LocalScale: {x: 1.4000005, y: 1.4000005, z: 1}
   m_Children:
   - {fileID: 120713170}
@@ -80514,6 +80561,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pm: {fileID: 0}
   puzzle: {fileID: 1670012011120810, guid: 6f09576975296b64192dd2aaec5eedf4, type: 2}
+  MotivationController: {fileID: 0}
   doorHP: 100
 --- !u!61 &1949673925
 BoxCollider2D:
@@ -80743,7 +80791,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1951634802}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.0999999, y: 3.86, z: 0}
+  m_LocalPosition: {x: -0.9, y: 3.86, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1964332326}
@@ -82260,6 +82308,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pm: {fileID: 0}
   puzzle: {fileID: 1518843313768998, guid: b967a897153f62a44a046ba099d7f67c, type: 2}
+  MotivationController: {fileID: 0}
   doorHP: 100
 --- !u!61 &1983931682
 BoxCollider2D:
@@ -83057,7 +83106,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2003539490}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.0999985, y: 7.84, z: 0}
+  m_LocalPosition: {x: -0.9, y: 7.84, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1964332326}
@@ -83124,7 +83173,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2005594322}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.9, y: 0.85999995, z: 0}
+  m_LocalPosition: {x: -2.9, y: 0.85999995, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1964332326}
@@ -84742,7 +84791,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2033759111}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 2.1, y: 3.86, z: 0}
+  m_LocalPosition: {x: 0.1, y: 3.86, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1964332326}
@@ -84914,6 +84963,7 @@ MonoBehaviour:
   CamController: {fileID: 0}
   DoorLink: {fileID: 614461819}
   CamPos: {fileID: 1120461926}
+  MotivationController: {fileID: 0}
 --- !u!61 &2035920403
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -85172,7 +85222,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2047338702}
   m_LocalRotation: {x: 0, y: 0, z: 1, w: 0}
-  m_LocalPosition: {x: -1.8976364, y: -1.14, z: 0}
+  m_LocalPosition: {x: -3.9, y: -1.14, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1662109650}
@@ -86039,7 +86089,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2073338286}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.0999999, y: 0.85999995, z: 0}
+  m_LocalPosition: {x: -0.9, y: 0.85999995, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1964332326}
@@ -86706,7 +86756,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2094933789}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.0999999, y: -1.14, z: 0}
+  m_LocalPosition: {x: -0.9, y: -1.14, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1964332326}
@@ -86773,7 +86823,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2095926399}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 3.1, y: 0.85999995, z: 0}
+  m_LocalPosition: {x: 1.1, y: 0.85999995, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1964332326}
@@ -87405,7 +87455,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2107594632}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.1, y: 4.86, z: 0}
+  m_LocalPosition: {x: -1.9, y: 4.86, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1964332326}
@@ -88280,7 +88330,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2146475623}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 2.1, y: 0.85999995, z: 0}
+  m_LocalPosition: {x: 0.1, y: 0.85999995, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1964332326}

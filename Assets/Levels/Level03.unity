@@ -4095,6 +4095,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pm: {fileID: 0}
   puzzle: {fileID: 1670012011120810, guid: 6f09576975296b64192dd2aaec5eedf4, type: 2}
+  MotivationController: {fileID: 0}
   doorHP: 100
 --- !u!61 &125325520
 BoxCollider2D:
@@ -4794,7 +4795,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 140820024}
   m_LocalRotation: {x: -0, y: -0, z: 0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: 2.1, y: -4.7, z: 0}
+  m_LocalPosition: {x: 2.1, y: -4.58, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2014346226}
@@ -7750,6 +7751,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pm: {fileID: 0}
   puzzle: {fileID: 0}
+  MotivationController: {fileID: 0}
   doorHP: 100
 --- !u!61 &250360388
 BoxCollider2D:
@@ -10535,6 +10537,7 @@ MonoBehaviour:
   CamController: {fileID: 0}
   DoorLink: {fileID: 1616921105}
   CamPos: {fileID: 1444465579}
+  MotivationController: {fileID: 0}
 --- !u!61 &333868308
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -10599,6 +10602,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pm: {fileID: 0}
   puzzle: {fileID: 0}
+  MotivationController: {fileID: 0}
   doorHP: 100
 --- !u!61 &334247813
 BoxCollider2D:
@@ -12103,6 +12107,7 @@ MonoBehaviour:
   CamController: {fileID: 0}
   DoorLink: {fileID: 125325517}
   CamPos: {fileID: 1444465579}
+  MotivationController: {fileID: 0}
 --- !u!61 &388862995
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -15146,6 +15151,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pm: {fileID: 0}
   puzzle: {fileID: 0}
+  MotivationController: {fileID: 0}
   doorHP: 100
 --- !u!61 &477246328
 BoxCollider2D:
@@ -16413,6 +16419,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pm: {fileID: 0}
   puzzle: {fileID: 0}
+  MotivationController: {fileID: 0}
   doorHP: 100
 --- !u!61 &505606692
 BoxCollider2D:
@@ -16659,7 +16666,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 516222043}
   m_LocalRotation: {x: 0, y: 0, z: 1, w: 0}
-  m_LocalPosition: {x: 13.1, y: -4.7, z: 0}
+  m_LocalPosition: {x: 13.1, y: -4.58, z: 0}
   m_LocalScale: {x: 1.0000005, y: 1.0000005, z: 1}
   m_Children: []
   m_Father: {fileID: 2014346226}
@@ -18747,6 +18754,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pm: {fileID: 0}
   puzzle: {fileID: 1184299035279844, guid: cc15fb28e2b699c4783ced7d61f3c337, type: 2}
+  MotivationController: {fileID: 0}
   doorHP: 100
 --- !u!61 &567623945
 BoxCollider2D:
@@ -20030,6 +20038,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pm: {fileID: 0}
   puzzle: {fileID: 1184299035279844, guid: cc15fb28e2b699c4783ced7d61f3c337, type: 2}
+  MotivationController: {fileID: 0}
   doorHP: 100
 --- !u!61 &595772810
 BoxCollider2D:
@@ -23433,7 +23442,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 719580994}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -5, y: 2.4, z: 0}
+  m_LocalPosition: {x: -5, y: 1.4, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1487908856}
@@ -24285,6 +24294,7 @@ MonoBehaviour:
   CamController: {fileID: 0}
   DoorLink: {fileID: 1757273591}
   CamPos: {fileID: 719580994}
+  MotivationController: {fileID: 0}
 --- !u!61 &748663627
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -24615,6 +24625,7 @@ MonoBehaviour:
   CamController: {fileID: 0}
   DoorLink: {fileID: 1765969357}
   CamPos: {fileID: 603287193}
+  MotivationController: {fileID: 0}
 --- !u!61 &761072731
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -24679,6 +24690,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pm: {fileID: 0}
   puzzle: {fileID: 0}
+  MotivationController: {fileID: 0}
   doorHP: 100
 --- !u!61 &763938581
 BoxCollider2D:
@@ -25364,6 +25376,7 @@ MonoBehaviour:
   CamController: {fileID: 0}
   DoorLink: {fileID: 567623942}
   CamPos: {fileID: 1607267010}
+  MotivationController: {fileID: 0}
 --- !u!61 &786121711
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -25374,7 +25387,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
@@ -25511,6 +25524,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pm: {fileID: 0}
   puzzle: {fileID: 0}
+  MotivationController: {fileID: 0}
   doorHP: 100
 --- !u!61 &793054149
 BoxCollider2D:
@@ -30980,6 +30994,7 @@ MonoBehaviour:
   CamController: {fileID: 0}
   DoorLink: {fileID: 1791089601}
   CamPos: {fileID: 1607267010}
+  MotivationController: {fileID: 0}
 --- !u!61 &979770149
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -37963,7 +37978,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1248486606}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 2.1, y: 1.3, z: 0}
+  m_LocalPosition: {x: 2.1, y: 1.35, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2014346226}
@@ -38067,6 +38082,7 @@ MonoBehaviour:
   CamController: {fileID: 0}
   DoorLink: {fileID: 595772807}
   CamPos: {fileID: 1980351070}
+  MotivationController: {fileID: 0}
 --- !u!61 &1250869013
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -38683,6 +38699,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pm: {fileID: 0}
   puzzle: {fileID: 0}
+  MotivationController: {fileID: 0}
   doorHP: 100
 --- !u!61 &1272421558
 BoxCollider2D:
@@ -39467,6 +39484,7 @@ MonoBehaviour:
   CamController: {fileID: 0}
   DoorLink: {fileID: 477246325}
   CamPos: {fileID: 1123245888}
+  MotivationController: {fileID: 0}
 --- !u!61 &1296570115
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -40000,6 +40018,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pm: {fileID: 0}
   puzzle: {fileID: 0}
+  MotivationController: {fileID: 0}
   doorHP: 100
 --- !u!61 &1311753204
 BoxCollider2D:
@@ -41281,6 +41300,7 @@ MonoBehaviour:
   CamController: {fileID: 0}
   DoorLink: {fileID: 1778624125}
   CamPos: {fileID: 533331852}
+  MotivationController: {fileID: 0}
 --- !u!61 &1378056616
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -46576,7 +46596,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1508449294}
   m_LocalRotation: {x: 0, y: 0, z: -0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: 13.1, y: 1.3, z: 0}
+  m_LocalPosition: {x: 13.1, y: 1.35, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2014346226}
@@ -50162,6 +50182,7 @@ MonoBehaviour:
   CamController: {fileID: 0}
   DoorLink: {fileID: 1272421555}
   CamPos: {fileID: 1123245888}
+  MotivationController: {fileID: 0}
 --- !u!61 &1604316688
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -50623,6 +50644,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pm: {fileID: 0}
   puzzle: {fileID: 0}
+  MotivationController: {fileID: 0}
   doorHP: 100
 --- !u!61 &1616921108
 BoxCollider2D:
@@ -51675,6 +51697,7 @@ MonoBehaviour:
   CamController: {fileID: 0}
   DoorLink: {fileID: 334247810}
   CamPos: {fileID: 533331852}
+  MotivationController: {fileID: 0}
 --- !u!61 &1640736462
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -53639,6 +53662,7 @@ MonoBehaviour:
   CamController: {fileID: 0}
   DoorLink: {fileID: 250360385}
   CamPos: {fileID: 1750039212}
+  MotivationController: {fileID: 0}
 --- !u!61 &1704383124
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -55048,6 +55072,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pm: {fileID: 0}
   puzzle: {fileID: 0}
+  MotivationController: {fileID: 0}
   doorHP: 100
 --- !u!61 &1757273594
 BoxCollider2D:
@@ -55500,6 +55525,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pm: {fileID: 0}
   puzzle: {fileID: 0}
+  MotivationController: {fileID: 0}
   doorHP: 100
 --- !u!61 &1765969360
 BoxCollider2D:
@@ -55769,6 +55795,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pm: {fileID: 0}
   puzzle: {fileID: 1518843313768998, guid: b967a897153f62a44a046ba099d7f67c, type: 2}
+  MotivationController: {fileID: 0}
   doorHP: 100
 --- !u!61 &1778624128
 BoxCollider2D:
@@ -56402,6 +56429,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pm: {fileID: 0}
   puzzle: {fileID: 1518843313768998, guid: b967a897153f62a44a046ba099d7f67c, type: 2}
+  MotivationController: {fileID: 0}
   doorHP: 100
 --- !u!61 &1791089604
 BoxCollider2D:
@@ -56870,6 +56898,7 @@ MonoBehaviour:
   CamController: {fileID: 0}
   DoorLink: {fileID: 2019850260}
   CamPos: {fileID: 719580994}
+  MotivationController: {fileID: 0}
 --- !u!61 &1807161527
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -60371,6 +60400,7 @@ MonoBehaviour:
   CamController: {fileID: 0}
   DoorLink: {fileID: 505606689}
   CamPos: {fileID: 603287193}
+  MotivationController: {fileID: 0}
 --- !u!61 &1919598909
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -61192,7 +61222,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4623870623645762, guid: 0af9bb801e000e241bab36eabba6285e, type: 2}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 1614985024989880, guid: 0af9bb801e000e241bab36eabba6285e, type: 2}
       propertyPath: m_Name
@@ -62358,6 +62388,7 @@ MonoBehaviour:
   CamController: {fileID: 0}
   DoorLink: {fileID: 1311753201}
   CamPos: {fileID: 1193721394}
+  MotivationController: {fileID: 0}
 --- !u!61 &2006209330
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -62934,6 +62965,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pm: {fileID: 0}
   puzzle: {fileID: 0}
+  MotivationController: {fileID: 0}
   doorHP: 100
 --- !u!61 &2019850263
 BoxCollider2D:
@@ -64452,6 +64484,7 @@ MonoBehaviour:
   CamController: {fileID: 0}
   DoorLink: {fileID: 763938578}
   CamPos: {fileID: 1607267010}
+  MotivationController: {fileID: 0}
 --- !u!61 &2058862641
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -66049,6 +66082,7 @@ MonoBehaviour:
   CamController: {fileID: 0}
   DoorLink: {fileID: 793054146}
   CamPos: {fileID: 1123245888}
+  MotivationController: {fileID: 0}
 --- !u!61 &2131414217
 BoxCollider2D:
   m_ObjectHideFlags: 0
