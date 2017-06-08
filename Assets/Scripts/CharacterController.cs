@@ -12,6 +12,8 @@ public class CharacterController : MonoBehaviour {
     public bool PuzzleActive;
     bool dead = false;
 
+    
+
     //Hiding variables
     bool isHiding = false; //is our player hiding?
     Vector2 currentHidingVector; //at what position is they hiding
@@ -22,6 +24,7 @@ public class CharacterController : MonoBehaviour {
 
     //The MotivationController
     public GameObject mc;
+    public GameObject pm;
 
     //Variables related to shooting
     public Rigidbody2D bullet;
@@ -52,6 +55,7 @@ public class CharacterController : MonoBehaviour {
         firePointDown = transform.FindChild("FirePointDown");
         firePointUp = transform.FindChild("FirePointUp");
         mc = GameObject.FindGameObjectWithTag("MotivationController");
+        pm = GameObject.FindGameObjectWithTag("PrefabManager");
     }
 
     //For moving away from puzzle
@@ -220,7 +224,7 @@ public class CharacterController : MonoBehaviour {
         {
             Destroy(other.gameObject);
             coinsAmount += 1;
-            mc.GetComponent<MotivationController>().IncreaseAchievementScore(2);
+            mc.GetComponent<MotivationController>().IncreaseAchievementScore(100/pm.GetComponent<PrefabManager>().coinsMax.Length);
         }
     }
 

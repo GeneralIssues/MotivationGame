@@ -12,6 +12,7 @@ public class EnemyController : MonoBehaviour {
     bool enemyDead = false;
 
     public GameObject MotivationController;
+    public GameObject pm;
 
     float enemyHP = 100;
     float bulletDmg = 40;
@@ -20,6 +21,7 @@ public class EnemyController : MonoBehaviour {
 	void Start () {
 		player = GameObject.FindGameObjectWithTag("Player");
         MotivationController = GameObject.FindWithTag("MotivationController");
+        pm = GameObject.FindGameObjectWithTag("PrefabManager");
 	}
 	
 	// Update is called once per frame
@@ -48,7 +50,7 @@ public class EnemyController : MonoBehaviour {
                 this.GetComponent<Animator>().Play("enemyDead");
                 this.GetComponent<BoxCollider2D>().isTrigger = true;
                 this.GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezeAll;
-                MotivationController.GetComponent<MotivationController>().IncreaseActionScore(5);
+                MotivationController.GetComponent<MotivationController>().IncreaseActionScore(100/pm.GetComponent<PrefabManager>().enemies.Length);
             }
         }
     }

@@ -1238,7 +1238,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pm: {fileID: 0}
-  puzzle: {fileID: 1914527438084620, guid: e4629f6fdab63994baf67001d72e2140, type: 2}
+  puzzle: {fileID: 0}
   MotivationController: {fileID: 0}
   doorHP: 100
 --- !u!1 &69442231

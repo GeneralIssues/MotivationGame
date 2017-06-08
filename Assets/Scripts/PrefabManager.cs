@@ -19,7 +19,10 @@ public class PrefabManager : MonoBehaviour
     //Arrays of placed items and enemies
     public GameObject[] enemies;
     public GameObject[] coins;
+    public GameObject[] coinsMax;
     public GameObject[] NPCs;
+    public GameObject[] doors;
+    public int numOfPuzzles;
     public List<GameObject> list = new List<GameObject>();
     //Singleton
     private static PrefabManager m_Instance = null;
@@ -38,12 +41,19 @@ public class PrefabManager : MonoBehaviour
     {
         list.AddRange(GameObject.FindGameObjectsWithTag("NPC"));
         text1 = GameObject.Find("AmountOfCoins").GetComponent<Text>();
+        coinsMax = GameObject.FindGameObjectsWithTag("Coin");
+        enemies = GameObject.FindGameObjectsWithTag("Enemy");
+        doors = GameObject.FindGameObjectsWithTag("Door");
+        for (int i = 0; i < doors.Length; i++){
+            if (doors[i].GetComponent<DoorController>().puzzle != null){
+                numOfPuzzles += 1;
+            }
+        }
     }
     void Update()
     {
-        enemies = GameObject.FindGameObjectsWithTag("Enemy");
-        coins = GameObject.FindGameObjectsWithTag("Coin");
         NPCs = GameObject.FindGameObjectsWithTag("NPC");
+        coins = GameObject.FindGameObjectsWithTag("Coin");
         text1.text = "Amount of coins left in level: " + (coins.Length.ToString());
         
     }

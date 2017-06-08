@@ -292,11 +292,11 @@ void Update ()
         avMastery /= numberOfLevelsEntered;
         avImmersion /= numberOfLevelsEntered;
 
-        // We decrease achievement score my 10 for every room left
-        while (numberOfLevelsEntered <= 6) {
+        // We decrease achievement score by 10 for every room left
+        /*while (numberOfLevelsEntered <= 6) {
             avAchievement -= 10;
             numberOfLevelsEntered++;
-        }
+        }*/
 
         string average = "Action: " + avAction 
             + " Achievement: " + avAchievement 
@@ -328,10 +328,10 @@ void Update ()
     {
         return AchievementScore;
     }
-    public void DecreaseAchievementScore(int dec)
+    /*public void DecreaseAchievementScore(int dec)
     {
         AchievementScore -= dec;
-    }
+    }*/
 
     //Mastery Score Functions
     public void IncreaseMasteryScore(int inc)

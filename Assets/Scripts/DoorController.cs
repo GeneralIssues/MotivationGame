@@ -59,7 +59,7 @@ public class DoorController : MonoBehaviour{
             if (doorHP <= 0) {
                 this.GetComponent<BoxCollider2D>().isTrigger = true;
                 this.GetComponent<Animator>().enabled = true;
-                MotivationController.GetComponent<MotivationController>().IncreaseActionScore(5); //Scorer
+                //MotivationController.GetComponent<MotivationController>().IncreaseActionScore(5); //Scorer
             }
         }
     }

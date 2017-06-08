@@ -285,12 +285,12 @@ Prefab:
     - target: {fileID: 114151546918219496, guid: 06f2eaf2e0230054c8785254ea04e599,
         type: 2}
       propertyPath: hasBeenToLevel.Array.data[2]
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 114151546918219496, guid: 06f2eaf2e0230054c8785254ea04e599,
         type: 2}
       propertyPath: hasBeenToLevel.Array.data[3]
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 114151546918219496, guid: 06f2eaf2e0230054c8785254ea04e599,
         type: 2}
@@ -331,6 +331,11 @@ Prefab:
         type: 2}
       propertyPath: m_Pivot.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114151546918219496, guid: 06f2eaf2e0230054c8785254ea04e599,
+        type: 2}
+      propertyPath: hasBeenToLevel.Array.data[1]
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 06f2eaf2e0230054c8785254ea04e599, type: 2}

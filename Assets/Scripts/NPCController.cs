@@ -60,7 +60,7 @@ public class NPCController : MonoBehaviour {
             currentlyTalking = true;
             if (this.name == "NPC1" && !one) {
                 StartCoroutine(DialogueStart(lore1));
-                mc.GetComponent<MotivationController>().IncreaseImmersionScore(5);
+                mc.GetComponent<MotivationController>().IncreaseImmersionScore(100);
                 //pm.GetComponent<PrefabManager>().list.RemoveAt(0);
                 one = true;
 
@@ -68,28 +68,28 @@ public class NPCController : MonoBehaviour {
             else if (this.name == "NPC2" && !two)
             {
                 StartCoroutine(DialogueStart(lore2));
-                mc.GetComponent<MotivationController>().IncreaseImmersionScore(5);
+                mc.GetComponent<MotivationController>().IncreaseImmersionScore(50);
                 //pm.GetComponent<PrefabManager>().list.RemoveAt(1);
                 two = true;
             }
             else if (this.name == "NPC3" && !three)
             {
                 StartCoroutine(DialogueStart(lore3));
-                mc.GetComponent<MotivationController>().IncreaseImmersionScore(5);
+                mc.GetComponent<MotivationController>().IncreaseImmersionScore(50);
                 //pm.GetComponent<PrefabManager>().list.RemoveAt(2);
                 three = true;
             }
             else if (this.name == "NPC4" && !four)
             {
                 StartCoroutine(DialogueStart(lore4));
-                mc.GetComponent<MotivationController>().IncreaseImmersionScore(5);
+                mc.GetComponent<MotivationController>().IncreaseImmersionScore(50);
                 //pm.GetComponent<PrefabManager>().list.RemoveAt(3);
                 four = true;
             }
             else if (this.name == "NPC5" && !five)
             {
                 StartCoroutine(DialogueStart(lore5));
-                mc.GetComponent<MotivationController>().IncreaseImmersionScore(5);
+                mc.GetComponent<MotivationController>().IncreaseImmersionScore(50);
                 //pm.GetComponent<PrefabManager>().list.RemoveAt(4);
                 five = true;
 
@@ -97,7 +97,7 @@ public class NPCController : MonoBehaviour {
             else if (this.name == "NPC6" && !six)
             {
                 StartCoroutine(DialogueStart(lore6));
-                mc.GetComponent<MotivationController>().IncreaseImmersionScore(5);
+                mc.GetComponent<MotivationController>().IncreaseImmersionScore(50);
                 //pm.GetComponent<PrefabManager>().list.RemoveAt(5);
                 six = true;
 
@@ -105,7 +105,7 @@ public class NPCController : MonoBehaviour {
             else if (this.name == "NPC7" && !seven)
             {
                 StartCoroutine(DialogueStart(lore7));
-                mc.GetComponent<MotivationController>().IncreaseImmersionScore(5);
+                mc.GetComponent<MotivationController>().IncreaseImmersionScore(50);
                 //pm.GetComponent<PrefabManager>().list.RemoveAt(6);
                 seven = true;
 
@@ -113,7 +113,7 @@ public class NPCController : MonoBehaviour {
             else if (this.name == "NPC8" && !eight)
             {
                 StartCoroutine(DialogueStart(lore8));
-                mc.GetComponent<MotivationController>().IncreaseImmersionScore(5);
+                mc.GetComponent<MotivationController>().IncreaseImmersionScore(50);
                 //pm.GetComponent<PrefabManager>().list.RemoveAt(7);
                 eight = true;
 
@@ -121,7 +121,7 @@ public class NPCController : MonoBehaviour {
             else if (this.name == "NPC9" && !nine)
             {
                 StartCoroutine(DialogueStart(lore9));
-                mc.GetComponent<MotivationController>().IncreaseImmersionScore(5);
+                mc.GetComponent<MotivationController>().IncreaseImmersionScore(50);
                 //pm.GetComponent<PrefabManager>().list.RemoveAt(8);
                 nine = true;
 
@@ -129,7 +129,7 @@ public class NPCController : MonoBehaviour {
             else if (this.name == "NPC10" && !ten)
             {
                 StartCoroutine(DialogueStart(lore10));
-                mc.GetComponent<MotivationController>().IncreaseImmersionScore(5);
+                mc.GetComponent<MotivationController>().IncreaseImmersionScore(100);
                 //pm.GetComponent<PrefabManager>().list.RemoveAt(9);
                 ten = true;
 
@@ -142,7 +142,7 @@ public class NPCController : MonoBehaviour {
         StopAllCoroutines();
         if (npctext.text != "") {
             npctext.text = "";
-            mc.GetComponent<MotivationController>().DecreaseImmersionScore(5);
+            mc.GetComponent<MotivationController>().DecreaseImmersionScore(100/pm.GetComponent<PrefabManager>().NPCs.Length);
         }
     }
 

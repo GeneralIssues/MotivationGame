@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class EndDoor : MonoBehaviour {
 
@@ -50,6 +51,7 @@ public class EndDoor : MonoBehaviour {
     {
         if (coll.tag == "Player") {
             MotivationController.GetComponent<MotivationController>().SaveStats();
+            SceneManager.LoadScene("End");
         }
     }
 }

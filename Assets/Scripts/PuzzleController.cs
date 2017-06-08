@@ -8,6 +8,7 @@ public class PuzzleController : MonoBehaviour{
     string nameImg;
 
     public GameObject MotivationController;
+    public GameObject pm;
 
     public int puzzleSize = 3;
 
@@ -24,6 +25,7 @@ public class PuzzleController : MonoBehaviour{
 
     GameObject current;
 
+
     // Use this for initialization
     void Start (){
         //Create the needed arrays
@@ -32,6 +34,7 @@ public class PuzzleController : MonoBehaviour{
         imagesColor = new Color[puzzleSize * puzzleSize];
 
         MotivationController = GameObject.FindGameObjectWithTag("MotivationController");
+        pm = GameObject.FindGameObjectWithTag("PrefabManager");
 
         current = this.transform.gameObject;
 
@@ -100,7 +103,7 @@ public class PuzzleController : MonoBehaviour{
             if (current.tag == "Door") {
                 current.GetComponent<Animator>().enabled = true;
                 GameObject.FindGameObjectWithTag("Player").GetComponent<CharacterController>().PuzzleActive = false;
-                MotivationController.GetComponent<MotivationController>().IncreaseMasteryScore(5); //Scorer
+                MotivationController.GetComponent<MotivationController>().IncreaseMasteryScore(100/(pm.GetComponent<PrefabManager>().numOfPuzzles/2)); //Scorer
 
             }
         }
