@@ -56,11 +56,12 @@ public class NPCController : MonoBehaviour {
     }
 
     void OnTriggerStay2D(Collider2D coll){
-        if (coll.tag == "Player" && Input.GetKeyUp(KeyCode.E)) {
+        if (coll.tag == "Player" && Input.GetKeyUp(KeyCode.E) && !currentlyTalking){
+            currentlyTalking = true;
             if (this.name == "NPC1" && !one) {
                 StartCoroutine(DialogueStart(lore1));
                 mc.GetComponent<MotivationController>().IncreaseImmersionScore(5);
-                pm.GetComponent<PrefabManager>().list.RemoveAt(0);
+                //pm.GetComponent<PrefabManager>().list.RemoveAt(0);
                 one = true;
 
             }
@@ -68,28 +69,28 @@ public class NPCController : MonoBehaviour {
             {
                 StartCoroutine(DialogueStart(lore2));
                 mc.GetComponent<MotivationController>().IncreaseImmersionScore(5);
-                pm.GetComponent<PrefabManager>().list.RemoveAt(1);
+                //pm.GetComponent<PrefabManager>().list.RemoveAt(1);
                 two = true;
             }
             else if (this.name == "NPC3" && !three)
             {
                 StartCoroutine(DialogueStart(lore3));
                 mc.GetComponent<MotivationController>().IncreaseImmersionScore(5);
-                pm.GetComponent<PrefabManager>().list.RemoveAt(2);
+                //pm.GetComponent<PrefabManager>().list.RemoveAt(2);
                 three = true;
             }
             else if (this.name == "NPC4" && !four)
             {
                 StartCoroutine(DialogueStart(lore4));
                 mc.GetComponent<MotivationController>().IncreaseImmersionScore(5);
-                pm.GetComponent<PrefabManager>().list.RemoveAt(3);
+                //pm.GetComponent<PrefabManager>().list.RemoveAt(3);
                 four = true;
             }
             else if (this.name == "NPC5" && !five)
             {
                 StartCoroutine(DialogueStart(lore5));
                 mc.GetComponent<MotivationController>().IncreaseImmersionScore(5);
-                pm.GetComponent<PrefabManager>().list.RemoveAt(4);
+                //pm.GetComponent<PrefabManager>().list.RemoveAt(4);
                 five = true;
 
             }
@@ -97,7 +98,7 @@ public class NPCController : MonoBehaviour {
             {
                 StartCoroutine(DialogueStart(lore6));
                 mc.GetComponent<MotivationController>().IncreaseImmersionScore(5);
-                pm.GetComponent<PrefabManager>().list.RemoveAt(5);
+                //pm.GetComponent<PrefabManager>().list.RemoveAt(5);
                 six = true;
 
             }
@@ -105,7 +106,7 @@ public class NPCController : MonoBehaviour {
             {
                 StartCoroutine(DialogueStart(lore7));
                 mc.GetComponent<MotivationController>().IncreaseImmersionScore(5);
-                pm.GetComponent<PrefabManager>().list.RemoveAt(6);
+                //pm.GetComponent<PrefabManager>().list.RemoveAt(6);
                 seven = true;
 
             }
@@ -113,7 +114,7 @@ public class NPCController : MonoBehaviour {
             {
                 StartCoroutine(DialogueStart(lore8));
                 mc.GetComponent<MotivationController>().IncreaseImmersionScore(5);
-                pm.GetComponent<PrefabManager>().list.RemoveAt(7);
+                //pm.GetComponent<PrefabManager>().list.RemoveAt(7);
                 eight = true;
 
             }
@@ -121,7 +122,7 @@ public class NPCController : MonoBehaviour {
             {
                 StartCoroutine(DialogueStart(lore9));
                 mc.GetComponent<MotivationController>().IncreaseImmersionScore(5);
-                pm.GetComponent<PrefabManager>().list.RemoveAt(8);
+                //pm.GetComponent<PrefabManager>().list.RemoveAt(8);
                 nine = true;
 
             }
@@ -129,7 +130,7 @@ public class NPCController : MonoBehaviour {
             {
                 StartCoroutine(DialogueStart(lore10));
                 mc.GetComponent<MotivationController>().IncreaseImmersionScore(5);
-                pm.GetComponent<PrefabManager>().list.RemoveAt(9);
+                //pm.GetComponent<PrefabManager>().list.RemoveAt(9);
                 ten = true;
 
             }

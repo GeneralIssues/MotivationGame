@@ -193,7 +193,7 @@ void Update ()
     /// </summary>
     public void SaveStats ()
     {
-        string path = "C:/variables.txt";
+        string path = "C:/Users/General/Desktop/variables.txt";
 
         string createText = "Motivation Scores";
         System.IO.File.WriteAllText(path, createText);
