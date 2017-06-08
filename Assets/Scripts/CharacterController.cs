@@ -149,7 +149,7 @@ public class CharacterController : MonoBehaviour {
     /// </summary>
     void MoveAwayFromPuzzle()
     {
-        print("Method ran");
+        //print("Method ran");
 
         //Move away down
         if (Input.GetKey(KeyCode.W) && this.transform.position.y > doorPos.position.y) {
