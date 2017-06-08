@@ -62,7 +62,7 @@ public class CharacterController : MonoBehaviour {
         if (!PuzzleActive && !dead)
             MovementDir();
 
-        if (scene.name != "MainHub" && !PuzzleActive) {
+        if (scene.name != "MainHub" && !PuzzleActive && !dead) {
             if (Input.GetKey(KeyCode.LeftArrow) && Time.time > timeToFire) {
                 timeToFire = Time.time + 1 / fireRate;
                 Shoot(Vector3.left, firePointLeft);
@@ -203,7 +203,7 @@ public class CharacterController : MonoBehaviour {
         }
 
         //Door touched
-        if (coll.gameObject.tag == "Door") {
+        if (coll.gameObject.tag == "Door" && coll.gameObject.GetComponent<DoorController>().puzzle != null) {
             doorPos = coll.gameObject.transform;
             print(doorPos);
         }

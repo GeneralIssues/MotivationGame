@@ -55,7 +55,7 @@ public class NPCController : MonoBehaviour {
         }
     }
 
-    void OnTriggerStay2D(Collider2D coll) {
+    void OnTriggerStay2D(Collider2D coll){
         if (coll.tag == "Player" && Input.GetKeyUp(KeyCode.E)) {
             if (this.name == "NPC1" && !one) {
                 StartCoroutine(DialogueStart(lore1));

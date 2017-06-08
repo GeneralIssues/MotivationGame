@@ -302,6 +302,36 @@ Prefab:
       propertyPath: hasBeenToLevel.Array.data[5]
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 224476381753474294, guid: 06f2eaf2e0230054c8785254ea04e599,
+        type: 2}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224476381753474294, guid: 06f2eaf2e0230054c8785254ea04e599,
+        type: 2}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224476381753474294, guid: 06f2eaf2e0230054c8785254ea04e599,
+        type: 2}
+      propertyPath: m_AnchoredPosition.x
+      value: 361
+      objectReference: {fileID: 0}
+    - target: {fileID: 224476381753474294, guid: 06f2eaf2e0230054c8785254ea04e599,
+        type: 2}
+      propertyPath: m_AnchoredPosition.y
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 224476381753474294, guid: 06f2eaf2e0230054c8785254ea04e599,
+        type: 2}
+      propertyPath: m_Pivot.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224476381753474294, guid: 06f2eaf2e0230054c8785254ea04e599,
+        type: 2}
+      propertyPath: m_Pivot.y
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 06f2eaf2e0230054c8785254ea04e599, type: 2}
   m_IsPrefabParent: 0
