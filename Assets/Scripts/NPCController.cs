@@ -48,7 +48,10 @@ public class NPCController : MonoBehaviour {
         if (Input.GetKeyDown(KeyCode.Space))
         {
             StopAllCoroutines();
-            npctext.text = "";
+            if (npctext.text != ""){
+                npctext.text = "";
+                mc.GetComponent<MotivationController>().DecreaseImmersionScore(5);
+            }
         }
     }
 
