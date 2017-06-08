@@ -198,7 +198,7 @@ public class CharacterController : MonoBehaviour {
             //this.GetComponent<BoxCollider2D>().isTrigger = true;
             this.GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezePosition;
             this.GetComponent<Animator>().Play("Dead");
-
+            mc.GetComponent<MotivationController>().ResetScores();
             StartCoroutine(RestartScene());
         }
 

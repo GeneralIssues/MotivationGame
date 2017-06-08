@@ -377,4 +377,11 @@ void Update ()
         }
     }
 
+    public void ResetScores(){
+        AchievementScore = 0;
+        ActionScore = 0;
+        ImmersionScore = 0;
+        MasteryScore = 0;
+    }
+
 }
