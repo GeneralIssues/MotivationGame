@@ -57,7 +57,7 @@ public class RoomSwitcher : MonoBehaviour
             //We draw the door in another value according to damage
             if (this.gameObject.tag != "Finish" && parentDoor.GetComponent<DoorController>().puzzle == null) {
                 parentDoor.GetComponent<SpriteRenderer>().color
-                    = Color.HSVToRGB(1f, 0f, parentDoor.GetComponent<DoorController>().doorHP / 150f);
+                    = Color.HSVToRGB(1f, 0f, parentDoor.GetComponent<DoorController>().doorHP / 230f);
             }
             else if (this.gameObject.tag != "Finish" && parentDoor.GetComponent<DoorController>().puzzle != null) {
                 parentDoor.GetComponent<SpriteRenderer>().color
