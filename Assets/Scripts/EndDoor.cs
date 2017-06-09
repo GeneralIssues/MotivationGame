@@ -40,7 +40,7 @@ public class EndDoor : MonoBehaviour {
                 numRoomsDone++;
         }
 
-        if (numRoomsDone >= 4) {
+        if (numRoomsDone >= 3) {
             endDoor.GetComponent<SpriteRenderer>().color = Color.green;
             endDoor.GetComponent<Animator>().enabled = true;
             endDoor.GetComponent<BoxCollider2D>().enabled = false;

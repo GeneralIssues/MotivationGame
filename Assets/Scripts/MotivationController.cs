@@ -293,8 +293,8 @@ void Update ()
         avImmersion /= numberOfLevelsEntered;
 
         // We decrease achievement score for rooms not entered
-        float roomRemainingPercentage = numberOfLevelsEntered / 6;
-        avAchievement *= roomRemainingPercentage;
+        float roomEnteredPercentage = (numberOfLevelsEntered / 6) * 100;
+        avAchievement = (roomEnteredPercentage + avAchievement) / 2;
 
         string average = "Action: " + avAction 
             + " Achievement: " + avAchievement 
